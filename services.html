@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; Programs | KENSEI &mdash; International Martial Arts Academy</title>
+  <meta name="description" content="Explore world-class martial arts training programs at KENSEI Academy: Karate, BJJ, Muay Thai, Boxing, Taekwondo, Kung Fu, Kalaripayattu, and specialized self-defense.">
+
+  <!-- Google Fonts: Barlow Condensed, Bebas Neue & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVBAR (Unified Component)
+       ======================================================================== -->
+    <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg kensei-navbar" aria-label="Main navigation">
+      <div class="container-xl d-flex align-items-center justify-content-between">
+        <!-- Brand Wordmark -->
+        <a class="brand-link" href="index.html">
+          <div class="brand-symbol" aria-hidden="true">K</div>
+          <div class="brand-text">
+            <span class="brand-title">KENSEI</span>
+            <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+          </div>
+        </a>
+
+        <!-- Right Side Controls (RTL + Theme + Desktop CTA + Mobile Hamburger) -->
+        <div class="d-flex align-items-center gap-2 order-lg-3 nav-header-actions">
+          <!-- RTL / LTR Toggle -->
+          <button id="rtlToggleBtn" class="nav-util-btn" title="Toggle RTL / LTR" aria-label="Toggle Text Direction">
+            <span id="rtlToggleLabel" class="rtl-toggle-text">RTL</span>
+          </button>
+
+          <!-- Light / Dark Theme Toggle -->
+          <button id="themeToggleBtn" class="nav-util-btn" title="Switch Theme" aria-label="Toggle Theme">
+            <i id="themeToggleIcon" class="bi bi-sun-fill"></i>
+          </button>
+
+          <!-- Desktop Book a Free Trial CTA -->
+          <a href="schedule.html" class="btn-kensei btn-kensei-primary btn-kensei-sm d-none d-lg-inline-flex" data-trial-program="General Inquiry">
+            <i class="bi bi-shield-check"></i>
+            <span>Book a Free Trial</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kenseiNavContent" aria-controls="kenseiNavContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+        <!-- Collapsible Navigation Menu -->
+        <div class="collapse navbar-collapse order-lg-2" id="kenseiNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="home-2.html">Home 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile-only CTA inside opened menu -->
+          <div class="d-lg-none mt-3 pt-3 border-top border-secondary-subtle">
+            <a href="schedule.html" class="btn-kensei btn-kensei-primary w-100 justify-content-center" data-trial-program="General Inquiry">
+              <i class="bi bi-shield-check"></i>
+              <span>Book a Free Trial</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       1. SERVICES HERO SECTION (Cinematic Martial Arts Dojo Montage)
+       ======================================================================== -->
+  <section class="home2-hero-section services-hero-section" id="hero-services">
+    <div class="home2-hero-bg">
+      <img src="assets/images/services-hero-montage.jpg" alt="KENSEI Martial Arts Dojo &mdash; International Martial Arts Montage" class="home2-hero-img" style="object-position: center 25%; filter: contrast(1.08) brightness(0.94);">
+      <div class="home2-hero-scrim-left" aria-hidden="true" style="background: linear-gradient(90deg, rgba(14, 16, 20, 0.98) 0%, rgba(14, 16, 20, 0.94) 42%, rgba(14, 16, 20, 0.55) 62%, rgba(14, 16, 20, 0.15) 82%, rgba(14, 16, 20, 0.2) 100%);"></div>
+      <div class="home2-hero-scrim-bottom" aria-hidden="true"></div>
+    </div>
+
+    <!-- Right Edge Vertical Watermark -->
+    <div class="home2-vertical-watermark" aria-hidden="true">
+      <span class="home2-watermark-line"></span>
+      <span class="home2-watermark-text">DISCIPLINE <span class="red-bullet">&bull;</span> STRENGTH <span class="red-bullet">&bull;</span> RESPECT</span>
+      <span class="home2-watermark-line"></span>
+    </div>
+
+    <!-- Floating Angular Badge -->
+    <div class="home2-floating-badge reveal-on-scroll">
+      <span class="home2-floating-text">7 GLOBAL DISCIPLINES &bull; HOSPITAL-GRADE TATAMI</span>
+    </div>
+
+    <div class="container-xl home2-hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-xl-7">
+          <span class="home2-accent-bar reveal-on-scroll" aria-hidden="true"></span>
+
+          <!-- Slanted Editorial Headline -->
+          <h1 class="home2-hero-headline reveal-on-scroll reveal-delay-1">
+            <span class="text-white-line">TRAIN YOUR BODY.</span>
+            <span class="text-red-line">STRENGTHEN YOUR MIND.</span>
+          </h1>
+
+          <p class="home2-hero-lead reveal-on-scroll reveal-delay-2">
+            Explore authentic martial arts programs from Japan, Korea, China, Thailand, Brazil, and India. Every discipline is taught with biomechanical precision, mutual respect, and dedicated beginner tracks.
+          </p>
+
+          <div class="home2-btn-group reveal-on-scroll reveal-delay-3">
+            <a href="#exploring-every-art" class="home2-btn-primary">
+              <span>EXPLORE EVERY ART</span>
+              <i class="bi bi-shield-check"></i>
+            </a>
+            <a href="schedule.html" class="home2-btn-outline">
+              <span>CLAIM TRIAL PASS</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="home2-stats-strip reveal-on-scroll reveal-delay-4">
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">7</span>
+              <span class="home2-stat-lbl">World Traditions</span>
+            </div>
+            <div class="home2-stat-sep" aria-hidden="true"></div>
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">6,000</span>
+              <span class="home2-stat-lbl">Sq.Ft Facility</span>
+            </div>
+            <div class="home2-stat-sep" aria-hidden="true"></div>
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">100%</span>
+              <span class="home2-stat-lbl">Safety &amp; Zero-Ego</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========================================================================
+       2. EXPLORING EVERY ART (Master Showcase Section featuring Dojo Montage)
+       ======================================================================== -->
+  <section class="explore-arts-section" id="exploring-every-art">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Mastery Canvas &bull; 7 Authentic Disciplines</span>
+        <h2 class="section-title">EXPLORING EVERY ART <br><span class="text-combat-red">ANATOMY OF THE WORLD MARTIAL SPECTRUM</span></h2>
+        <p class="section-subtitle">
+          Step directly into our master dojo montage. Each martial artist captured in this panoramic visual represents an authentic international combat lineage taught with biomechanical precision, safe partner culture, and dedicated beginner tracks at KENSEI Academy.
+        </p>
+      </div>
+
+      <!-- High-Definition Hero Montage Frame -->
+      <div class="montage-cinematic-frame reveal-on-scroll">
+        <img src="assets/images/services-hero-montage.jpg" alt="KENSEI Martial Arts Academy &mdash; Exploring Every Art Montage" class="montage-cinematic-img">
+        <div class="montage-overlay-caption">
+          <div>
+            <h3 class="montage-title">THE SEVEN TRADITIONS OF KENSEI</h3>
+            <p class="text-white-50 mb-0 small">From ancient Kerala battlegrounds to Okinawan dojos, Brazilian tatami, and modern sweet-science boxing rings.</p>
+          </div>
+          <span class="badge bg-danger px-3 py-2 text-uppercase fw-bold"><i class="bi bi-shield-check"></i> Hospital-Grade Olympic Tatami</span>
+        </div>
+      </div>
+
+      <!-- Detailed Breakdown of Every Art in the Montage -->
+      <div class="row g-4 reveal-on-scroll">
+        <!-- 1. Center: Traditional Karate -->
+        <div class="col-md-6 col-lg-4" id="art-karate">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Center Front &bull; White Gi Master</span>
+            <h4 class="art-breakdown-title">TRADITIONAL OKINAWAN KARATE</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> Japan &bull; Okinawa / Honshu</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The grounded master in crisp white Gi and black belt in low horse stance (<em>kiba-dachi</em>), executing an open-palm strike (<em>shotei uchi</em>).
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Linear explosive power (<em>kime</em>), hip torque rotation, foundational Kata forms, dynamic block-and-counter sequences, and mental stillness under duress.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Ages 6+</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Zero Experience Welcome</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Belt Pathway</span>
+            </div>
+            <a href="program-detail.html?program=karate" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Top Left: Olympic Taekwondo -->
+        <div class="col-md-6 col-lg-4" id="art-taekwondo">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Top Left &bull; Dynamic High Kick</span>
+            <h4 class="art-breakdown-title">OLYMPIC TAEKWONDO</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> Korea &bull; Kukkiwon / World Taekwondo</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The agile female martial artist in white dobok launching a head-height turning side kick (<em>yeop chagi</em>) with aerial precision.
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Rapid pelvic whip mechanics, 360&deg; jumping kicks, Olympic sparring footwork, extreme lower-body flexibility, and split-second spatial reaction time.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Kids &amp; Teens</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Olympic Drills</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Flexibility Focus</span>
+            </div>
+            <a href="program-detail.html?program=taekwondo" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Center Back: Shaolin Kung Fu -->
+        <div class="col-md-6 col-lg-4" id="art-shaolin">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Center Back &bull; Saffron Robe Monk</span>
+            <h4 class="art-breakdown-title">SHAOLIN KUNG FU &amp; WUSHU</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> China &bull; Songshan Shaolin</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The Shaolin warrior monk in traditional saffron orange robes in deep bow stance (<em>gong bu</em>), demonstrating open-palm redirection.
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Five Animal movements (Tiger, Crane, Leopard, Snake, Dragon), staff and saber fundamentals, tendon conditioning, and internal breath harmonization (Qigong).
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">All Ages</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Holistic Mobility</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Internal Breath</span>
+            </div>
+            <a href="program-detail.html?program=kungfu" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Center Right: Kalaripayattu -->
+        <div class="col-md-6 col-lg-4" id="art-kalaripayattu">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Center Right &bull; Long Hardwood Staff</span>
+            <h4 class="art-breakdown-title">KALARIPAYATTU &amp; WEAPON COMBAT</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> India &bull; Kerala Battlefield Lineage</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The warrior in traditional red-and-gold waist wrap wielding a polished curved staff (<em>kettukari</em>) in ground-hugging animal posture (<em>ashva vadivu</em>).
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Humanity's oldest martial science: 8 animal postures, <em>Marma</em> vital point awareness, long and short wooden stick fencing, extreme hip mobility, and primal warrior conditioning.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Ancient Heritage</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Staff Mastery</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Marma Science</span>
+            </div>
+            <a href="program-detail.html?program=kalaripayattu" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Top Right: Muay Thai -->
+        <div class="col-md-6 col-lg-4" id="art-muaythai">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Top Right &bull; Airborne Flying Knee</span>
+            <h4 class="art-breakdown-title">MUAY THAI (ART OF EIGHT LIMBS)</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> Thailand &bull; Muay Thai / Boran</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The airborne fighter in traditional satin fight shorts and hand wraps executing an explosive flying knee (<em>khao loi</em>).
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Devastating eight-point striking (fists, elbows, knees, shins), dominant plum clinch control, Dutch-style pad work, and intense metabolic conditioning.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Teens &amp; Adults</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Full-Body Cardio</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Clinch Mastery</span>
+            </div>
+            <a href="program-detail.html?program=kickboxing" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. Bottom Right: Western Boxing -->
+        <div class="col-md-6 col-lg-4" id="art-boxing">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Bottom Right &bull; Heavy Glove Striker</span>
+            <h4 class="art-breakdown-title">WESTERN BOXING (SWEET SCIENCE)</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> England &amp; USA &bull; Queensberry Rules</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The muscular power striker in tight orthodox boxing stance with black leather gloves, chin tucked, eyes locked on the target.
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Precise kinetic chain punching (jab, cross, hook, uppercut), head movement (slip, bob, weave), angle evasion, mitt work, and explosive anaerobic stamina.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Beginner Friendly</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">High-Calorie Burn</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Footwork Mastery</span>
+            </div>
+            <a href="program-detail.html?program=boxing" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 7. Center Left: Kickboxing & Self-Defense -->
+        <div class="col-md-6 col-lg-4" id="art-kickboxing">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Center Left &bull; Crouched Striker</span>
+            <h4 class="art-breakdown-title">KICKBOXING &amp; SELF-DEFENSE</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> Global &bull; Hybrid Dutch Combatives</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The female fighter in black combat top and gloves in a grounded athletic crouch, coiled and ready to explode into action.
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Fast 4-to-6 strike combination drills, situational threat de-escalation, escaping wrist and neck grabs, low kick checks, and functional confidence.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Women &amp; Beginners</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Practical Combatives</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Pad Drills</span>
+            </div>
+            <a href="program-detail.html?program=kickboxing" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 8. Bottom Left: Brazilian Jiu-Jitsu -->
+        <div class="col-md-6 col-lg-4" id="art-bjj">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-danger text-white">Bottom Left &bull; Blue Gi Mat Grapplers</span>
+            <h4 class="art-breakdown-title">BRAZILIAN JIU-JITSU (BJJ)</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-geo-alt-fill"></i> Brazil &bull; Gracie &amp; Kodokan Lineage</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The grapplers locked on the tatami in royal blue gi, applying anatomical joint leverage and control mechanics.
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What Students Learn:</strong> Ground survival, guard passing, sweeping larger opponents, positional escapes, submissions (armbars, kimuras, chokes), and safe live sparring (rolling).
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">All Body Types</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Zero Striking Impact</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Chess on the Mats</span>
+            </div>
+            <a href="program-detail.html?program=bjj" class="art-breakdown-link">
+              <span>View Full Curriculum</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 9. Background: Sacred Torii Gate & Budō Spirit -->
+        <div class="col-md-6 col-lg-4" id="art-torii">
+          <div class="art-breakdown-card">
+            <span class="art-badge-spot bg-secondary text-white">Center Back &bull; Heritage Gate</span>
+            <h4 class="art-breakdown-title">THE SACRED DOJO TORII GATE</h4>
+            <span class="art-breakdown-origin"><i class="bi bi-shield-fill"></i> The Soul of Budō &amp; Bushido</span>
+            <p class="art-breakdown-desc">
+              <strong>Figure in Montage:</strong> The crimson Torii gate, cherry blossoms, and vertical calligraphy banners framing the warrior spectrum against a rising crimson sun.
+            </p>
+            <p class="art-breakdown-desc">
+              <strong>What It Represents:</strong> Crossing into the dojo is a sacred covenant. Here, students leave their ego at the threshold, practicing mutual respect, humility, and relentless self-betterment.
+            </p>
+            <div class="mb-3">
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Respect &amp; Honor</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small me-1">Zero-Ego Culture</span>
+              <span class="badge bg-dark border border-secondary text-white-50 small">Family Community</span>
+            </div>
+            <a href="#trial" class="art-breakdown-link">
+              <span>Claim Free Trial Pass</span> <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. EXPLORE OUR MARTIAL ARTS PROGRAMS (Clickable Service Detail Cards)
+       ======================================================================== -->
+  <section class="section-padding" id="programs" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Mastery Disciplines &bull; Authentic Lineage</span>
+        <h2 class="section-title">EXPLORE OUR MARTIAL ARTS PROGRAMS <br><span class="text-combat-red">CHOOSE YOUR PATHWAY TO MASTERY</span></h2>
+        <p class="section-subtitle">
+          Click any discipline below to view in-depth curriculum specifications, techniques taught, suitable age groups, and class cadences.
+        </p>
+      </div>
+
+      <div class="row g-4 reveal-on-scroll">
+        <!-- 1. Traditional Karate -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=karate" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> Japan &bull; Okinawa</span>
+                <img src="assets/images/karate-japan.jpg" alt="Traditional Karate training at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">TRADITIONAL KARATE</h3>
+                <span class="program-srv-subtitle">Linear Striking &bull; Kata &bull; Kumite</span>
+                <p class="program-srv-desc">
+                  Develop explosive punches, snap kicks, spatial balance, and disciplined composure rooted in Shotokan and Goju-Ryu traditions.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Oi-Zuki</span>
+                  <span class="program-srv-pill">Mawashi-Geri</span>
+                  <span class="program-srv-pill">Traditional Kata</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 2. Taekwondo -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=taekwondo" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> Korea &bull; Kukkiwon</span>
+                <img src="assets/images/taekwondo-korea.jpg" alt="Olympic Taekwondo kicking training at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">OLYMPIC TAEKWONDO</h3>
+                <span class="program-srv-subtitle">High Kicking &bull; Agility &bull; Speed</span>
+                <p class="program-srv-desc">
+                  Famous worldwide for lightning-fast kicking combinations, jumping aerial attacks, and elastic lower-body flexibility.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Dollyo-Chagi</span>
+                  <span class="program-srv-pill">Spinning Hook</span>
+                  <span class="program-srv-pill">Kyorugi Sparring</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 3. Shaolin Kung Fu -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=kungfu" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> China &bull; Shaolin</span>
+                <img src="assets/images/kungfu-china.jpg" alt="Shaolin Kung Fu practice at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">SHAOLIN KUNG FU</h3>
+                <span class="program-srv-subtitle">Five Animals &bull; Flow &bull; Tendon Power</span>
+                <p class="program-srv-desc">
+                  Fluid combat systems blending animal forms, low-stance agility, tendon flexibility, and circular momentum redirection.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Tiger &amp; Crane</span>
+                  <span class="program-srv-pill">Horse Stance (Ma Bu)</span>
+                  <span class="program-srv-pill">Staff Forms</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 4. Muay Thai Kickboxing -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=kickboxing" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> Thailand &bull; Netherlands</span>
+                <img src="assets/images/muaythai-thailand.jpg" alt="Muay Thai Kickboxing rounds at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">MUAY THAI &amp; KICKBOXING</h3>
+                <span class="program-srv-subtitle">The Art of 8 Limbs &bull; Dutch Combos</span>
+                <p class="program-srv-desc">
+                  Full-contact striking utilizing fists, elbows, knees, and shins. High-cadence Dutch combination padwork burning up to 900 kcal.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Low Shin Kick</span>
+                  <span class="program-srv-pill">Plum Clinch</span>
+                  <span class="program-srv-pill">Elbow Strikes</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 5. Western Boxing -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=boxing" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> Modern International</span>
+                <img src="assets/images/boxing-international.jpg" alt="Western Boxing training at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">WESTERN BOXING</h3>
+                <span class="program-srv-subtitle">The Sweet Science &bull; Head Movement</span>
+                <p class="program-srv-desc">
+                  Master the sweet science of timing, distance control, slip counters, crisp kinetic jabs, and defensive ring generalship.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Kinetic Jab-Cross</span>
+                  <span class="program-srv-pill">Slip &amp; Roll</span>
+                  <span class="program-srv-pill">Pivot Steps</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 6. Brazilian Jiu-Jitsu -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=bjj" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> Brazil &bull; Gracie Lineage</span>
+                <img src="assets/images/bjj-brazil.jpg" alt="Brazilian Jiu-Jitsu grappling training at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">BRAZILIAN JIU-JITSU</h3>
+                <span class="program-srv-subtitle">Ground Control &bull; Joint Locks &bull; Chokes</span>
+                <p class="program-srv-desc">
+                  The ultimate martial equalizer: leverage, joint locks, and chokes that allow smaller practitioners to submit larger opponents safely.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Guard Retention</span>
+                  <span class="program-srv-pill">Armbars</span>
+                  <span class="program-srv-pill">Triangle Choke</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- 7. Kalaripayattu -->
+        <div class="col-md-6 col-lg-4">
+          <a href="program-detail.html?program=kalaripayattu" class="text-decoration-none">
+            <div class="program-srv-card">
+              <div class="program-srv-img-wrap">
+                <span class="program-srv-origin-badge"><i class="bi bi-geo-alt-fill text-combat-red"></i> India &bull; Kerala</span>
+                <img src="assets/images/kalaripayattu-india.jpg" alt="Ancient Indian Kalaripayattu practice at KENSEI Academy" class="program-srv-img" loading="lazy">
+              </div>
+              <div class="program-srv-body">
+                <h3 class="program-srv-title">KALARIPAYATTU</h3>
+                <span class="program-srv-subtitle">Ancient Mother Art &bull; Weaponry &bull; Marma</span>
+                <p class="program-srv-desc">
+                  India's ancient battlefield art combining extreme hip mobility, animal postures (Vadivu), staff combat, and vital Marma point defense.
+                </p>
+                <div class="program-srv-tags">
+                  <span class="program-srv-pill">Meithari Leg Splits</span>
+                  <span class="program-srv-pill">Kolthari Staff</span>
+                  <span class="program-srv-pill">Marma Points</span>
+                </div>
+                <div class="program-srv-action">
+                  <span>View Program Details</span>
+                  <i class="bi bi-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. SPECIALIZED TRAINING TRACKS
+       ======================================================================== -->
+  <section class="section-padding" id="specialized" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6 reveal-on-scroll">
+          <span class="section-badge">Targeted Performance</span>
+          <h2 class="section-title">SPECIALIZED TRAINING TRACKS <br><span class="text-combat-red">TAILORED FOR YOUR MISSION</span></h2>
+          <p class="section-subtitle">
+            Beyond standard belt curriculum, KENSEI offers dedicated specialized intensives engineered for tactical survival, private skill acceleration, and championship kumite.
+          </p>
+        </div>
+        <div class="col-lg-6 reveal-on-scroll reveal-delay-1">
+          <div class="position-relative overflow-hidden rounded-1 border border-secondary shadow-lg">
+            <img src="assets/images/services/specialized-training.jpg" alt="Specialized tactical martial arts training at KENSEI Academy" class="img-fluid w-100" style="object-fit: cover; max-height: 380px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 reveal-on-scroll">
+        <!-- Track 1: Self-Defense Workshops -->
+        <div class="col-md-6 col-lg-3">
+          <div class="spec-training-card">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-shield-lock-fill text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">Intensive</span>
+            </div>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">SELF-DEFENSE WORKSHOPS</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              Reality-based civilian defense. Learn situational awareness, boundary control, and reflexive escapes from grabs, pins, and armed threats.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 border-top border-slate pt-3">
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Pre-assault indicator training</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Fulcrum-based choke releases</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Trauma-informed environment</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 2: Personal Training -->
+        <div class="col-md-6 col-lg-3">
+          <div class="spec-training-card">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-person-bounding-box text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">1-on-1 Faculty</span>
+            </div>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">PRIVATE 1-ON-1 COACHING</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              Private hourly sessions with black belt masters. Accelerate technical proficiency, diagnose movement inefficiencies, and progress 3x faster.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 border-top border-slate pt-3">
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Frame-by-frame video review</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Custom biomechanical plan</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Flexible executive scheduling</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 3: Fitness Conditioning -->
+        <div class="col-md-6 col-lg-3">
+          <div class="spec-training-card">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-fire text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">High Metabolic</span>
+            </div>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">FITNESS CONDITIONING</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              Martial athletic conditioning utilizing heavy bags, Bulgarian bags, kettlebells, and high-cadence pad rounds. Torch 800+ calories.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 border-top border-slate pt-3">
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Explosive rotational power</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Cardiovascular durability</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Joint &amp; core stabilization</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 4: Competition Prep -->
+        <div class="col-md-6 col-lg-3">
+          <div class="spec-training-card">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-trophy-fill text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">Kumite Squad</span>
+            </div>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">COMPETITION PREPARATION</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              For athletes preparing for state, national, and international tournaments. Tactical sparring rounds, weight management, and fight strategy.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 border-top border-slate pt-3">
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Olympic rulebook analysis</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Shark-tank endurance rounds</li>
+              <li><i class="bi bi-check2 text-combat-red me-1"></i> Over 20+ National medals won</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. TRAINING FOR EVERY AGE
+       ======================================================================== -->
+  <section class="section-padding" id="every-age" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Inclusive Community &bull; Lifelong Growth</span>
+        <h2 class="section-title">TRAINING FOR EVERY AGE <br><span class="text-combat-red">ONE ACADEMY. ALL GENERATIONS.</span></h2>
+        <p class="section-subtitle">
+          Our curricula are age-differentiated, ensuring young children build discipline and motor coordination while adults and seniors enjoy injury-free longevity.
+        </p>
+      </div>
+
+      <div class="row g-4 g-lg-5 reveal-on-scroll">
+        <!-- Kids -->
+        <div class="col-md-6 col-lg-3">
+          <div class="age-group-card">
+            <span class="age-badge">AGES 5 &ndash; 12</span>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">LITTLE WARRIORS</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              Instilling focus, anti-bullying verbal boundaries, spatial motor skills, and polite respect in a joyful, energetic dojo setting.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 mt-auto border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Anti-bullying posture</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Respect for teachers &amp; parents</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Safe breakfalls &amp; agility</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Teens -->
+        <div class="col-md-6 col-lg-3">
+          <div class="age-group-card">
+            <span class="age-badge">AGES 13 &ndash; 17</span>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">TEENS TACTICAL SQUAD</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              Channeling adolescent energy into athletic power, emotional composure, peer leadership, and authentic self-defense readiness.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 mt-auto border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Emotional poise under stress</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> High metabolic endurance</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Healthy peer community</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Adults -->
+        <div class="col-md-6 col-lg-3">
+          <div class="age-group-card">
+            <span class="age-badge">AGES 18 &ndash; 49</span>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">ADULT EVERYDAY MASTERY</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              The ultimate workday decompression. Reclaim functional athletic strength, master reality-based self-defense, and clear the mind.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 mt-auto border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Workday stress release</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Functional kinetic conditioning</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Zero-ego training culture</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Masters / Beginners -->
+        <div class="col-md-6 col-lg-3">
+          <div class="age-group-card">
+            <span class="age-badge">AGES 50+ &bull; BEGINNERS</span>
+            <h3 class="font-heading fs-4 mb-2" style="color: var(--text-ivory);">MASTERS &amp; INITIATES</h3>
+            <p class="text-muted small mb-3" style="line-height: 1.65;">
+              Gentle on the joints, powerful on balance. Focuses on hip flexibility, spine alignment, fall prevention, and internal martial breath.
+            </p>
+            <ul class="list-unstyled text-ivory small mb-0 d-flex flex-column gap-2 mt-auto border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Joint mobility &amp; longevity</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Fall recovery mechanics</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-1"></i> Accommodating pace</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. HOW OUR TRAINING WORKS (4-Step Onboarding Process)
+       ======================================================================== -->
+  <section class="section-padding" id="how-it-works" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Methodology &bull; The Onboarding Blueprint</span>
+        <h2 class="section-title">HOW OUR TRAINING WORKS <br><span class="text-combat-red">A STRUCTURED PATH FROM INITIATE TO BLACK BELT</span></h2>
+        <p class="section-subtitle">
+          We eliminate the guesswork and anxiety of joining a martial arts dojo. Our transparent 4-step framework guarantees you progress safely at every stage.
+        </p>
+      </div>
+
+      <div class="progression-track reveal-on-scroll">
+        <!-- Step 1: Assessment -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Step 01</span>
+          <h3 class="prog-stage-title">ASSESSMENT</h3>
+          <p class="prog-stage-desc">
+            Before your first class, our faculty conducts a 15-minute movement baseline: mobility audit, prior injury assessment, and goal alignment.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Baseline Audit &bull; Goals</span>
+          </div>
+        </div>
+
+        <!-- Step 2: Fundamentals -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Step 02</span>
+          <h3 class="prog-stage-title">FUNDAMENTALS</h3>
+          <p class="prog-stage-desc">
+            Learn stance architecture, linear shields, breakfall landings, and breath pacing in dedicated low-pressure white belt cohorts.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Stance &bull; Shields &bull; Breathing</span>
+          </div>
+        </div>
+
+        <!-- Step 3: Skill Development -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Step 03</span>
+          <h3 class="prog-stage-title">SKILL DEVELOPMENT</h3>
+          <p class="prog-stage-desc">
+            Progress to kinetic striking combinations, joint lock levers, live padwork resistance, and controlled cooperative sparring.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Padwork &bull; Combos &bull; Flow</span>
+          </div>
+        </div>
+
+        <!-- Step 4: Progress Evaluation -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Step 04</span>
+          <h3 class="prog-stage-title">PROGRESS EVALUATION</h3>
+          <p class="prog-stage-desc">
+            Standardized belt testing criteria, transparent skill rubrics, and formal belt promotion ceremonies celebrating your transformation.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Testing &bull; Belts &bull; Mastery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. CHOOSE YOUR TRAINING GOAL (Interactive Goal Pathways)
+       ======================================================================== -->
+  <section class="section-padding" id="goals" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Personalized Pathways</span>
+        <h2 class="section-title">CHOOSE YOUR TRAINING GOAL <br><span class="text-combat-red">ENGINEERED FOR YOUR OUTCOME</span></h2>
+        <p class="section-subtitle">
+          Select your primary motivation below to view your recommended discipline mix, weekly attendance cadence, and expected 90-day transformation.
+        </p>
+      </div>
+
+      <!-- Goal Selector Buttons -->
+      <div class="row g-3 mb-5 justify-content-center reveal-on-scroll">
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="goal-card-btn active" data-goal="fitness">
+            <i class="bi bi-heart-pulse-fill text-combat-red fs-2 mb-2 d-block"></i>
+            <span class="font-heading fs-5 d-block text-ivory">FITNESS</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="goal-card-btn" data-goal="defense">
+            <i class="bi bi-shield-check text-combat-red fs-2 mb-2 d-block"></i>
+            <span class="font-heading fs-5 d-block text-ivory">SELF-DEFENSE</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="goal-card-btn" data-goal="confidence">
+            <i class="bi bi-person-check-fill text-combat-red fs-2 mb-2 d-block"></i>
+            <span class="font-heading fs-5 d-block text-ivory">CONFIDENCE</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="goal-card-btn" data-goal="competition">
+            <i class="bi bi-trophy-fill text-combat-red fs-2 mb-2 d-block"></i>
+            <span class="font-heading fs-5 d-block text-ivory">COMPETITION</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goal Output Display Card -->
+      <div class="p-4 p-md-5 rounded-1 border border-secondary shadow-lg reveal-on-scroll" style="background: var(--bg-midnight);">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span id="goalOutputBadge" class="badge bg-danger mb-2">PEAK ATHLETIC BLUEPRINT</span>
+            <h3 id="goalOutputTitle" class="font-heading fs-3 text-ivory mb-3">THE HIGH-METABOLIC CONDITIONING TRACK</h3>
+            <p id="goalOutputDesc" class="text-muted" style="font-size: 1.05rem; line-height: 1.75;">
+              Combines high-cadence Dutch Kickboxing pad circuits with Boxing footwork and core bodyweight conditioning. Designed to burn up to 800 calories per session while forging lean kinetic power and joint durability.
+            </p>
+            <div class="d-flex flex-wrap gap-4 mt-4 pt-3 border-top border-slate">
+              <div>
+                <span class="text-muted small text-uppercase d-block">Recommended Cadence</span>
+                <span id="goalOutputFrequency" class="text-ivory fw-bold">3 Sessions / Week</span>
+              </div>
+              <div>
+                <span class="text-muted small text-uppercase d-block">Recommended Disciplines</span>
+                <span id="goalOutputPrograms" class="text-combat-red fw-bold">Kickboxing &bull; Boxing Conditioning</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="p-4 rounded-1 border border-secondary" style="background: var(--bg-charcoal);">
+              <span class="text-muted small text-uppercase d-block mb-1">90-Day Target Milestone</span>
+              <h4 id="goalOutputMilestone" class="font-heading fs-4 text-combat-red mb-3">+35% Stamina &amp; Fluid 4-Punch Combos in 60 Days</h4>
+              <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm w-100 justify-content-center">
+                <span>Start This Pathway</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. CLASS SCHEDULE & TRAINING PLANS
+       ======================================================================== -->
+  <section class="section-padding" id="plans" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Transparent Membership &bull; Flexible Cadence</span>
+        <h2 class="section-title">SCHEDULE &amp; TRAINING PLANS <br><span class="text-combat-red">ALL-INCLUSIVE MARTIAL ARTS EDUCATION</span></h2>
+        <p class="section-subtitle">
+          Transparent tuition with no hidden registration fees, no predatory lock-in contracts, and complete access to hospital-grade sanitized tatami.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch reveal-on-scroll">
+        <!-- Plan 1: Starter Tier -->
+        <div class="col-lg-4">
+          <div class="plan-pricing-card">
+            <span class="text-combat-red fw-bold text-uppercase small mb-2">Fundamental Track</span>
+            <h3 class="font-heading fs-3 text-ivory mb-2">STARTER MEMBERSHIP</h3>
+            <p class="text-muted small mb-4">Ideal for busy professionals and beginners easing into structured martial training.</p>
+            <div class="mb-4">
+              <span class="plan-price-num">$129</span>
+              <span class="plan-price-term">/ month</span>
+            </div>
+            <ul class="list-unstyled text-ivory small mb-4 d-flex flex-column gap-3 flex-grow-1 border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> 2 Classes Per Week (Any Discipline)</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Dedicated White Belt Fundamentals</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Free Locker &amp; Shower Access</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Standard Belt Testing Eligibility</li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-outline w-100 justify-content-center">
+              <span>Select Starter Plan</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 2: Combat Core (Featured) -->
+        <div class="col-lg-4">
+          <div class="plan-pricing-card featured">
+            <span class="plan-ribbon">Most Popular</span>
+            <span class="text-combat-red fw-bold text-uppercase small mb-2">Complete Immersion</span>
+            <h3 class="font-heading fs-3 text-ivory mb-2">COMBAT CORE</h3>
+            <p class="text-muted small mb-4">Our most popular membership for serious physical transformation and diverse cross-training.</p>
+            <div class="mb-4">
+              <span class="plan-price-num">$179</span>
+              <span class="plan-price-term">/ month</span>
+            </div>
+            <ul class="list-unstyled text-ivory small mb-4 d-flex flex-column gap-3 flex-grow-1 border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> <strong>Unlimited Classes</strong> in All 7 Disciplines</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Unlimited Weekend Open Tatami Sparring</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Complimentary Official KENSEI Uniform</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Monthly Biomechanical Movement Review</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> 10% Pro Shop Equipment Discount</li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-primary w-100 justify-content-center">
+              <span>Join Combat Core</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Plan 3: Master Pathway -->
+        <div class="col-lg-4">
+          <div class="plan-pricing-card">
+            <span class="text-combat-red fw-bold text-uppercase small mb-2">Executive &bull; Black Belt Track</span>
+            <h3 class="font-heading fs-3 text-ivory mb-2">BLACK BELT PATHWAY</h3>
+            <p class="text-muted small mb-4">For dedicated practitioners aiming for certified black belt mastery and private mentorship.</p>
+            <div class="mb-4">
+              <span class="plan-price-num">$249</span>
+              <span class="plan-price-term">/ month</span>
+            </div>
+            <ul class="list-unstyled text-ivory small mb-4 d-flex flex-column gap-3 flex-grow-1 border-top border-slate pt-3">
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Everything in Combat Core Included</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> 2 Monthly 1-on-1 Private Master Sessions</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> Competition Kumite Squad Priority Access</li>
+              <li><i class="bi bi-check-circle-fill text-combat-red me-2"></i> International Black Belt Certification Fees Paid</li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-outline w-100 justify-content-center">
+              <span>Explore Master Pathway</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. FREQUENTLY ASKED QUESTIONS
+       ======================================================================== -->
+  <section class="section-padding" id="faq" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Clarity &bull; Zero Surprises</span>
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS <br><span class="text-combat-red">EVERYTHING YOU NEED TO KNOW</span></h2>
+        <p class="section-subtitle">
+          Have questions before stepping onto the mats? Here are the most common inquiries from beginners and transfer martial artists.
+        </p>
+      </div>
+
+      <div class="row justify-content-center reveal-on-scroll">
+        <div class="col-lg-9">
+          <div class="accordion kensei-accordion" id="servicesFaqAccordion">
+            <!-- Q1 -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  I have never practiced martial arts before. Is KENSEI beginner-friendly?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#servicesFaqAccordion">
+                <div class="accordion-body">
+                  Yes, absolutely. Over 70% of our adult practitioners began with zero combat or sports background. We have dedicated white-belt beginner modules where you learn basic stance mechanics, footwork, and breakfalls in a low-pressure, supportive environment.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What equipment and uniform do I need for my first trial session?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#servicesFaqAccordion">
+                <div class="accordion-body">
+                  Nothing! For your complimentary 60-minute trial class, simply arrive in comfortable workout clothing (t-shirt and athletic pants/shorts). We provide sterilized loaner uniforms, boxing gloves, shin protection, and tatami safety gear at no cost.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Can I train across multiple disciplines, or must I choose only one?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#servicesFaqAccordion">
+                <div class="accordion-body">
+                  You are fully encouraged to cross-train. Our Combat Core and Black Belt memberships permit unrestricted access to all 7 disciplines (Karate, BJJ, Boxing, Muay Thai, Taekwondo, Kung Fu, and Kalaripayattu). Many students practice BJJ for ground defense alongside Boxing or Muay Thai for standing striking.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What are the age limits for classes?
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#servicesFaqAccordion">
+                <div class="accordion-body">
+                  We accept students starting from age 5 in our Little Warriors program. We have no upper age limit; our oldest active black belt student is 72 years young! Classes are strictly divided by age and skill bracket for optimal safety.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="accordion-item mb-3">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How does KENSEI prevent injuries during sparring?
+                </button>
+              </h3>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#servicesFaqAccordion">
+                <div class="accordion-body">
+                  Safety is non-negotiable at KENSEI. Sparring is strictly controlled, touch-contact only for beginners, and closely supervised by certified black belts. We enforce dual-density Olympic tatami mats with high impact subflooring and require certified protective gear for all striking exchanges.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Are memberships locked into long-term contracts?
+                </button>
+              </h3>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#servicesFaqAccordion">
+                <div class="accordion-body">
+                  No. We operate on month-to-month memberships with zero cancellation penalties. If you travel or get injured, you can pause or freeze your membership anytime with 7 days' advance written notice.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. BOOK A FREE TRIAL CTA
+       ======================================================================== -->
+  <section class="section-padding about-cta-section" id="trial">
+    <div class="container-xl">
+      <div class="about-cta-card reveal-on-scroll">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5 about-cta-img-col d-none d-lg-block">
+            <img src="assets/images/services/services-faq.jpg" alt="KENSEI martial arts practice" loading="lazy">
+          </div>
+          <div class="col-lg-7 about-cta-content">
+            <span class="section-badge">Step Onto The Tatami</span>
+            <h2 class="section-title mb-3">
+              READY TO COMMENCE <br>
+              <span class="text-combat-red">YOUR MARTIAL JOURNEY?</span>
+            </h2>
+            <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.65;">
+              Select your target discipline and preferred training slot. Your first 60-minute class is 100% free with complete loaner uniform provided.
+            </p>
+
+            <form class="row g-3" onsubmit="event.preventDefault(); alert('Congratulations! Your trial session has been reserved. Our admissions coordinator will contact you shortly.');">
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Full Name</label>
+                <input type="text" class="form-control" placeholder="e.g. Jordan Hayes" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Email Address</label>
+                <input type="email" class="form-control" placeholder="e.g. jordan@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Target Discipline</label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select Program</option>
+                  <option value="karate">Traditional Karate &bull; Japan</option>
+                  <option value="taekwondo">Olympic Taekwondo &bull; Korea</option>
+                  <option value="kungfu">Shaolin Kung Fu &bull; China</option>
+                  <option value="muaythai">Muay Thai &bull; Thailand</option>
+                  <option value="boxing">Western Boxing &bull; International</option>
+                  <option value="bjj">Brazilian Jiu-Jitsu &bull; Brazil</option>
+                  <option value="kalaripayattu">Kalaripayattu &bull; India</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Preferred Day</label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select Day of Week</option>
+                  <option value="monday">Monday (Evening)</option>
+                  <option value="tuesday">Tuesday (Evening)</option>
+                  <option value="wednesday">Wednesday (Evening)</option>
+                  <option value="thursday">Thursday (Evening)</option>
+                  <option value="friday">Friday (Evening)</option>
+                  <option value="saturday">Saturday (Morning)</option>
+                </select>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn-kensei btn-kensei-primary btn-kensei-lg w-100 justify-content-center">
+                  <i class="bi bi-shield-check"></i>
+                  <span>CLAIM YOUR FREE TRIAL PASS</span>
+                </button>
+                <div class="text-center mt-2">
+                  <span class="text-muted small"><i class="bi bi-shield-check text-combat-red"></i> Zero obligation &bull; Complete loaner gear provided</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER (Canonical Home Footer)
+       ======================================================================== -->
+  <footer class="kensei-footer" id="contact">
+    <div class="container-xl">
+      <div class="row g-5">
+        <!-- Widget 1: Academy Overview -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-link mb-3" href="index.html">
+            <div class="brand-symbol" aria-hidden="true">K</div>
+            <div class="brand-text">
+              <span class="brand-title">KENSEI</span>
+              <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+            </div>
+          </a>
+          <p class="mt-3">
+            KENSEI is a high-performance martial arts institution committed to authentic combat disciplines, ethical
+            character development, and reality-based tactical self-preservation.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Widget 2: Quick Links (Navbar Links) -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="schedule.html"><i class="bi bi-chevron-right small"></i> Schedule</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 3: Support & Legal -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">SUPPORT</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html#privacy"><i class="bi bi-chevron-right small"></i> Privacy Policy</a></li>
+            <li><a href="terms.html#terms"><i class="bi bi-chevron-right small"></i> Terms &amp; Conditions</a></li>
+            <li><a href="terms.html#faqs"><i class="bi bi-chevron-right small"></i> FAQs</a></li>
+            <li><a href="terms.html#safety"><i class="bi bi-chevron-right small"></i> Dojo Safety Code</a></li>
+            <li><a href="contact.html#free-trial"><i class="bi bi-chevron-right small"></i> Free Trial Pass</a></li>
+            <li><a href="contact.html#send-message"><i class="bi bi-chevron-right small"></i> Help &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 4: Contact Details & Hours -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-widget-title">CONTACT DETAILS</h4>
+          <ul class="contact-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>742 Bushido Way, Combat Arts Pavilion, District 4, NY 10013</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span><a href="tel:+12125550988" class="text-reset text-decoration-none">+1 (212) 555-0988</a> / <a href="tel:+12125550989" class="text-reset text-decoration-none">+1 (212) 555-0989</a></span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span><a href="mailto:admissions@kenseiacademy.com" class="text-reset text-decoration-none">admissions@kenseiacademy.com</a></span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon &ndash; Fri: 06:00 AM &ndash; 09:30 PM<br>Saturday: 08:30 AM &ndash; 04:00 PM (Closed Sun)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 KENSEI Martial Arts &amp; Self-Defense Academy. All rights reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="terms.html#privacy" class="text-decoration-none text-muted small">Privacy Policy</a>
+          <a href="terms.html#terms" class="text-decoration-none text-muted small">Terms &amp; Conditions</a>
+          <a href="terms.html#faqs" class="text-decoration-none text-muted small">FAQs</a>
+          <a href="terms.html#safety" class="text-decoration-none text-muted small">Dojo Safety Code</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

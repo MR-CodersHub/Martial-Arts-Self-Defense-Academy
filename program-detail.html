@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Details | KENSEI &mdash; Martial Arts &amp; Self-Defense Academy</title>
+  <meta name="description" content="Explore in-depth curriculum details, techniques taught, suitable age groups, curriculum levels, and free trial booking for KENSEI Academy programs.">
+
+  <!-- Google Fonts: Barlow Condensed, Bebas Neue & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVBAR (Unified Component)
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg kensei-navbar" aria-label="Main navigation">
+      <div class="container-xl">
+        <a class="brand-link" href="index.html">
+          <div class="brand-symbol" aria-hidden="true">K</div>
+          <div class="brand-text">
+            <span class="brand-title">KENSEI</span>
+            <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kenseiNavContent"
+          aria-controls="kenseiNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="kenseiNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home-2.html">Home 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2 nav-actions-wrap">
+            <button id="rtlToggleBtn" class="nav-util-btn" title="Toggle RTL / LTR" aria-label="Toggle Text Direction">
+              <span id="rtlToggleLabel" class="rtl-toggle-text">RTL</span>
+            </button>
+
+            <button id="themeToggleBtn" class="nav-util-btn" title="Switch Theme" aria-label="Toggle Theme">
+              <i id="themeToggleIcon" class="bi bi-sun-fill"></i>
+            </button>
+
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm">
+              <i class="bi bi-shield-check"></i>
+              <span>Book a Free Trial</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       DISCIPLINE SWITCHER PILLS BAR
+       ======================================================================== -->
+  <div class="py-3 border-bottom" style="background: var(--bg-charcoal); border-color: var(--border-slate) !important;">
+    <div class="container-xl">
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <span class="small text-uppercase fw-bold text-muted me-2"><i class="bi bi-compass"></i> Select Discipline:</span>
+        <a href="program-detail.html?program=karate" class="discipline-pill-btn" data-prog-id="karate">Karate</a>
+        <a href="program-detail.html?program=taekwondo" class="discipline-pill-btn" data-prog-id="taekwondo">Taekwondo</a>
+        <a href="program-detail.html?program=kungfu" class="discipline-pill-btn" data-prog-id="kungfu">Kung Fu</a>
+        <a href="program-detail.html?program=kickboxing" class="discipline-pill-btn" data-prog-id="kickboxing">Muay Thai</a>
+        <a href="program-detail.html?program=boxing" class="discipline-pill-btn" data-prog-id="boxing">Boxing</a>
+        <a href="program-detail.html?program=bjj" class="discipline-pill-btn" data-prog-id="bjj">BJJ</a>
+        <a href="program-detail.html?program=kalaripayattu" class="discipline-pill-btn" data-prog-id="kalaripayattu">Kalaripayattu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       1. PROGRAM HERO (Dynamic per discipline)
+       ======================================================================== -->
+  <section class="prog-hero-section" id="hero">
+    <div class="container-xl">
+      <div class="row align-items-center g-5">
+        <!-- Left: Copy & Actions -->
+        <div class="col-lg-6 col-xl-6">
+          <a href="services.html" class="text-combat-red fw-bold text-uppercase small mb-3 d-inline-flex align-items-center gap-2 text-decoration-none">
+            <i class="bi bi-arrow-left"></i> Back to All Programs
+          </a>
+          <span class="home2-accent-bar reveal-on-scroll" aria-hidden="true"></span>
+
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span id="progOriginBadge" class="badge bg-danger text-uppercase px-3 py-1">JAPAN</span>
+            <span id="progPillBadge" class="small text-uppercase fw-bold text-muted">STRIKING &bull; KATA &bull; KUMITE</span>
+          </div>
+
+          <h1 id="progTitle" class="home2-hero-headline reveal-on-scroll reveal-delay-1">
+            <span class="text-white-line">TRADITIONAL</span>
+            <span class="text-red-line">KARATE.</span>
+          </h1>
+
+          <p id="progTagline" class="text-combat-red fw-bold text-uppercase mb-2" style="letter-spacing: 0.06em; font-size: 0.95rem;">
+            Precision, Discipline &amp; Biomechanical Alignment
+          </p>
+
+          <p id="progLead" class="prog-hero-lead reveal-on-scroll reveal-delay-2">
+            Disciplined punching, kicking, blocking, and mental fortitude rooted in Shotokan and Okinawan heritage.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4 reveal-on-scroll reveal-delay-3">
+            <a href="#trial" class="home2-btn-primary">
+              <i class="bi bi-shield-check"></i>
+              <span>BOOK A FREE TRIAL</span>
+            </a>
+            <a href="#curriculum" class="home2-btn-outline">
+              <span>EXPLORE CURRICULUM</span>
+              <i class="bi bi-arrow-down"></i>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="d-flex align-items-center gap-4 text-muted small pt-2">
+            <span><i class="bi bi-patch-check-fill text-combat-red me-1"></i> Certified Black Belts</span>
+            <span><i class="bi bi-shield-shaded text-combat-red me-1"></i> Zero-Ego Culture</span>
+            <span><i class="bi bi-heart-pulse-fill text-combat-red me-1"></i> Loaner Gear Included</span>
+          </div>
+        </div>
+
+        <!-- Right: Discipline-specific action photograph in foreground showcase box -->
+        <div class="col-lg-6 col-xl-6">
+          <div class="prog-hero-showcase-box reveal-on-scroll reveal-delay-2">
+            <img id="progHeroImg" src="assets/images/karate-japan.jpg" alt="Discipline training at KENSEI Academy" class="prog-hero-img">
+            <div class="showcase-footer-bar">
+              <span id="progActionCaption" class="text-white small fw-bold text-uppercase tracking-wider">
+                <i class="bi bi-camera-reels text-danger me-1"></i> Authentic Dojo Training
+              </span>
+              <a href="#techniques" class="showcase-explore-btn">
+                <span>View Techniques</span> <i class="bi bi-arrow-down-short"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. ABOUT THE PROGRAM
+       ======================================================================== -->
+  <section class="section-padding" id="about-program" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <span class="section-badge">Discipline &bull; Heritage &bull; Philosophy</span>
+          <h2 class="section-title">ABOUT THE PROGRAM <br><span class="text-combat-red" id="aboutHeadingDiscipline">THE WAY OF COMBAT</span></h2>
+          <p id="progAboutText1" class="text-muted" style="font-size: 1.05rem; line-height: 1.8;">
+            Historical background and philosophical foundations will appear here.
+          </p>
+          <p id="progAboutText2" class="text-muted" style="font-size: 1rem; line-height: 1.75;">
+            What students experience on the mats, training culture, and biomechanics.
+          </p>
+
+          <!-- Philosophy Callout -->
+          <div class="p-3 mt-4 rounded-1 border-start border-4 border-danger" style="background: var(--bg-midnight); border: 1px solid var(--border-slate);">
+            <div class="small text-uppercase fw-bold text-combat-red mb-1"><i class="bi bi-quote"></i> Core Philosophy</div>
+            <div id="progPhilosophy" class="text-ivory fst-italic">
+              "Karate ni Sente Nashi" &mdash; There is no first strike in Karate.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Program Specifications Sheet -->
+          <div class="p-4 rounded-1" style="background: var(--bg-midnight); border: 1px solid var(--border-slate); border-top: 4px solid var(--accent-combat-red);">
+            <h3 class="font-heading fs-4 mb-3" style="color: var(--text-ivory);"><i class="bi bi-clipboard2-check text-combat-red"></i> PROGRAM SPECIFICATIONS</h3>
+            
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary border-opacity-25">
+                <span class="small text-muted text-uppercase fw-bold">Lineage &amp; Country</span>
+                <span id="specOrigin" class="small fw-semibold text-ivory">Japan &bull; Okinawa</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary border-opacity-25">
+                <span class="small text-muted text-uppercase fw-bold">Suitable Ages</span>
+                <span id="specAges" class="small fw-semibold text-ivory">Ages 5 to 65+</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary border-opacity-25">
+                <span class="small text-muted text-uppercase fw-bold">Rank / Belt Pathway</span>
+                <span id="specLevels" class="small fw-semibold text-ivory">White to Black Belt</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary border-opacity-25">
+                <span class="small text-muted text-uppercase fw-bold">Session Duration</span>
+                <span class="small fw-semibold text-ivory">60 &ndash; 75 Minutes</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pb-2 border-bottom border-secondary border-opacity-25">
+                <span class="small text-muted text-uppercase fw-bold">Class Schedule</span>
+                <span id="specSchedule" class="small fw-semibold text-ivory">Mon &bull; Wed &bull; Fri</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small text-muted text-uppercase fw-bold">Required Gear</span>
+                <span id="specEquipment" class="small fw-semibold text-ivory">Traditional Gi (Loaners available)</span>
+              </div>
+            </div>
+
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm w-100 justify-content-center mt-4">
+              <span>Book Trial Class in This Art</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. TECHNIQUES YOU'LL LEARN
+       ======================================================================== -->
+  <section class="section-padding" id="techniques" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Mastery Modules &bull; Kinetic Execution</span>
+        <h2 class="section-title">TECHNIQUES YOU'LL LEARN <br><span class="text-combat-red" id="techHeadingDiscipline">ANATOMY OF MOVEMENTS</span></h2>
+        <p class="section-subtitle">
+          Every discipline is taught with biomechanical precision, safe partner culture, and dedicated progression stages.
+        </p>
+      </div>
+
+      <div class="row g-4" id="techniquesGrid">
+        <!-- Dynamically populated 4-card technique grid -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. BENEFITS OF TRAINING
+       ======================================================================== -->
+  <section class="section-padding" id="benefits" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Physical &amp; Mental Conditioning</span>
+        <h2 class="section-title">BENEFITS OF TRAINING <br><span class="text-combat-red">FORGE BODY AND CHARACTER</span></h2>
+        <p class="section-subtitle">
+          Beyond physical combat, martial arts develops cognitive resilience, posture, and deep composure under pressure.
+        </p>
+      </div>
+
+      <div class="row g-4" id="benefitsGrid">
+        <!-- Dynamically populated 6 compact feature cards with icons -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. TRAINING CURRICULUM (Beginner &bull; Intermediate &bull; Advanced)
+       ======================================================================== -->
+  <section class="section-padding" id="curriculum" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Structured Roadmap &bull; 3 Progression Stages</span>
+        <h2 class="section-title">TRAINING CURRICULUM <br><span class="text-combat-red">FROM FUNDAMENTALS TO MASTERY</span></h2>
+        <p class="section-subtitle">
+          Clear, objective milestones guarantee that every student develops solid mechanics before progressing to tactical sparring.
+        </p>
+      </div>
+
+      <div class="row g-4" id="curriculumGrid">
+        <!-- Dynamically populated 3 level cards: Beginner, Intermediate, Advanced -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. WHO CAN JOIN?
+       ======================================================================== -->
+  <section class="section-padding" id="who-can-join" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Inclusive Community &bull; Every Generation</span>
+        <h2 class="section-title">WHO CAN JOIN? <br><span class="text-combat-red">A TRACK FOR EVERY ASPIRATION</span></h2>
+        <p class="section-subtitle">
+          Whether you want disciplined fitness, real-world self-defense, or high-performance competition, there is a dedicated squad for you.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Kids & Juniors -->
+        <div class="col-md-6 col-lg-3">
+          <div class="who-join-card">
+            <div class="who-join-icon"><i class="bi bi-person-heart"></i></div>
+            <h3 class="who-join-title">KIDS &amp; JUNIORS</h3>
+            <p class="who-join-desc">
+              Ages 5&ndash;12. Builds balance, anti-bullying confidence, executive focus, and mutual respect in a supportive dojo environment.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Teenagers & Adults -->
+        <div class="col-md-6 col-lg-3">
+          <div class="who-join-card">
+            <div class="who-join-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h3 class="who-join-title">TEENS &amp; ADULTS</h3>
+            <p class="who-join-desc">
+              Ages 13+. Full-body functional conditioning, stress relief, bone density, and reality-based tactical self-defense for everyday peace of mind.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Absolute Beginners -->
+        <div class="col-md-6 col-lg-3">
+          <div class="who-join-card">
+            <div class="who-join-icon"><i class="bi bi-shield-check"></i></div>
+            <h3 class="who-join-title">ABSOLUTE BEGINNERS</h3>
+            <p class="who-join-desc">
+              Zero experience required. Dedicated beginner cohorts, loaner gear provided, and step-by-step biomechanical coaching without intimidation.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Aspiring Competitors -->
+        <div class="col-md-6 col-lg-3">
+          <div class="who-join-card">
+            <div class="who-join-icon"><i class="bi bi-trophy-fill"></i></div>
+            <h3 class="who-join-title">FITNESS &amp; COMPETITORS</h3>
+            <p class="who-join-desc">
+              High-cadence rounds, advanced fight IQ, ring/mat tactical sparring, and sanctioned tournament coaching for athletes seeking the podium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. A TYPICAL TRAINING SESSION
+       ======================================================================== -->
+  <section class="section-padding" id="training-session" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">60&ndash;75 Minutes &bull; Structured Class Flow</span>
+        <h2 class="section-title">A TYPICAL TRAINING SESSION <br><span class="text-combat-red">ANATOMY OF A KENSEI CLASS</span></h2>
+        <p class="section-subtitle">
+          Every session follows an intentional, sports-science backed sequence to ensure peak learning, safety, and progressive conditioning.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-2-4 col-xl">
+          <div class="session-step-card">
+            <span class="session-step-badge">Stage 01</span>
+            <div class="session-step-time">10 &ndash; 15 Mins</div>
+            <h3 class="session-step-title">WARM-UP &amp; MOBILITY</h3>
+            <p class="session-step-desc">Dynamic joint opening, core temperature elevation, rotational stretching, and sport-specific footwork.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-2-4 col-xl">
+          <div class="session-step-card">
+            <span class="session-step-badge">Stage 02</span>
+            <div class="session-step-time">20 Mins</div>
+            <h3 class="session-step-title">TECHNIQUE PRACTICE</h3>
+            <p class="session-step-desc">Master coach breakdowns of kinetic angles, precision strikes, grappling mechanics, or traditional Kata/Forms.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-2-4 col-xl">
+          <div class="session-step-card">
+            <span class="session-step-badge">Stage 03</span>
+            <div class="session-step-time">15 Mins</div>
+            <h3 class="session-step-title">PARTNER DRILLS</h3>
+            <p class="session-step-desc">Controlled pad work, focus mitts, clinch work, or positional mat flow under safe cooperative guidance.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg-2-4 col-xl">
+          <div class="session-step-card">
+            <span class="session-step-badge">Stage 04</span>
+            <div class="session-step-time">10 &ndash; 15 Mins</div>
+            <h3 class="session-step-title">CONTROLLED SPARRING</h3>
+            <p class="session-step-desc">Live situational application, positional rolling, or light technical sparring tailored strictly to student skill tier.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="col-md-6 col-lg-2-4 col-xl">
+          <div class="session-step-card">
+            <span class="session-step-badge">Stage 05</span>
+            <div class="session-step-time">5 Mins</div>
+            <h3 class="session-step-title">COOL-DOWN &amp; RECOVERY</h3>
+            <p class="session-step-desc">Parasympathetic breathing (Mokuso), static flexibility, bow-out dojo etiquette, and coach Q&amp;A.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. FREQUENTLY ASKED QUESTIONS
+       ======================================================================== -->
+  <section class="section-padding" id="faq" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Common Questions &bull; Transparent Guidance</span>
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS <br><span class="text-combat-red">EVERYTHING YOU NEED TO KNOW</span></h2>
+        <p class="section-subtitle">
+          Have questions before stepping onto the tatami? Here are answers to the most common inquiries from new students and parents.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion kensei-accordion" id="progFaqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHead1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                  What are the age limits for this program?
+                </button>
+              </h3>
+              <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHead1" data-bs-parent="#progFaqAccordion">
+                <div class="accordion-body" id="faqAnsAge">
+                  We welcome students starting from age 5 in our Junior Samurai cohort, up to practitioners in their 60s and 70s. All classes are stratified by age group and skill level so training is always safe and age-appropriate.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHead2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                  Do I need prior martial arts experience or high fitness?
+                </button>
+              </h3>
+              <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHead2" data-bs-parent="#progFaqAccordion">
+                <div class="accordion-body">
+                  No prior martial arts experience or baseline fitness is required! Over 65% of our new members start with zero combat sports background. Our instructors guide you step-by-step through fundamental stances and movements at your own comfortable pace.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHead3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                  What uniform or equipment do I need for my trial class?
+                </button>
+              </h3>
+              <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHead3" data-bs-parent="#progFaqAccordion">
+                <div class="accordion-body" id="faqAnsGear">
+                  For your free trial, simply wear comfortable athletic clothing (t-shirt and sweatpants or shorts). All required protective gear (loaner Gi, boxing gloves, shin guards) is sanitized and provided free of charge by the academy.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHead4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                  How long is each class and what is the student-to-coach ratio?
+                </button>
+              </h3>
+              <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHead4" data-bs-parent="#progFaqAccordion">
+                <div class="accordion-body">
+                  Standard classes run for 60 to 75 minutes. We maintain a strict maximum 12:1 student-to-instructor ratio on the mats to ensure individualized postural feedback, safety oversight, and rapid skill retention.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="faqHead5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                  What happens during my Free Trial Session?
+                </button>
+              </h3>
+              <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHead5" data-bs-parent="#progFaqAccordion">
+                <div class="accordion-body">
+                  You will be greeted by our admissions coordinator, given a tour of our hospital-grade tatami facility, fitted with any loaner equipment, and paired with an experienced assistant coach who walks you through the fundamentals. There is zero pressure and zero commitment.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. FINAL CTA (Book Free Trial)
+       ======================================================================== -->
+  <section class="section-padding about-cta-section" id="trial">
+    <div class="container-xl">
+      <div class="about-cta-card">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5 about-cta-img-col d-none d-lg-block">
+            <img id="progCtaImg" src="assets/images/karate-japan.jpg" alt="KENSEI martial arts training" loading="lazy">
+          </div>
+          <div class="col-lg-7 about-cta-content">
+            <span class="section-badge">Step Onto The Tatami</span>
+            <h2 class="section-title mb-2">
+              READY TO BEGIN YOUR JOURNEY? <br>
+              <span id="progCtaTitle" class="text-combat-red">BOOK YOUR FREE TRIAL</span>
+            </h2>
+            <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.65;">
+              Experience authentic instruction, meet our certified black belt masters, and discover quiet confidence on the tatami. No commitment required.
+            </p>
+
+            <form class="row g-3" id="programTrialForm" onsubmit="event.preventDefault(); alert('Trial pass confirmed for ' + document.getElementById('progFormInput').value + '! Our coordinator will contact you shortly with your confirmation details.');">
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Full Name</label>
+                <input type="text" class="form-control" placeholder="e.g. Liam Taylor" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Email Address</label>
+                <input type="email" class="form-control" placeholder="e.g. liam@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="e.g. +1 (555) 234-5678" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Selected Program</label>
+                <input type="text" id="progFormInput" class="form-control" readonly value="Traditional Karate">
+              </div>
+              <div class="col-md-12">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Preferred Schedule Batch</label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select Preferred Batch Day &amp; Time</option>
+                  <option value="weekday-evening">Weekday Evening (06:30 PM &ndash; 07:45 PM)</option>
+                  <option value="weekend-morning">Saturday Morning (10:00 AM &ndash; 11:15 AM)</option>
+                  <option value="morning-strike">Morning Strike (07:00 AM &ndash; 08:00 AM)</option>
+                  <option value="private-eval">One-on-One Evaluation with Master Coach</option>
+                </select>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn-kensei btn-kensei-primary btn-kensei-lg w-100 justify-content-center">
+                  <i class="bi bi-shield-check"></i>
+                  <span>CONFIRM MY FREE TRIAL PASS</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER (Canonical Home Footer)
+       ======================================================================== -->
+  <footer class="kensei-footer" id="footer-contact">
+    <div class="container-xl">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-link mb-3" href="index.html">
+            <div class="brand-symbol" aria-hidden="true">K</div>
+            <div class="brand-text">
+              <span class="brand-title">KENSEI</span>
+              <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+            </div>
+          </a>
+          <p class="mt-3">
+            KENSEI is a high-performance martial arts institution committed to authentic combat disciplines, ethical
+            character development, and reality-based tactical self-preservation.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">DISCIPLINES</h4>
+          <ul class="footer-links">
+            <li><a href="program-detail.html?program=karate"><i class="bi bi-chevron-right small"></i> Karate</a></li>
+            <li><a href="program-detail.html?program=bjj"><i class="bi bi-chevron-right small"></i> Brazilian Jiu-Jitsu</a></li>
+            <li><a href="program-detail.html?program=kickboxing"><i class="bi bi-chevron-right small"></i> Kickboxing</a></li>
+            <li><a href="program-detail.html?program=boxing"><i class="bi bi-chevron-right small"></i> Boxing</a></li>
+            <li><a href="program-detail.html?program=taekwondo"><i class="bi bi-chevron-right small"></i> Taekwondo</a></li>
+            <li><a href="program-detail.html?program=kalaripayattu"><i class="bi bi-chevron-right small"></i> Kalaripayattu</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">NAVIGATION</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="index.html#why"><i class="bi bi-chevron-right small"></i> Why Kensei</a></li>
+            <li><a href="schedule.html"><i class="bi bi-chevron-right small"></i> Class Timetable</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-widget-title">DOJO HEADQUARTERS</h4>
+          <ul class="contact-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>742 Bushido Way, Combat Arts Pavilion, District 4, NY 10013</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span>+1 (212) 555-0988 / +1 (212) 555-0989</span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span>admissions@kenseiacademy.com</span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon &ndash; Fri: 06:00 AM &ndash; 09:30 PM<br>Saturday: 08:30 AM &ndash; 04:00 PM (Closed Sun)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 KENSEI Martial Arts &amp; Self-Defense Academy. All rights reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="terms.html#privacy" class="text-decoration-none text-muted small">Privacy Policy</a>
+          <a href="#" class="text-decoration-none text-muted small">Terms of Service</a>
+          <a href="terms.html#safety" class="text-decoration-none text-muted small">Dojo Safety Code</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+
+  <!-- Comprehensive Client-Side Data & Renderer for All 7 Disciplines -->
+  <script>
+    const programsData = {
+      karate: {
+        id: "karate",
+        name: "Traditional Karate",
+        origin: "Japan &bull; Okinawa",
+        badge: "Striking &bull; Kata &bull; Kumite",
+        tagline: "Precision, Discipline & Biomechanical Alignment",
+        lead: "Disciplined punching, kicking, blocking, and quiet confidence rooted in Shotokan and Okinawan lineage.",
+        image: "assets/images/karate-japan.jpg",
+        actionCaption: "Master Sato Demonstrating Open-Palm Stance",
+        aboutText1: "Karate-Do (The Way of the Empty Hand) originated in Okinawa as a synthesis of indigenous combat arts and southern Chinese striking systems. At KENSEI Academy, our karate curriculum emphasizes the complete spectrum: skeletal bone alignment, kinetic torque from the pelvic girdle, and absolute structural precision.",
+        aboutText2: "Students practice in a focused, respectful atmosphere where ego is surrendered at the dojo threshold. You will master traditional Kihon basics, classical Kata movement libraries, and controlled partner Kumite drills designed to forge calm composure under pressure.",
+        philosophy: '"Karate ni Sente Nashi" — There is no first strike in Karate. We cultivate strength so that conflict may be avoided.',
+        specOrigin: "Okinawa &bull; Japan",
+        specAges: "Ages 5 to 65+ (Junior Samurai, Teens, Adult Masters)",
+        specLevels: "White Belt to 5th Dan Certified Black Belt",
+        specSchedule: "Mon &bull; Wed &bull; Fri (06:00 PM Fundamentals / 07:15 PM Kumite)",
+        specEquipment: "White Traditional Gi (Dogi), groin cup, mouthguard. Loaner sets provided for trials.",
+        faqAge: "We welcome children from age 5 in our Junior Samurai program, as well as adults well into their 60s and 70s seeking mobility and self-defense.",
+        faqGear: "For your first class, wear comfortable workout clothes. We provide a sanitized loaner Dogi and protective gloves free of charge.",
+        techniques: [
+          { tag: "Module 01 &bull; Fundamentals", title: "Kihon (Foundational Basics)", desc: "Mastering linear body alignment, gyaku-zuki (reverse punch), oi-zuki (lunge punch), snapping front kicks (mae-geri), and rising blocks (age-uke)." },
+          { tag: "Module 02 &bull; Prearranged Forms", title: "Traditional Kata", desc: "Practicing classical geometries (Heian/Pinan, Bassai Dai, Kanku Dai) that embed tactical muscle memory, breath control, and multi-directional defense." },
+          { tag: "Module 03 &bull; Partner Combat", title: "Controlled Kumite", desc: "Structured distance management, entry angles, counter-striking timing, and touch-contact sparring under strict zero-injury protocols." },
+          { tag: "Module 04 &bull; Combat Application", title: "Bunkai & Joint Manipulation", desc: "Deconstructing Kata sequences into real-world self-defense: escaping wrist grabs, neutralizing lapel seizures, and off-balancing assailants." }
+        ],
+        benefits: [
+          { icon: "bi-lightning-charge-fill", title: "Linear Striking Power", desc: "Generates devastating impact through kinetic hip snap without requiring brute muscular mass." },
+          { icon: "bi-shield-shaded", title: "Structural Defense", desc: "Ingrains instinctual 360-degree deflection blocks that protect vital head and torso targets." },
+          { icon: "bi-body-text", title: "Spine & Core Alignment", desc: "Low stances (kiba-dachi, zenkutsu-dachi) strengthen the lower back, glutes, and pelvic floor." },
+          { icon: "bi-heart-pulse-fill", title: "Cardio & Anaerobic Health", desc: "High-intensity Kata intervals train cardiovascular stamina and rapid heart-rate recovery." },
+          { icon: "bi-eye-fill", title: "Quiet Focus & Stillness", desc: "Mokuso breathing resets cortisol levels and cultivates deep mental clarity under pressure." },
+          { icon: "bi-trophy-fill", title: "Recognized Belt Pathway", desc: "Clear, achievable belt milestones provide rewarding personal growth for all age groups." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track",
+            badge: "White to Orange Belt",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Proper dojo etiquette, bowing (Rei), and zanshin awareness",
+              "Foundational stances: Shizentai, Zenkutsu-Dachi, and Kiba-Dachi",
+              "Straight linear punches (Choku-Zuki) and hip chambering",
+              "Upper (Age-Uke) and Lower (Gedan-Barai) defensive blocks",
+              "Kata: Taikyoku Shodan and Heian Shodan"
+            ]
+          },
+          {
+            level: "Intermediate Track",
+            badge: "Green to Brown Belt",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Multi-strike combinations: jab-cross-roundhouse transitions",
+              "Rotational hip power and fluid weight transfer drills",
+              "Intermediate Kata: Heian Nidan through Godan, Tekki Shodan",
+              "Ippon Kumite (One-Step Sparring) with precise distance calculation",
+              "Bunkai self-defense applications against common street grabs"
+            ]
+          },
+          {
+            level: "Advanced Track",
+            badge: "Brown 1st Kyu to Black Belt",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "Continuous Jiyu Kumite (Free Sparring) with point and continuous rules",
+              "Master Kata: Bassai Dai, Kanku Dai, Empi, and Jion",
+              "High-speed counter-timing: De-ai (intercepting strike) and Sen-no-Sen",
+              "Joint-lock reversals and tactical takedowns from close range",
+              "Instructor assistant coaching and leadership mentorship"
+            ]
+          }
+        ]
+      },
+
+      taekwondo: {
+        id: "taekwondo",
+        name: "Olympic Taekwondo",
+        origin: "Korea &bull; Kukkiwon",
+        badge: "Kicks &bull; Blocks &bull; Patterns &bull; Sparring",
+        tagline: "Dynamic Kicking, High Velocity & Aerial Agility",
+        lead: "World-renowned for explosive kicking combinations, rapid spatial agility, and Olympic sparring footwork.",
+        image: "assets/images/taekwondo-korea.jpg",
+        actionCaption: "Master Athlete Executing Head-Height Side Kick",
+        aboutText1: "Taekwondo (The Way of the Foot and the Fist) is Korea's celebrated martial art and an Olympic sport practiced across 200 nations. It specializes in high-velocity kicking, utilizing the legs' superior reach and power to dominate combat distance.",
+        aboutText2: "At KENSEI, we combine traditional World Taekwondo (WT) values with Olympic sports science. Students develop whiplash flexibility, 360-degree rotational torque, and lightning reflexes while maintaining safe, electronic-scoring sparring parameters.",
+        philosophy: '"Baekjulboolgool" — Indomitable Spirit. Yielding to neither exhaustion nor adversity.',
+        specOrigin: "Seoul &bull; South Korea",
+        specAges: "Ages 5 to 55+ (Youth Athletic, Teen Sparring, Adult Fitness)",
+        specLevels: "White Belt to 4th Dan Kukkiwon Certified Black Belt",
+        specSchedule: "Tue &bull; Thu (05:30 PM Youth / 07:00 PM Adults) &bull; Sat (10:00 AM Sparring)",
+        specEquipment: "WT-approved Dobok, shin/forearm guards, chest protector (Hogu provided).",
+        faqAge: "Our Little Tigers start at age 5, focusing on motor skills and balance. Adult classes focus on flexibility and high-calorie cardio.",
+        faqGear: "Wear lightweight gym pants and a t-shirt for your trial. We provide loaner electronic target pads and protective guards.",
+        techniques: [
+          { tag: "Module 01 &bull; Lower-Body Arsenal", title: "Dynamic Kicking Mechanics", desc: "Front snap (Ap Chagi), penetrating side kicks (Yeop Chagi), whiplash roundhouse (Dollyo Chagi), and axe kicks (Naeryeo Chagi)." },
+          { tag: "Module 02 &bull; Upper Body Deflections", title: "Precision Blocks (Makki)", desc: "High rising blocks (Olgul Makki), low sweep blocks (Arae Makki), and knife-hand deflections (Sonnal Makki) balancing the kicking arsenal." },
+          { tag: "Module 03 &bull; Traditional Forms", title: "Poomsae Patterns", desc: "Taegeuk 1 through 8 forms developing spatial rhythm, balance, explosive hip chambering, and mental focus." },
+          { tag: "Module 04 &bull; Live Matchplay", title: "Olympic Sparring (Kyorugi)", desc: "High-cadence footwork switches, counter-kicking in the clinch, 360-degree spin hook kicks, and electronic chest guard tactics." }
+        ],
+        benefits: [
+          { icon: "bi-lightning-charge-fill", title: "Explosive Kicking Velocity", desc: "Unlocks unmatched lower-body power and reach advantage over any standing opponent." },
+          { icon: "bi-fire", title: "Massive Calorie Burn", desc: "High-cadence kicking drills burn up to 850 calories per hour while sculpting legs and core." },
+          { icon: "bi-activity", title: "Extreme Pelvic Flexibility", desc: "Systematic hamstring and adductor stretching creates effortless high kicks without injury." },
+          { icon: "bi-stopwatch-fill", title: "Lightning Reflex Speed", desc: "Trains the nervous system to react and fire in milliseconds upon noticing visual cues." },
+          { icon: "bi-shield-shaded", title: "Spatial Distance Control", desc: "Teaches you to control the fighting radius and keep potential threats well out of arm's reach." },
+          { icon: "bi-trophy-fill", title: "Olympic Federation Pathway", desc: "Direct pathway to recognized Kukkiwon international rank certification and tournament play." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track",
+            badge: "White to Yellow/Green Belt",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Basic stances: Moa Seogi, Ap Seogi, and Ap Koobi (forward lunge stance)",
+              "Linear kicks: Front kick (Ap Chagi) and foundational Roundhouse (Dollyo Chagi)",
+              "Basic hand strikes and low/middle blocks (Arae and Momtong Makki)",
+              "Introductory Poomsae: Taegeuk Il Jang and Taegeuk Ee Jang",
+              "Controlled target pad kicking drills with focus on knee chambering"
+            ]
+          },
+          {
+            level: "Intermediate Track",
+            badge: "Blue to Red Belt",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Penetrating side kick (Yeop Chagi) and descending axe kick (Naeryeo Chagi)",
+              "Spinning back kick (Dwi Chagi) and jumping combination kicks",
+              "Poomsae mastery: Taegeuk Sam Jang through Taegeuk Chil Jang",
+              "Tactical footwork: sliding steps, angle cuts, and feinting entries",
+              "Light-contact chest guard sparring (Kyorugi) emphasizing speed and accuracy"
+            ]
+          },
+          {
+            level: "Advanced Track",
+            badge: "Red-Black to Kukkiwon Black Belt",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "360-degree jumping spin hook kicks (Dwi Huryeo Chagi) and 540 tornado kicks",
+              "Master Poomsae: Taegeuk Pal Jang and Koryo Poomsae",
+              "Olympic match tactics: clinch exits, electronic scoring touches, and counter-kicks",
+              "Self-defense (Hosinsul): releases from wrist grabs, chokes, and bear hugs",
+              "Kukkiwon Dan test preparation and junior instructor leadership"
+            ]
+          }
+        ]
+      },
+
+      kungfu: {
+        id: "kungfu",
+        name: "Shaolin Kung Fu",
+        origin: "China &bull; Shaolin Temple",
+        badge: "Forms &bull; Stances &bull; Hand Techniques &bull; Animal Dynamics",
+        tagline: "Fluid Power, Animal Forms & Tendon Elasticity",
+        lead: "Centuries-old holistic combat art integrating the Five Animal forms, deep stances, and internal breath (Qi) control.",
+        image: "assets/images/kungfu-china.jpg",
+        actionCaption: "Shaolin Monk in Low Gong Bu Tiger Stance",
+        aboutText1: "Shaolin Kung Fu is one of mankind's oldest and most comprehensive martial arts, developed over 1,500 years at the Songshan Shaolin Monastery. It harmonizes external combat power with internal breath control (Qigong), building an iron body with spring-like tendon elasticity.",
+        aboutText2: "At KENSEI, students immerse themselves in the biomimetic wisdom of the Five Animals: the bone-power of the Tiger, the dynamic balance of the Crane, the tendon strength of the Leopard, the supple flow of the Snake, and the internal spirit of the Dragon.",
+        philosophy: '"Chan Wu Yi Ti" — Zen and Martial Arts are One. External strength cultivated with internal peace.',
+        specOrigin: "Songshan &bull; Henan, China",
+        specAges: "Ages 6 to 70+ (Youth Agility, Adult Flow, Masters Qigong)",
+        specLevels: "Grade 1 (Sash) through Master Faculty Level",
+        specSchedule: "Tue &bull; Thu (06:00 PM) &bull; Sat (11:30 AM Forms & Flow)",
+        specEquipment: "Shaolin lightweight cotton tunic, training sash, flexible flat-soled dojo shoes.",
+        faqAge: "All ages are welcome. Children love the animal postures, while adults appreciate the joint mobility and stress-relieving Qigong breathwork.",
+        faqGear: "Wear flexible pants and a comfortable t-shirt for your trial class. We practice in socks or lightweight indoor flat shoes.",
+        techniques: [
+          { tag: "Module 01 &bull; Foundational Postures", title: "Five Classical Stances", desc: "Mastering Horse Stance (Ma Bu), Bow Stance (Gong Bu), Drop Stance (Pu Bu), False Stance (Xu Bu), and Rest Stance (Xie Bu)." },
+          { tag: "Module 02 &bull; Upper Body Strikes", title: "Hand & Palm Techniques", desc: "Tiger Claw palm strikes, Crane beak nerve strikes, Leopard short fist, and circular deflections redirecting opposing momentum." },
+          { tag: "Module 03 &bull; Classical Routines", title: "Traditional Taolu (Forms)", desc: "Fluid, high-coordination forms (Lian Huan Quan, Xiao Hong Quan) that synchronize whole-body kinetic chains and deep breath control." },
+          { tag: "Module 04 &bull; Weapons & Energy", title: "Shaolin Staff & Qigong", desc: "Handling the wooden Shaolin pole (Gun) to condition the wrists and shoulders, coupled with Baduanjin breathwork for recovery." }
+        ],
+        benefits: [
+          { icon: "bi-arrow-repeat", title: "Whole-Body Kinetic Fluidity", desc: "Eliminates stiff mechanical movement in favor of whiplash whole-body wave power." },
+          { icon: "bi-activity", title: "Tendon & Joint Longevity", desc: "Deep stances decompress the hip sockets and reinforce the knee ligaments and Achilles tendons." },
+          { icon: "bi-lungs-fill", title: "Internal Breath Control", desc: "Qigong diaphragmatic breathing lowers resting heart rate and boosts mental endurance." },
+          { icon: "bi-shield-shaded", title: "Parabolic Momentum Redirection", desc: "Neutralizes incoming aggression by rolling with the force rather than clashing head-on." },
+          { icon: "bi-body-text", title: "Total Body Mobility", desc: "Restores natural spinal rotation, hip flexibility, and balance across multi-planar angles." },
+          { icon: "bi-peace-fill", title: "Mind-Body Harmony", desc: "Bridges intense physical martial capability with meditative Zen calm and emotional poise." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track",
+            badge: "Novice Sash Level",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Foundational Five Stances: Ma Bu (Horse), Gong Bu (Bow), and Pu Bu (Flat)",
+              "Straight punch (Chong Quan) and palm heel strike (Tui Zhang)",
+              "Dynamic leg stretching swings: Front, Side, and Outside Crescent kicks",
+              "Introductory hand-form: Lian Huan Quan (Continuous Fist)",
+              "Baduanjin (Eight Brocades) foundational breathwork routines"
+            ]
+          },
+          {
+            level: "Intermediate Track",
+            badge: "Adept Sash Level",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Animal dynamics: Tiger Claw power drills and Crane single-leg balance routines",
+              "Low sweep kicks (Sao Tui) and rotational spinning palm deflections",
+              "Shaolin Xiao Hong Quan (Small Red Fist) complete classical form",
+              "Wooden Staff (Shaolin Gun) foundational spins, thrusts, and blocks",
+              "Chin Na joint-lock capture and release basics against common grabs"
+            ]
+          },
+          {
+            level: "Advanced Track",
+            badge: "Master Sash Level",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "Master Animal Forms: Leopard speed combinations and Snake coiled strikes",
+              "Advanced traditional weapons: Shaolin Broadsword (Dao) and Straight Sword (Jian)",
+              "Da Hong Quan (Big Red Fist) and high-speed aerial acrobatics",
+              "Iron Shirt conditioning and martial Qigong breath-retention drills",
+              "San Shou full-contact Chinese kickboxing and takedown integration"
+            ]
+          }
+        ]
+      },
+
+      kickboxing: {
+        id: "kickboxing",
+        name: "Muay Thai &amp; Kickboxing",
+        origin: "Thailand &bull; Bangkok / Netherlands",
+        badge: "Punches &bull; Kicks &bull; Elbows &bull; Knees &bull; Clinch",
+        tagline: "The Art of Eight Limbs &bull; Dutch Combative Power",
+        lead: "Devastating full-contact striking utilizing fists, elbows, knees, shins, and ruthless Dutch combination padwork.",
+        image: "assets/images/muaythai-thailand.jpg",
+        actionCaption: "Airborne Muay Thai Striker Landing Flying Knee",
+        aboutText1: "Known as the Art of Eight Limbs, Muay Thai transforms the entire body into a battle-tested combative weapon: hands act as swords and daggers, elbows as heavy hammers, shins and forearms as iron shields, and knees as piercing axes.",
+        aboutText2: "At KENSEI, we fuse authentic Thai stadium striking with European Dutch Kickboxing punch-kick chaining. Our training emphasizes biomechanical hip drive, shin conditioning on heavy bags, and dominant plum clinch control in a high-energy, zero-ego environment.",
+        philosophy: '"Nak Muay" — The Heart of a Fighter. Relentless forward work ethic, humble respect, and unbreakable physical conditioning.',
+        specOrigin: "Bangkok &bull; Thailand & Netherlands",
+        specAges: "Ages 13 to 58+ (Teens Striking, Adult Fitness, Fight Squad)",
+        specLevels: "Novice Striker to Amateur/Pro Competition Level",
+        specSchedule: "Mon &bull; Wed &bull; Fri (07:00 AM Morning Strike / 06:30 PM Evening Rounds)",
+        specEquipment: "16oz boxing gloves, 180-inch hand wraps, Muay Thai shorts, shin guards (sanitized loaners provided).",
+        faqAge: "Our minimum age is 13 for teens. Adults of all fitness levels train together with partner intensity scaled to personal comfort.",
+        faqGear: "Bring comfortable workout shorts and a t-shirt. We provide freshly sanitized loaner gloves and shin guards for your free trial.",
+        techniques: [
+          { tag: "Module 01 &bull; Fists & Kinetic Chaining", title: "Boxing & Dutch Combos", desc: "Kinetic jab-cross combinations, tight left hooks to the liver, and overhands chained seamlessly into brutal low leg kicks." },
+          { tag: "Module 02 &bull; Shin & Push Kicks", title: "Roundhouse & Teep Kicks", desc: "Driving the heavy shinbone through targets like a baseball bat, paired with front push kicks (Teep) to control space." },
+          { tag: "Module 03 &bull; Short-Range Weapons", title: "Elbow Strikes (Sok)", desc: "Horizontal, slashing, upward, and spinning back elbows executed inside the pocket to neutralize close-range aggression." },
+          { tag: "Module 04 &bull; Close-Quarter Dominance", title: "Knee Strikes & Clinch", desc: "Locking the Thai plum neck collar, breaking posture, and delivering driving thoracic and rib knees (Khao Loi)." }
+        ],
+        benefits: [
+          { icon: "bi-fire", title: "900+ Calorie Burn", desc: "Intense round-based heavy bag and Thai pad work burns body fat and builds lean, dense muscle." },
+          { icon: "bi-shield-fill", title: "Iron Shin & Bone Density", desc: "Systematic heavy bag impact micro-calcifies shinbones and strengthens joint capsules." },
+          { icon: "bi-heart-pulse-fill", title: "Elite VO2 Max Cardio", desc: "3-minute round intervals build relentless cardiovascular stamina and explosive recovery." },
+          { icon: "bi-lightning-fill", title: "Brutal Close-Range Dominance", desc: "Teaches you how to fight and dominate in phone-booth range with elbows and knees." },
+          { icon: "bi-person-arms-up", title: "Stress Annihilation", desc: "There is nothing more cathartic than landing full-power kicks and punches into thick Thai pads." },
+          { icon: "bi-trophy-fill", title: "Fight-Ready Combative IQ", desc: "Instills the instinctual timing, rhythm, and guard resilience trusted by UFC champions." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track",
+            badge: "Striking Fundamentals",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Proper fighting stance, high guard posture, and rhythmic weight-shifting bounce",
+              "Straight punches: Jab and Cross with chin tucked behind the shoulder",
+              "Roundhouse kick mechanics: hip rotation, standing foot pivot, and shin impact",
+              "The front push-kick (Teep) to maintain defensive distance",
+              "Holding Thai pads and heavy bag drill etiquette with safe wrist alignment"
+            ]
+          },
+          {
+            level: "Intermediate Track",
+            badge: "Combative Striker",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Dutch Kickboxing combinations: Jab-Cross-Hook into Low Leg Kick",
+              "Checking low kicks (shin blocks) and immediate return-kick counters",
+              "Introductory plum clinch: double collar tie, head control, and side knee strikes",
+              "Horizontal and slashing elbow strikes off the jab slip",
+              "Controlled technical sparring (20-30% power) focusing on touch and defense"
+            ]
+          },
+          {
+            level: "Advanced Track",
+            badge: "Fight Team & Masters",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "Advanced clinch sweeps, off-balancing trips, and catching kicks into dumps",
+              "Spinning back elbows, jumping flying knees (Khao Loi), and fake-kick entries",
+              "Ringcraft: cutting off the ring, feints, and trapping opponents against the ropes",
+              "Hard situational sparring with full protective gear under coach supervision",
+              "Weight management, corner strategy, and sanctioned tournament fight prep"
+            ]
+          }
+        ]
+      },
+
+      boxing: {
+        id: "boxing",
+        name: "Western Boxing",
+        origin: "England &amp; USA &bull; The Sweet Science",
+        badge: "Footwork &bull; Punches &bull; Defence &bull; Combinations",
+        tagline: "The Sweet Science &bull; Head Movement, Angles & Power",
+        lead: "The quintessential art of kinetic punching, deceptive slip-counters, angle footwork, and supreme anaerobic fitness.",
+        image: "assets/images/boxing-international.jpg",
+        actionCaption: "Power Boxer Coiled in Orthodox Fighting Stance",
+        aboutText1: "Boxing is known worldwide as The Sweet Science—the ultimate study in economy of motion, distance manipulation, and counter-punching. Stripped of kicks and grappling, boxing refines upper-body combat to absolute mathematical elegance.",
+        aboutText2: "At KENSEI, you will master the kinetic chain: pushing off the ball of the foot, driving rotational torque through the hips, and snapping fists into the target with pinpoint precision. Our coaches prioritize defensive slipping, bobbing, and weaving so you hit without getting hit.",
+        philosophy: '"Hit and do not get hit." — The classical Queensberry mandate of supreme ring craftsmanship.',
+        specOrigin: "London &bull; UK & USA",
+        specAges: "Ages 10 to 65+ (Youth Boxing, Boxing Fitness, Golden Gloves)",
+        specLevels: "Beginner Fundamentals to Competitive Amateur Ring Level",
+        specSchedule: "Mon &bull; Tue &bull; Thu (06:00 PM) &bull; Sat (09:00 AM Bag Lab)",
+        specEquipment: "Boxing gloves (14/16oz), 180-inch cotton wraps, jump rope, boxing boots or flat gym sneakers.",
+        faqAge: "We coach students from age 10 in our youth boxing academy, up to adults in their 60s looking for premier upper-body fitness.",
+        faqGear: "Bring gym clothes and sneakers. We provide hand wraps and loaner 16oz training gloves for your free evaluation session.",
+        techniques: [
+          { tag: "Module 01 &bull; Ring Geometry", title: "Footwork & Pivot Angles", desc: "Pendulum steps, step-drags, pivot exits, and cutting off the ring to trap opponents and escape rope pressure." },
+          { tag: "Module 02 &bull; Kinetic Strikes", title: "Punches & Combinations", desc: "Snapping jab, cross, lead hook to liver/jaw, overhand, and digging uppercuts transferring ground force through the hips." },
+          { tag: "Module 03 &bull; Slip & Weave Art", title: "Defensive Head Movement", desc: "Slipping outside the punch line, rolling underneath hooks, ducking straight shots, and parrying with gloves." },
+          { tag: "Module 04 &bull; Counter-Punching", title: "Counter-Striking & Ring IQ", desc: "Catch-and-shoot counters, slip-and-rip body hooks, pull-counters, and setting tactical traps with feints." }
+        ],
+        benefits: [
+          { icon: "bi-lightning-fill", title: "Pinpoint Hand-Eye Reflexes", desc: "Sharpens cognitive reaction speeds to dodge and counter strikes traveling at blinding speeds." },
+          { icon: "bi-activity", title: "Rotational Core Torque", desc: "Every punch activates the obliques, abdominal wall, and latissimus dorsi for supreme core strength." },
+          { icon: "bi-eye-fill", title: "Calm Eyes Under Fire", desc: "Teaches you to keep your eyes wide open and breathe calmly even when punches fly toward your face." },
+          { icon: "bi-shield-fill", title: "Practical Street Striking", desc: "Instills the most reliable, instinctive punching mechanics for personal civilian safety." },
+          { icon: "bi-heart-pulse-fill", title: "Shoulder & Anaerobic Stamina", desc: "Holding a tight guard and punching heavy bags creates muscular endurance that never fades." },
+          { icon: "bi-trophy-fill", title: "Golden Gloves Craftsmanship", desc: "Learn from seasoned boxing cornermen with authentic amateur and professional pedigrees." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track",
+            badge: "Fundamentals & Stance",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Orthodox or Southpaw stance, balance distribution, and high guard positioning",
+              "The Jab (#1): range finder, defensive shield, and offensive spear",
+              "The Straight Cross (#2): kinetic ground drive through the back heel and hip",
+              "Basic footwork: step-slide forward, backward, left, and right without crossing feet",
+              "Jump rope cadence and speed bag hand-eye rhythm coordination"
+            ]
+          },
+          {
+            level: "Intermediate Track",
+            badge: "Combination Craftsman",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Lead Hook (#3) and Rear Uppercut (#6) inside pocket exchanges",
+              "Head movement: Slip-left, slip-right, roll-under-hook, and shoulder roll",
+              "Combination chaining: 1-2-3 (Jab-Cross-Hook) and 1-2-slip-2 counters",
+              "Holding mitts and callout pad work with speed and accuracy focus",
+              "Controlled situational sparring with body-only punches and light touch headgear"
+            ]
+          },
+          {
+            level: "Advanced Track",
+            badge: "Ring General & Competitor",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "Counter-punching mastery: Pull-counter, slip-and-rip to the liver, and check hook",
+              "Cutting off the ring, feinting with shoulders and eyes, and breaking opponent rhythm",
+              "Inside fighting (infighting): head positioning on chest, short hooks, and frames",
+              "Full technical ring sparring with 16oz gloves, groin protector, and headgear",
+              "USA Boxing amateur card registration and tournament corner coaching"
+            ]
+          }
+        ]
+      },
+
+      bjj: {
+        id: "bjj",
+        name: "Brazilian Jiu-Jitsu",
+        origin: "Brazil &bull; Gracie Lineage",
+        badge: "Grappling &bull; Positional Control &bull; Escapes &bull; Submissions",
+        tagline: "The Gentle Art &bull; Leverage Over Brute Force",
+        lead: "Ground fighting, anatomical joint locks, chokes, and mechanical fulcrums enabling a smaller person to submit a larger opponent.",
+        image: "assets/images/bjj-brazil.jpg",
+        actionCaption: "BJJ Practitioners Locked in Ground Grappling Control",
+        aboutText1: "Brazilian Jiu-Jitsu (BJJ) revolutionized martial arts by proving that real-world fights almost inevitably go to the ground. Derived from Kodokan Judo and perfected in Brazil, BJJ relies on leverage, weight distribution, and anatomical fulcrums rather than size or striking.",
+        aboutText2: "At KENSEI, you will learn how to survive on the bottom, use your legs as a shield (the Guard), sweep aggressive attackers onto their backs, and apply humane submissions (armbars, chokes, shoulder locks) that force opponents to tap out without needing concussive strikes.",
+        philosophy: '"A smaller, weaker person can successfully defend against a bigger, stronger assailant by using leverage and proper technique." — Grandmaster Helio Gracie.',
+        specOrigin: "Rio de Janeiro &bull; Brazil",
+        specAges: "Ages 5 to 68+ (Kids Anti-Bully, Women BJJ, Adult Gi & No-Gi)",
+        specLevels: "White Belt to IBJJF Certified Black Belt",
+        specSchedule: "Mon &bull; Wed &bull; Fri (11:00 AM Mat / 07:30 PM Gi & No-Gi)",
+        specEquipment: "BJJ Kimono (Gi) and rank belt, or rashguard & compression shorts for No-Gi.",
+        faqAge: "BJJ is the world's most accessible combat sport for older adults because it has zero striking impact on the brain.",
+        faqGear: "Wear a tight t-shirt or rashguard and shorts with no zippers. We provide clean, sanitized loaner Gis for your trial roll.",
+        techniques: [
+          { tag: "Module 01 &bull; Ground Survival", title: "Guard Retention & Escapes", desc: "Using the hips and legs (Closed, Half, Open Guard) to prevent top pressure, and shrimp escapes to disengage." },
+          { tag: "Module 02 &bull; Dominance Hierarchy", title: "Positional Control", desc: "Progressing through the hierarchy of control: Side Control, Knee-on-Belly, Full Mount, and taking the Back." },
+          { tag: "Module 03 &bull; Anatomical Levers", title: "Joint Locks (Submissions)", desc: "Applying hyperextension and rotational pressure: Armbars, Kimuras, Americanas, and Omoplatas." },
+          { tag: "Module 04 &bull; Airway & Arterial Control", title: "Strangles & Chokes", desc: "Restricting carotid artery blood flow safely: Rear Naked Choke, Triangle Choke, Guillotine, and Gi Lapel chokes." }
+        ],
+        benefits: [
+          { icon: "bi-shield-check", title: "The Ultimate Giant Killer", desc: "Enables smaller men and women to defeat larger, heavier attackers using mechanical fulcrums." },
+          { icon: "bi-brain", title: "Human Physical Chess", desc: "Engages deep cognitive problem-solving, anticipation, and strategy on the mats every single round." },
+          { icon: "bi-bandaid", title: "Zero Head Concussion Risk", desc: "High-intensity full-effort sparring without punches, kicks, or traumatic brain concussions." },
+          { icon: "bi-heart-pulse-fill", title: "Full-Body Functional Strength", desc: "Develops isometric grip strength, core rotational power, and hip mobility naturally." },
+          { icon: "bi-people-fill", title: "Egoless Brother/Sisterhood", desc: "Tapping out strips away arrogance and creates genuine, deep humility among training partners." },
+          { icon: "bi-trophy-fill", title: "IBJJF International Belt Honor", desc: "One of the most prestigious belt journeys in sports, recognized worldwide by the IBJJF." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track",
+            badge: "White Belt Fundamentals",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Safe falling mechanics (Ukemi), bridging, and technical stand-up under pressure",
+              "The shrimp escape (hip escape) and framing against heavy top chest pressure",
+              "Closed Guard basics: breaking opponent posture and controlling the wrists",
+              "The basic Scissor Sweep and Flower Sweep to reverse positions",
+              "Fundamental submissions: Straight Armbar from guard and the Cross-Collar Choke"
+            ]
+          },
+          {
+            level: "Intermediate Track",
+            badge: "Blue & Purple Belt",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Guard passing systems: Toreando pass, Knee-slice pass, and Over-under pass",
+              "Half-guard dominance: recovering guard, underhook battles, and dogfight sweeps",
+              "Triangle Choke and Kimura submission chaining off opponent defense",
+              "Back control attacks: seatbelt grip retention and the Rear-Naked Choke (Mata Leão)",
+              "Live positional sparring and free rolling with active partner tap-out protocol"
+            ]
+          },
+          {
+            level: "Advanced Track",
+            badge: "Brown & Black Belt",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "Leg-lock matrices: Straight ankle locks, Kneebars, and safe honey-hole entries",
+              "Dynamic Berimbolo, De La Riva guard, and advanced inverted guard retention",
+              "No-Gi wrestling integration: double-leg takedowns, front headlock, and Darce chokes",
+              "Tournament ruleset strategy: IBJJF, ADCC points, and referee advantage gaming",
+              "Mentorship, mat instruction pedagogy, and belt promotion curriculum grading"
+            ]
+          }
+        ]
+      },
+
+      kalaripayattu: {
+        id: "kalaripayattu",
+        name: "Kalaripayattu",
+        origin: "India &bull; Kerala Battlefield Lineage",
+        badge: "Meipayattu &bull; Flexibility &bull; Traditional Weapons &bull; Marma",
+        tagline: "The Mother of Martial Arts &bull; Animal Postures & Weapons",
+        lead: "The ancient Indian battlefield art featuring deep animal postures (Vadivu), long staff fencing, and Marma pressure points.",
+        image: "assets/images/kalaripayattu-india.jpg",
+        actionCaption: "Kalaripayattu Master in Ashva Vadivu Animal Stance",
+        aboutText1: "Considered by martial historians as one of the world's oldest surviving combat arts, Kalaripayattu originated in Kerala, Southern India. It is steeped in Ayurveda, yogic breath discipline, and battlefield weaponry designed to condition the warrior's body until 'the body becomes all eyes.'",
+        aboutText2: "At KENSEI, you will train in the traditional Four Stages of Kalari: Meipayattu (body conditioning & extreme leg kicks), Kolthari (wooden weapons like the Kettukari staff), Angathari (metal blades), and Verumkai (empty-hand defense targeting 107 Marma vital points).",
+        philosophy: '"Mei thirinju nokkanam" — The warrior’s body must become as swift and all-seeing as the eyes themselves.',
+        specOrigin: "Kerala &bull; Southern India",
+        specAges: "Ages 7 to 65+ (Flexibility, Ancient Heritage, Weaponry)",
+        specLevels: "Stage 1 (Meithari) through Advanced Marma Master",
+        specSchedule: "Tue &bull; Thu (07:30 PM) &bull; Sun (09:00 AM Weaponry Lab)",
+        specEquipment: "Traditional Kalari cotton trousers, cotton sash wrap, practiced barefoot on sterilized tatami.",
+        faqAge: "Practiced by students of all ages. It is especially celebrated for reversing chronic hip stiffness and restoring spine vitality.",
+        faqGear: "Wear loose cotton trousers or yoga pants. We practice barefoot and provide wooden practice staffs (Kettukari) for trial classes.",
+        techniques: [
+          { tag: "Module 01 &bull; Body Conditioning", title: "Meipayattu (Body Art)", desc: "Dynamic high leg swings (Kaalukal), twisting aerial jumps, and deep groin-opening animal postures." },
+          { tag: "Module 02 &bull; Sacred Postures", title: "Eight Animal Vadivu", desc: "Embodying the archetypes: Lion (Simha), Elephant (Gaja), Horse (Ashva), Serpent (Sarpa), and Boar (Varaha)." },
+          { tag: "Module 03 &bull; Wooden Staff Combat", title: "Kolthari (Stick Fencing)", desc: "Rapid circular strikes, blocks, and sweeps using the long hardwood staff (Kettukari) and short baton (Muchan)." },
+          { tag: "Module 04 &bull; Vital Point Science", title: "Marma Shastra & Empty Hand", desc: "Pinpointing 107 vital anatomical intersections to neutralize attackers with minimal kinetic effort." }
+        ],
+        benefits: [
+          { icon: "bi-activity", title: "Unrivaled Pelvic & Spine Flexibility", desc: "High leg-swing sequences open the hips, decompress the lumbar spine, and restore youthfulness." },
+          { icon: "bi-shield-shaded", title: "Weapons Defense Mastery", desc: "Teaches intuitive spatial awareness and distance estimation against blunt and edged weapons." },
+          { icon: "bi-flower1", title: "Ayurvedic Energy Balance", desc: "Harmonizes the nervous system through ancient Indian pranic breathwork and movement flow." },
+          { icon: "bi-lightning-charge-fill", title: "Ground-Hugging Agility", desc: "Low animal postures build tremendous functional leg strength and balance over uneven terrain." },
+          { icon: "bi-eye-fill", title: "The Body Becomes All Eyes", desc: "Develops 360-degree sensory awareness so you sense oncoming threats before seeing them." },
+          { icon: "bi-book-half", title: "Ancient Living Heritage", desc: "Direct immersion into the ancestral mother of all Asian martial traditions." }
+        ],
+        curriculum: [
+          {
+            level: "Beginner Track (Meithari)",
+            badge: "Stage 01 &bull; Body Conditioning",
+            focus: "Fundamentals & Basic Movements",
+            items: [
+              "Vandanam (sacred salutation to the lineage and training ground)",
+              "Kaalukal: Straight kick (Nere Kaal), Inside-out kick (Konu Kaal), and Circular kick",
+              "Gaja Vadivu (Elephant posture) and Simha Vadivu (Lion posture) foundation",
+              "Basic forward and backward step patterns (Chuvadu)",
+              "Dynamic spine mobilization and Ayurvedic breathing routines"
+            ]
+          },
+          {
+            level: "Intermediate Track (Kolthari)",
+            badge: "Stage 02 &bull; Wooden Weapons",
+            focus: "Technique Development & Combinations",
+            items: [
+              "Sarpa Vadivu (Serpent posture) and Ashva Vadivu (Horse posture) transitions",
+              "Kettukari (12-span curved hardwood long staff) 18 classical striking angles",
+              "Muchan (short stick) rapid partner deflection drills and wrist disarms",
+              "Otta (curved horn-shaped wooden dagger) precision strikes to nerve centers",
+              "Verumkai: empty-hand parries and locks against armed aggressors"
+            ]
+          },
+          {
+            level: "Advanced Track (Angathari & Marma)",
+            badge: "Stage 03 &bull; Metal Weapons & Marma",
+            focus: "Advanced Skills & Tactical Application",
+            items: [
+              "Valum Parichayum: Traditional sword and buckler shield battlefield choreography",
+              "Urumi: The legendary flexible multi-bladed whip sword mastery (strictly supervised)",
+              "Marma Shastra: Mapping the 107 vital anatomical pressure points for self-preservation",
+              "Advanced multi-opponent evasions and low acrobatic leap strikes",
+              "Kalari Chikitsa: traditional restorative massage and injury mitigation science"
+            ]
+          }
+        ]
+      }
+    };
+
+    // Client-side initialization based on ?program= query parameter
+    function initProgramPage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedKey = urlParams.get('program') || 'karate';
+      const p = programsData[selectedKey] || programsData['karate'];
+
+      // Update active pill button
+      document.querySelectorAll('.discipline-pill-btn').forEach(btn => {
+        if (btn.getAttribute('data-prog-id') === p.id) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // 1. Program Hero
+      document.title = p.name + " | KENSEI Martial Arts Academy";
+      document.getElementById('progOriginBadge').innerHTML = p.origin;
+      document.getElementById('progPillBadge').innerHTML = p.badge;
+      
+      const titleWords = p.name.split(' ');
+      document.getElementById('progTitle').innerHTML = '<span class="text-white-line">' + titleWords[0] + '</span> <span class="text-red-line">' + (titleWords.slice(1).join(' ') || 'PROGRAM') + '</span>';
+      document.getElementById('progTagline').innerHTML = p.tagline;
+      document.getElementById('progLead').textContent = p.lead;
+      document.getElementById('progHeroImg').src = p.image;
+      document.getElementById('progHeroImg').alt = p.name + " at KENSEI Academy";
+      document.getElementById('progActionCaption').innerHTML = '<i class="bi bi-camera-reels text-danger me-1"></i> ' + p.actionCaption;
+
+      // 2. About Program
+      document.getElementById('aboutHeadingDiscipline').textContent = p.name.toUpperCase();
+      document.getElementById('progAboutText1').textContent = p.aboutText1;
+      document.getElementById('progAboutText2').textContent = p.aboutText2;
+      document.getElementById('progPhilosophy').textContent = p.philosophy;
+
+      // Program Specs
+      document.getElementById('specOrigin').innerHTML = p.specOrigin;
+      document.getElementById('specAges').innerHTML = p.specAges;
+      document.getElementById('specLevels').innerHTML = p.specLevels;
+      document.getElementById('specSchedule').innerHTML = p.specSchedule;
+      document.getElementById('specEquipment').innerHTML = p.specEquipment;
+
+      // 3. Techniques You'll Learn
+      document.getElementById('techHeadingDiscipline').textContent = p.name.toUpperCase() + " ARSENAL";
+      const techGrid = document.getElementById('techniquesGrid');
+      techGrid.innerHTML = p.techniques.map(t => `
+        <div class="col-md-6 col-lg-3">
+          <div class="technique-card">
+            <span class="technique-tag">${t.tag}</span>
+            <h3 class="technique-title">${t.title}</h3>
+            <p class="technique-desc">${t.desc}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // 4. Benefits
+      const benefitsGrid = document.getElementById('benefitsGrid');
+      benefitsGrid.innerHTML = p.benefits.map(b => `
+        <div class="col-md-6 col-lg-4">
+          <div class="benefit-compact-card">
+            <div class="benefit-icon-box">
+              <i class="bi ${b.icon}"></i>
+            </div>
+            <div>
+              <h3 class="benefit-card-title">${b.title}</h3>
+              <p class="benefit-card-desc">${b.desc}</p>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // 5. Training Curriculum (Beginner, Intermediate, Advanced)
+      const curriculumGrid = document.getElementById('curriculumGrid');
+      curriculumGrid.innerHTML = p.curriculum.map(c => `
+        <div class="col-lg-4">
+          <div class="curriculum-level-card">
+            <div class="curriculum-level-header">
+              <div>
+                <span class="badge bg-danger text-uppercase mb-1">${c.badge}</span>
+                <h3 class="curriculum-level-name">${c.level}</h3>
+              </div>
+            </div>
+            <div class="curriculum-level-body">
+              <div class="small text-combat-red fw-bold text-uppercase mb-3">
+                <i class="bi bi-crosshair"></i> Focus: ${c.focus}
+              </div>
+              <ul class="curriculum-item-list">
+                ${c.items.map(item => '<li><i class="bi bi-check2-circle"></i> <span>' + item + '</span></li>').join('')}
+              </ul>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // 8. FAQ specific details
+      document.getElementById('faqAnsAge').textContent = p.faqAge;
+      document.getElementById('faqAnsGear').textContent = p.faqGear;
+
+      // 9. Final CTA
+      document.getElementById('progCtaImg').src = p.image;
+      document.getElementById('progCtaTitle').textContent = "BOOK YOUR " + p.name.toUpperCase() + " TRIAL";
+      document.getElementById('progFormInput').value = p.name;
+    }
+
+    document.addEventListener('DOMContentLoaded', initProgramPage);
+  </script>
+</body>
+</html>

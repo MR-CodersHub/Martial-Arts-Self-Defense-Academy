@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Martial Arts Article | KENSEI Academy</title>
+  <meta name="description" id="pageDescription" content="Read expert martial arts analysis and tactical training insights from the master faculty at KENSEI Academy.">
+
+  <!-- Google Fonts: Barlow Condensed, Bebas Neue & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg kensei-navbar" aria-label="Main navigation">
+      <div class="container-xl d-flex align-items-center justify-content-between">
+        <!-- Brand Wordmark -->
+        <a class="brand-link" href="index.html">
+          <div class="brand-symbol" aria-hidden="true">K</div>
+          <div class="brand-text">
+            <span class="brand-title">KENSEI</span>
+            <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+          </div>
+        </a>
+
+        <!-- Right Side Controls (RTL + Theme + Desktop CTA + Mobile Hamburger) -->
+        <div class="d-flex align-items-center gap-2 order-lg-3 nav-header-actions">
+          <!-- RTL / LTR Toggle -->
+          <button id="rtlToggleBtn" class="nav-util-btn" title="Toggle RTL / LTR" aria-label="Toggle Text Direction">
+            <span id="rtlToggleLabel" class="rtl-toggle-text">RTL</span>
+          </button>
+
+          <!-- Light / Dark Theme Toggle -->
+          <button id="themeToggleBtn" class="nav-util-btn" title="Switch Theme" aria-label="Toggle Theme">
+            <i id="themeToggleIcon" class="bi bi-sun-fill"></i>
+          </button>
+
+          <!-- Desktop Book a Free Trial CTA -->
+          <a href="schedule.html" class="btn-kensei btn-kensei-primary btn-kensei-sm d-none d-lg-inline-flex" data-trial-program="General Inquiry">
+            <i class="bi bi-shield-check"></i>
+            <span>Book a Free Trial</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kenseiNavContent" aria-controls="kenseiNavContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+        <!-- Collapsible Navigation Menu -->
+        <div class="collapse navbar-collapse order-lg-2" id="kenseiNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="home-2.html">Home 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile-only CTA inside opened menu -->
+          <div class="d-lg-none mt-3 pt-3 border-top border-secondary-subtle">
+            <a href="schedule.html" class="btn-kensei btn-kensei-primary w-100 justify-content-center" data-trial-program="General Inquiry">
+              <i class="bi bi-shield-check"></i>
+              <span>Book a Free Trial</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. ARTICLE HERO -->
+    <section class="article-hero-section">
+      <div class="container-xl">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+            <li class="breadcrumb-item"><a href="blog.html" class="text-decoration-none text-muted">Blog</a></li>
+            <li class="breadcrumb-item active text-danger" id="breadcrumbCategory" aria-current="page">Martial Arts</li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <div class="col-lg-10">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+              <span class="section-badge mb-2" id="articleCategoryBadge">Martial Arts &bull; Master Series</span>
+              <span class="text-muted small" id="articleReadTime"><i class="bi bi-clock me-1"></i>6 min read</span>
+              <span class="text-muted small">&bull;</span>
+              <span class="text-muted small" id="articleDate">October 14, 2026</span>
+            </div>
+
+            <h1 class="section-title display-4 fw-bold text-uppercase mb-3" id="articleHeadline">
+              Mastering Karate Fundamentals: <span class="text-combat-red">The Biomechanics of Kihon &amp; Kata</span>
+            </h1>
+
+            <p class="lead text-muted mb-4" id="articleSubtitle">
+              Why kinetic alignment, hip torque (Koshi), and ground reaction forces generate devastating power without muscular tension.
+            </p>
+
+            <!-- Author Byline -->
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-secondary border-opacity-25">
+              <div class="author-avatar-wrap" style="width: 48px; height: 48px; position: relative;">
+     <img id="authorAvatarImg" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Author" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-combat-red);">
+   </div>
+              <div>
+                <div class="fw-bold text-white fs-6" id="authorName">Master Kenji Sato</div>
+                <div class="text-muted small" id="authorRole">7th Dan Shotokan Karate &bull; Head of Traditional Arts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN EDITORIAL CONTENT + SIDEBAR -->
+    <section class="section-padding" style="background: var(--bg-midnight);">
+      <div class="container-xl">
+
+        <!-- Featured Banner Image -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <img id="articleFeaturedBanner" src="assets/images/karate-japan.jpg" alt="Featured Article Banner" class="article-featured-banner">
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <!-- 2. ARTICLE CONTENT (LEFT COLUMN) -->
+          <div class="col-lg-8">
+            <article class="article-body-content">
+
+              <!-- 4. KEY TAKEAWAYS -->
+              <div class="takeaways-box">
+                <div class="mb-2"><span class="section-badge">Core Principles &bull; Summary</span></div>
+                <h3 class="takeaways-title">
+                  <i class="bi bi-shield-check text-danger me-2"></i>
+                  <span class="heading-lead-text">KEY WARRIOR</span> <span class="text-combat-red">TAKEAWAYS</span>
+                </h3>
+                <ul class="mb-0 list-unstyled" id="takeawaysList">
+                  <!-- Populated dynamically -->
+                </ul>
+              </div>
+
+              <!-- Main Article Headings & Paragraphs -->
+              <div id="articleBodySections">
+                <!-- Populated dynamically -->
+              </div>
+
+              <!-- 6. SHARE ARTICLE -->
+              <div class="article-share-section">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="fw-bold text-uppercase small text-white">Share Intel:</span>
+                </div>
+                <div class="share-buttons-group">
+                  <button class="share-btn" id="copyLinkBtn" title="Copy Article Link" aria-label="Copy Article Link">
+                    <i class="bi bi-link-45deg"></i>
+                  </button>
+                  <a href="#" id="shareTwitter" target="_blank" rel="noopener" class="share-btn" title="Share on X / Twitter" aria-label="Share on X">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#" id="shareFacebook" target="_blank" rel="noopener" class="share-btn" title="Share on Facebook" aria-label="Share on Facebook">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" id="shareLinkedin" target="_blank" rel="noopener" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#" id="shareWhatsapp" target="_blank" rel="noopener" class="share-btn" title="Share on WhatsApp" aria-label="Share on WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Toast / Alert for Copy Link -->
+              <div id="copyToast" class="alert alert-success d-none py-2 px-3 small" role="alert">
+                <i class="bi bi-check-circle-fill me-1"></i> Article link copied to clipboard!
+              </div>
+
+              <!-- 7. BACK TO ALL BLOGS -->
+              <div class="pt-3">
+                <a href="blog.html" class="btn btn-outline-secondary">
+                  <i class="bi bi-arrow-left me-1"></i> Back to All Articles
+                </a>
+              </div>
+
+            </article>
+          </div>
+
+          <!-- SIDEBAR: 3. TABLE OF CONTENTS + QUICK TRIAL -->
+          <div class="col-lg-4">
+            <!-- 3. Table of Contents -->
+            <div class="toc-sidebar-card">
+              <div class="mb-2"><span class="section-badge">Navigation &bull; Quick Index</span></div>
+              <h3 class="toc-title">
+                <i class="bi bi-list-nested text-danger me-2"></i>
+                <span class="heading-lead-text">TABLE OF</span> <span class="text-combat-red">CONTENTS</span>
+              </h3>
+              <ul class="toc-list" id="tocList">
+                <!-- Dynamically generated anchors -->
+              </ul>
+            </div>
+
+            <!-- Dojo Pass Widget -->
+            <div class="sidebar-dojo-card p-4 mb-4 text-center">
+              <div class="mb-3">
+                <i class="bi bi-award-fill text-danger fs-1"></i>
+              </div>
+              <div class="mb-2"><span class="section-badge mx-auto">Dojo Pass &bull; Zero Ego</span></div>
+              <h4 class="fw-bold mb-2"><span class="heading-lead-text">TRAIN WITH</span> <span class="text-combat-red">US</span></h4>
+              <p class="text-muted small mb-3">
+                Step onto the tatami and experience authentic training firsthand with zero intimidation.
+              </p>
+              <a href="schedule.html" class="btn-kensei btn-kensei-primary btn-kensei-sm w-100 justify-content-center">
+                <span>Book Free Trial Pass</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Academy Schedule Widget -->
+            <div class="sidebar-dojo-card p-4 text-center">
+              <div class="mb-2"><span class="section-badge mx-auto">Class Schedule &bull; Mon - Sat</span></div>
+              <h5 class="fw-bold mb-2"><span class="heading-lead-text">WEEKLY</span> <span class="text-combat-red">TIMETABLE</span></h5>
+              <p class="text-muted small mb-3">
+                Classes running Mon &ndash; Sat across 7 global lineages for kids, teens, and adults.
+              </p>
+              <a href="schedule.html" class="btn-kensei btn-kensei-outline btn-kensei-sm w-100 justify-content-center">
+                <span>View Class Schedule</span>
+                <i class="bi bi-calendar3 ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. RELATED ARTICLES -->
+    <section class="section-padding" style="background: var(--bg-charcoal); border-top: 1px solid var(--border-slate);">
+      <div class="container-xl">
+        <div class="mb-4">
+          <span class="section-badge">Continue Learning &bull; Combat Series</span>
+          <h2 class="section-title"><span class="heading-lead-text">RELATED WARRIOR</span> <br><span class="text-combat-red">INSIGHTS</span></h2>
+        </div>
+
+        <div class="row g-4" id="relatedArticlesContainer">
+          <!-- Populated dynamically with 3 cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FINAL CTA -->
+    <section class="blog-final-cta-section text-center">
+      <div class="container-xl py-4">
+        <span class="section-badge mb-3">Join KENSEI Academy &bull; Est. 2011</span>
+        <h2 class="section-title display-4 fw-bold text-uppercase mb-3">
+          <span class="heading-lead-text">READY TO PUT THEORY</span> <br><span class="text-combat-red">INTO PRACTICE?</span>
+        </h2>
+        <p class="lead text-muted max-w-700 mx-auto mb-4">
+          Reading builds understanding, but movement builds mastery. Reserve your free trial pass today and experience our hospital-grade tatami, master faculty, and egoless community.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="schedule.html" class="btn-kensei btn-kensei-primary btn-kensei-lg">
+            <i class="bi bi-calendar-check me-2"></i>
+            <span>Book Your Free Trial</span>
+          </a>
+          <a href="services.html" class="btn-kensei btn-kensei-outline btn-kensei-lg">
+            <span>Explore All 7 Disciplines</span>
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="kensei-footer" id="contact">
+    <div class="container-xl">
+      <div class="row g-5">
+        <!-- Widget 1: Academy Overview -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-link mb-3" href="index.html">
+            <div class="brand-symbol" aria-hidden="true">K</div>
+            <div class="brand-text">
+              <span class="brand-title">KENSEI</span>
+              <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+            </div>
+          </a>
+          <p class="mt-3">
+            KENSEI is a high-performance martial arts institution committed to authentic combat disciplines, ethical
+            character development, and reality-based tactical self-preservation.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Widget 2: Quick Links (Navbar Links) -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="schedule.html"><i class="bi bi-chevron-right small"></i> Schedule</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 3: Support & Legal -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">SUPPORT</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html#privacy"><i class="bi bi-chevron-right small"></i> Privacy Policy</a></li>
+            <li><a href="terms.html#terms"><i class="bi bi-chevron-right small"></i> Terms &amp; Conditions</a></li>
+            <li><a href="terms.html#faqs"><i class="bi bi-chevron-right small"></i> FAQs</a></li>
+            <li><a href="terms.html#safety"><i class="bi bi-chevron-right small"></i> Dojo Safety Code</a></li>
+            <li><a href="contact.html#free-trial"><i class="bi bi-chevron-right small"></i> Free Trial Pass</a></li>
+            <li><a href="contact.html#send-message"><i class="bi bi-chevron-right small"></i> Help &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 4: Contact Details & Hours -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-widget-title">CONTACT DETAILS</h4>
+          <ul class="contact-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>742 Bushido Way, Combat Arts Pavilion, District 4, NY 10013</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span><a href="tel:+12125550988" class="text-reset text-decoration-none">+1 (212) 555-0988</a> / <a href="tel:+12125550989" class="text-reset text-decoration-none">+1 (212) 555-0989</a></span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span><a href="mailto:admissions@kenseiacademy.com" class="text-reset text-decoration-none">admissions@kenseiacademy.com</a></span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon &ndash; Fri: 06:00 AM &ndash; 09:30 PM<br>Saturday: 08:30 AM &ndash; 04:00 PM (Closed Sun)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 KENSEI Martial Arts &amp; Self-Defense Academy. All rights reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="terms.html#privacy" class="text-decoration-none text-muted small">Privacy Policy</a>
+          <a href="terms.html#terms" class="text-decoration-none text-muted small">Terms &amp; Conditions</a>
+          <a href="terms.html#faqs" class="text-decoration-none text-muted small">FAQs</a>
+          <a href="terms.html#safety" class="text-decoration-none text-muted small">Dojo Safety Code</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+
+  <!-- Dynamic Blog Loader Script -->
+  <script>
+    var BLOG_ARTICLES = {"karate-basics":{"id":"karate-basics","slug":"karate-basics","title":"Mastering Karate Fundamentals: The Biomechanics of Kihon & Kata","subtitle":"Why kinetic alignment, hip torque (Koshi), and ground reaction forces generate devastating power without muscular tension.","category":"Martial Arts","date":"October 14, 2026","readTime":"6 min read","author":"Master Kenji Sato","authorRole":"7th Dan Shotokan Karate &bull; Head of Traditional Arts","authorInitials":"KS","image":"assets/images/karate-japan.jpg","excerpt":"Discover how kinetic alignment, hip torque, and ground reaction forces generate devastating speed and power without muscle strain.","takeaways":["Power originates from the floor through ground reaction force, not raw arm muscles.","Koshi (hip rotation and snap) amplifies kinetic transfer by over 300%.","Hikite (the pulling hand) maintains rotational equilibrium and stabilizes the shoulder girdle.","Kata is not dance; it is an encyclopedia of close-quarters biomechanical leverage and joint locks."],"sections":[{"id":"section-1","title":"The Physics of Ground Reaction Force","content":"<p>In traditional Okinawan Karate, a punch does not begin in the fist, the shoulder, or even the chest. It begins at the interface between the soles of your feet and the tatami mat. Modern sports biomechanics calls this <em>Ground Reaction Force (GRF)</em>. According to Newton's Third Law, when a practitioner drives their rear heel downward and backward into the mat during a reverse punch (Gyaku-Zuki), the ground pushes back with equal and opposite force.</p><p>Novice students frequently attempt to generate punch power through muscular contraction of the pectorals and triceps. However, human arm muscles are physiologically incapable of delivering concussive impact on their own without structural backing. True power is transmitted through a skeletal kinetic chain: rear foot &rarr; ankle joint &rarr; knee extension &rarr; hip drive &rarr; spinal rotation &rarr; latissimus dorsi engagement &rarr; fist impact.</p>"},{"id":"section-2","title":"Hip Torque: The Engine of Koshi","content":"<p>The Japanese term <strong>Koshi</strong> encompasses the pelvis, hips, and lower abdominal core (the <em>Tanden</em> or <em>Hara</em>). In Shotokan and Goju-Ryu, Koshi is the rotational transmission of the body. By snapping the hips from an open 45-degree angle (Hanmi) into a square, forward-facing orientation (Shomen) at the microsecond of impact, the body accelerates the striking limb like the tip of a whip.</p><blockquote>\"Karate ni sente nashi &mdash; There is no first strike in Karate. But when a strike is required, the whole universe must move through the hips in unison.\" &mdash; Master Gichin Funakoshi</blockquote><p>Equally critical is the role of <strong>Hikite</strong> (the withdrawing hand). As the striking hand extends, the opposite fist violently pulls back to the hip. This action creates a dual-force rotational couple, doubling the angular velocity of the torso while preventing the spine from over-rotating off its central vertical axis.</p>"},{"id":"section-3","title":"Kata as an Encyclopedia of Combat Biomechanics","content":"<p>To the untrained observer, Karate <em>Kata</em> appears to be an aesthetic sequence of stylized pantomimes. In reality, classical Kata (such as Heian, Bassai Dai, and Kanku Dai) are biomechanical codebooks developed before written sports medicine existed. Every turn, stance transition, and chambered limb contains a <strong>Bunkai</strong> (practical combat application).</p><ul><li><strong>Zenkutsu-Dachi (Front Stance):</strong> Maximizes forward linear momentum and GRF penetration against heavy opposition.</li><li><strong>Kokutsu-Dachi (Back Stance):</strong> Absorbs incoming kinetic force while pre-loading the rear hip spring for explosive counter-strikes.</li><li><strong>Kiba-Dachi (Horse Stance):</strong> Develops bilateral hip stability, lateral shearing resistance, and low-center sweeps.</li></ul>"},{"id":"section-4","title":"Integrating Kihon, Kata & Kumite into Daily Practice","content":"<p>The genius of classical Karate pedagogy lies in the symbiotic triad of <em>Kihon</em> (basics), <em>Kata</em> (forms), and <em>Kumite</em> (sparring). Without Kihon, Kata deteriorates into sloppy choreography. Without Kata, Kumite degrades into reckless street brawling. And without Kumite, Kihon remains purely theoretical.</p><p>At KENSEI Academy, our foundational syllabus requires white and yellow belt students to execute minimum 500 clean repetitions of basic chambering and hip snaps before entering semi-contact partner sparring. Precision always precedes velocity; structural integrity always precedes brute strength.</p>"}]},"self-defense-tips":{"id":"self-defense-tips","slug":"self-defense-tips","title":"Practical Civilian Self-Defense: 5 Survival Rules You Need To Know","subtitle":"Why situational awareness, verbal boundary setting, and tactical distance management matter far more than flashy Hollywood disarms.","category":"Self-Defense","date":"October 22, 2026","readTime":"7 min read","author":"Elena Rostova","authorRole":"Lead Tactical Combatives & Self-Defense Instructor","authorInitials":"ER","image":"assets/images/skills-real-life.jpg","excerpt":"Why situational awareness, verbal boundary setting, and tactical distance management matter far more than flashy Hollywood disarms.","takeaways":["Avoidance and de-escalation resolve 95% of volatile street encounters before physical contact.","Maintain the 21-foot reactionary gap whenever strangers approach with aggressive postures.","Target vulnerable structural zones: eyes, throat, groin, and balance line rather than exchanging punches.","Adrenaline alters fine motor skills; simple Gross Motor Drills are the only ones that work under stress."],"sections":[{"id":"section-1","title":"Rule 1: Situational Awareness & The Cooper Color Code","content":"<p>The most devastating strike in martial arts is the one you never saw coming. In modern self-defense psychology, the Cooper Color Code divides mental preparedness into four states: White (unaware, distracted by smartphones), Yellow (relaxed alertness, scanning exits and surroundings), Orange (specific potential threat identified), and Red (active confrontation).</p><p>Over 80% of violent street crimes rely on target selection predicated on victim distraction. By remaining in Condition Yellow in public parking structures, subway platforms, and transit corridors, you project an alert posture that predatory criminals instinctively avoid.</p>"},{"id":"section-2","title":"Rule 2: The 21-Foot Reactionary Gap","content":"<p>Human reaction time under sudden sensory shock averages between 0.75 and 1.5 seconds. If an aggressor charges from within 10 feet, an average civilian cannot deploy defensive blocks before physical impact occurs. Maintaining a conservative perimeter of 15 to 21 feet gives your nervous system time to perceive intent, pivot to an angled escape route, or draw tactical deterrents.</p><blockquote>\"The ultimate victory in civilian self-defense is returning home safely to your family without having thrown a single punch.\" &mdash; Elena Rostova</blockquote>"},{"id":"section-3","title":"Rule 3: Verbal De-Escalation & Non-Threatening Guard","content":"<p>Adopting an aggressive boxing stance on the street often escalates an antagonist's ego and provokes violence. Instead, KENSEI instructors teach the <em>Passive Fence</em>: hands raised open-palmed at chest height, elbows tucked, chin down, saying clearly: \"I don't want any trouble, step back.\" This positions your arms inches away from defensive parries while establishing legal justification that you were attempting to de-escalate.</p>"},{"id":"section-4","title":"Rule 4 & 5: Gross Motor Skills & Tactical Escape","content":"<p>When physiological fight-or-flight triggers, vasoconstriction eliminates fine motor dexterity in the fingers and wrists. Complex joint manipulation and spinning kicks fail under acute adrenaline dumps. Survival requires gross motor movements: palm strikes, downward elbow hammers, knee strikes to the pelvic girdle, and immediate sprint evacuation toward illuminated public areas.</p>"}]},"martial-arts-fitness":{"id":"martial-arts-fitness","slug":"martial-arts-fitness","title":"Why Martial Arts Outperforms Traditional Gym Workouts for Functional Fitness","subtitle":"Compound kinetic movements, core stability, and rotational torque build athletic durability that isolated bench presses simply cannot match.","category":"Fitness","date":"November 03, 2026","readTime":"5 min read","author":"Marcus Vance","authorRole":"Head of Strength & Conditioning, KENSEI Elite","authorInitials":"MV","image":"assets/images/workout-routines.jpg","excerpt":"Compound kinetic movements, core stability, and rotational torque build athletic durability that isolated bench presses simply cannot match.","takeaways":["Martial arts trains movement patterns in multiple planes (sagittal, frontal, and transverse), not isolated muscle heads.","Rotational core strength provides spine stability and functional power transfer in everyday life.","High-intensity interval cadence on the pads replicates real cardiovascular endurance far better than steady-state cardio.","Joint mobility and tendon resilience prevent chronic injuries and improve lifespan athletic longevity."],"sections":[{"id":"section-1","title":"The Limitation of Isolated Hypertrophy","content":"<p>Traditional commercial fitness routines are overwhelmingly dominated by single-joint isolation lifts: bicep curls, leg extensions, and machine chest presses. While these exercises enlarge muscle volume, they fail to train the neurological recruitment and neuromuscular coordination needed to stabilize heavy loads across asymmetric movements in daily life.</p><p>Martial arts exercises every muscle group concurrently. A single Thai roundhouse kick requires eccentric hamstring loading, hip adductor flexibility, oblique rotational torque, scapular depression, and single-leg calf balance on the support foot.</p>"},{"id":"section-2","title":"Tri-Planar Movement & Anti-Rotational Core Strength","content":"<p>Human beings live in three physical planes: sagittal (forward-backward), frontal (side-to-side), and transverse (rotational). Traditional weight training occurs almost exclusively in the sagittal plane. Martial arts, conversely, thrives in the transverse plane where core torque is forged.</p><blockquote>\"You don't build martial strength by sitting on a machine. You build it by teaching 600 muscles to fire in a single microsecond of kinetic unity.\" &mdash; Marcus Vance</blockquote><p>Developing rotational power and anti-rotational spinal bracing creates bulletproof lower-back resilience, eliminating the postural degeneration common among desk workers.</p>"},{"id":"section-3","title":"Cardiovascular Cadence: Aerobic Base Meets Anaerobic Threshold","content":"<p>Jogging on a treadmill for 45 minutes builds steady-state aerobic endurance, but does not prepare the cardiac muscular wall for explosive anaerobic surges. Three 3-minute rounds of intensive pad work, grappling scrambles, or shadow boxing force heart rates from 130 bpm to 185 bpm, followed by short 60-second recovery intervals. This elevates mitochondrial density and accelerates post-exercise oxygen consumption (EPOC).</p>"},{"id":"section-4","title":"The Longevity Factor: Tendons, Fascia & Dynamic Flexibility","content":"<p>Muscles grow quickly; tendons and connective fascia adapt slowly over months of consistent stress. Martial arts forms, deep stances, and dynamic stretching routines nourish articular cartilage with synovial fluid, preserving joint longevity well into your 50s, 60s, and 70s.</p>"}]},"bjj-leverage-science":{"id":"bjj-leverage-science","slug":"bjj-leverage-science","title":"The Physics of Brazilian Jiu-Jitsu: How Mechanical Leverage Defeats Brute Force","subtitle":"An engineer's breakdown of fulcrums, rotational control, and positional hierarchy that allow a 130lb practitioner to submit a 220lb opponent.","category":"Training","date":"November 11, 2026","readTime":"8 min read","author":"Professor Thiago Silva","authorRole":"3rd Degree BJJ Black Belt &bull; Head of Ground Combatives","authorInitials":"TS","image":"assets/images/bjj-brazil.jpg","excerpt":"An engineer's breakdown of fulcrums, rotational control, and positional hierarchy that allow a 130lb practitioner to submit a 220lb opponent.","takeaways":["Leverage is applied physics: extending the distance from the fulcrum multiplies applied force exponentially.","Positional hierarchy (Mount, Back Control, Side Control) prioritizes safety before submission execution.","Underhooks and head positioning dictate spine alignment—where the head goes, the body must follow.","Efficiency of effort (Seiryoku Zenyo): never oppose force directly, redirect and capitalize on momentum."],"sections":[{"id":"section-1","title":"Archimedes on the Tatami: Levers and Fulcrums","content":"<p>\"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world.\" The Greek polymath Archimedes was describing the exact physical laws that govern Brazilian Jiu-Jitsu. Consider the classic Armbar (Juji-Gatame). A 130lb practitioner does not use arm strength to bend an opponent's elbow backward; they isolate the opponent's single arm using their entire core, glutes, and thighs, with the practitioner's pelvis acting as the immovable fulcrum.</p><p>By gripping at the opponent's wrist—the point furthest from the elbow joint—the practitioner maximizes the lever arm distance, multiplying mechanical advantage by four to six times.</p>"},{"id":"section-2","title":"The Positional Hierarchy: Position Before Submission","content":"<p>Grandmaster Carlos Gracie codified the principle: <em>Positio Super Submissio</em> (Position Before Submission). Attempting a choke or joint lock from an unstable guard exposes you to counter-strikes and reversals. Elite Jiu-Jitsu relies on an empirical progression:</p><ol><li><strong>Takedown or Guard Pull:</strong> Bring the fight to the horizontal plane where concussive striking power drops by 80%.</li><li><strong>Guard Passing:</strong> Clear the opponent's legs and establish dominant chest-to-chest contact.</li><li><strong>Pinning Control:</strong> Consolidate Knee-on-Belly, Side Control, Full Mount, or Rear Back Mount.</li><li><strong>Submission:</strong> Apply the mechanical lock only after the opponent has exhausted their explosive escape energy.</li></ol>"},{"id":"section-3","title":"Spinal Alignment & Head Position","content":"<p>The human spine cannot generate significant torque when twisted outside its natural lordotic alignment. In wrestling and BJJ, <em>Head Position</em> acts as the rudder of the entire torso. If you control the chin and crown of your opponent's head via a cross-face or guillotine tie-up, their hip movement is neutralized. Where the head turns, the hips are physically incapable of rotating in the opposite direction.</p><blockquote>\"Jiu-Jitsu is human chess played at 200 heartbeats per minute. If you rush, you lose a piece. If you control space, checkmate is inevitable.\" &mdash; Professor Thiago Silva</blockquote>"},{"id":"section-4","title":"Seiryoku Zenyo: Maximum Efficiency with Minimum Effort","content":"<p>The philosophy of ground fighting is not fighting force with equal resistance, but blending with momentum. When an opponent pushes into you, you do not push back; you pull them forward and initiate an overhead sweep. When they pull away, you follow their momentum to take top mount.</p>"}]},"muay-thai-conditioning":{"id":"muay-thai-conditioning","slug":"muay-thai-conditioning","title":"Inside the Thai Camp: Conditioning the Body with the Art of Eight Limbs","subtitle":"From shin conditioning to anaerobic clinch endurance, explore the rigorous conditioning systems that forge elite Nak Muay fighters.","category":"Training","date":"November 15, 2026","readTime":"6 min read","author":"Kru Somchai Prasert","authorRole":"Former Lumpinee Stadium Competitor &bull; Head Muay Thai Trainer","authorInitials":"SP","image":"assets/images/muaythai-thailand.jpg","excerpt":"From shin conditioning to anaerobic clinch endurance, explore the rigorous conditioning systems that forge elite Nak Muay fighters.","takeaways":["Bone remodeling (Wolff's Law): safe micro-stress through heavy bag kicking strengthens cortical bone density.","The clinch is isometric wrestling: neck flexion and lat engagement create an impenetrable defense.","Rotational hip drive through the lead ball of the foot turns the leg into an unyielding baseball bat.","Breathing cadence during pad work teaches breath control under maximum cardiovascular duress."],"sections":[{"id":"section-1","title":"Wolff's Law & Safe Shin Conditioning","content":"<p>A pervasive urban legend suggests Thai fighters condition their shins by kicking banana trees or rolling glass bottles over their tibias. In professional camps in Bangkok and Chiang Mai, this dangerous folklore is strictly forbidden. True bone remodeling relies on <strong>Wolff's Law</strong>: bone under mechanical load adapts and remodels to become denser and stronger over time.</p><p>By kicking dense, leather teardrop bags thousands of times each month under expert supervision, micro-fissures in the tibial cortex calcify with high mineral density, forging steel-like shins safely and without permanent nerve trauma.</p>"},{"id":"section-2","title":"The Biomechanics of the Thai Roundhouse","content":"<p>Unlike a Karate kick which snaps from the knee joint, a Muay Thai roundhouse is delivered like a swinging baseball bat. The fighter pivots on the ball of the support foot, swinging the hip entirely through the target line while rotating the same-side shoulder backward for counter-torque. The strike impacts with the lower third of the shin bone rather than the fragile instep of the foot.</p><blockquote>\"You cannot fake Muay Thai. You must pay with sweat, step on the canvas, and let the heavy bag teach you what truth feels like.\" &mdash; Kru Somchai Prasert</blockquote>"},{"id":"section-3","title":"The Art of Plum: Isometric Clinch Warfare","content":"<p>The Thai clinch (<em>Chap Ko</em>) is one of the most taxing physical disciplines in combat sports. Two fighters grapple chest-to-chest, battling for double inside collar ties while delivering short, penetrative knee strikes to the ribs and thighs. Clinch training recruits the deep cervical neck flexors, trapezius, and serratus anterior in continuous isometric contractions that simulate wrestling against a relentless opponent.</p>"},{"id":"section-4","title":"The 5-Round Aerobic Engine","content":"<p>Traditional Thai stadium fights run five 3-minute rounds. To maintain lightning-fast reflexes into the final round, Nak Muay fighters run 8 to 10 kilometers every morning before touching a heavy bag. This massive aerobic base allows fighters to flush lactic acid from their muscles in seconds between rounds.</p>"}]},"academy-expansion":{"id":"academy-expansion","slug":"academy-expansion","title":"KENSEI Academy Unveils New Olympic Tatami & Recovery Pavilion","subtitle":"Expanding our 6,000 sq.ft facility with antimicrobial shock-absorption sub-flooring, private ice baths, and dedicated biomechanics video labs.","category":"Academy News","date":"November 18, 2026","readTime":"4 min read","author":"Dojo Operations Team","authorRole":"KENSEI Facility Administration","authorInitials":"KO","image":"assets/images/inside-dojo.jpg","excerpt":"Expanding our 6,000 sq.ft facility with antimicrobial shock-absorption sub-flooring, private ice baths, and dedicated video analysis labs.","takeaways":["Custom 50mm dual-density Tatami reduces joint impact by 42% compared to standard gym mats.","State-of-the-art HEPA filtration and UV-C sanitization guarantee an immaculate training environment.","New contrast therapy suite features twin cedar cold plunges and infrared recovery saunas.","Expanded prime-time schedule adds 12 new weekly slots across Kids, Teens, and Adult cohorts."],"sections":[{"id":"section-1","title":"Engineered for Safety: The 50mm Olympic Sub-Floor","content":"<p>When KENSEI Academy first opened its doors, our founding mission was clear: martial arts taught with uncompromising technical fidelity in an egoless, medical-grade safety environment. As part of our Winter 2026 expansion, our flagship training hall now features a custom 50mm dual-density foam sub-floor imported directly from specialized combat facilities in Tokyo.</p><p>Testing confirms this flooring reduces joint decelerative shock by 42% during throws and takedowns, allowing practitioners of all ages—from our 5-year-old Junior Warriors to our 65-year-old Master Cohort—to train vigorously without fear of joint wear.</p>"},{"id":"section-2","title":"Recovery Pavilion: Cold Plunges & Infrared Therapy","content":"<p>Combat training requires disciplined recovery. The new KENSEI Recovery Pavilion incorporates twin cedar cold plunge tubs maintained at 48°F (9°C) and full-spectrum infrared saunas. Contrast hydrotherapy accelerates the clearance of inflammatory cytokines, reduces delayed-onset muscle soreness (DOMS), and primes the nervous system for next-day training.</p>"},{"id":"section-3","title":"Biomechanics & High-Speed Video Lab","content":"<p>Our secondary tatami suite is now equipped with synchronized 240fps high-speed capture cameras. During private instruction and advanced sparring workshops, instructors can play back a student's footwork, hip angle, and strike velocity frame-by-frame on high-definition wall displays, identifying micro-flaws that are invisible to the naked eye.</p>"},{"id":"section-4","title":"New Class Timings & Expanded Batch Availability","content":"<p>With 6,000 total square feet of training area, we have expanded our weekly timetable with 12 new classes, including early morning 6:00 AM Dawn Warrior sessions, 12:15 PM Executive Lunch Kickboxing, and dedicated 4:30 PM Youth Junior Batches. Visit our Schedule page to book your trial today.</p>"}]},"mind-body-harmony":{"id":"mind-body-harmony","slug":"mind-body-harmony","title":"The Mental Tatami: Developing Emotional Stillness Through Martial Discipline","subtitle":"How Zanshin (unbroken alertness) and Mushin (mind of no-mind) transform everyday stress, workplace focus, and calm under fire.","category":"Martial Arts","date":"November 20, 2026","readTime":"5 min read","author":"Master Kenji Sato","authorRole":"7th Dan Shotokan Karate &bull; Head of Traditional Arts","authorInitials":"KS","image":"assets/images/day-at-kensei.jpg","excerpt":"How Zanshin (unbroken alertness) and Mushin (mind of no-mind) transform everyday stress, workplace focus, and calm under fire.","takeaways":["Mushin (no-mind) frees the nervous system from conscious overthinking, enabling instant reflex response.","Zanshin teaches continuous relaxed awareness both before, during, and long after confrontation.","Breath regulation (Kokyu) lowers heart rate within seconds of high-pressure stress spikes.","The ultimate triumph of the warrior is conquering oneself rather than dominating another."],"sections":[{"id":"section-1","title":"Mushin: The Mind Free of Cognitive Noise","content":"<p>The classical Zen concept of <strong>Mushin no Shin</strong> (\"mind without mind\") refers to a state of consciousness entirely free from ego, anxiety, anger, and calculation. In combat, if a martial artist pauses to mentally think: <em>\"My opponent is throwing a jab; I should now step 45 degrees left and chamber my counter-punch,\"</em> they are already hit.</p><p>The human brain requires approximately 200 milliseconds to consciously process sensory input and formulate an executive decision. Through repetitive drills in Kihon and Kata, motor pathways bypass conscious cognitive processing, allowing instantaneous spinal reflex responses to emerge naturally.</p>"},{"id":"section-2","title":"Zanshin: The Art of Unbroken Alertness","content":"<p>In Japanese Budo, <strong>Zanshin</strong> translates literally as \"remaining mind.\" When a strike lands in sparring, the beginner drops their hands, relaxes, and smiles in satisfaction. The master does nothing of the sort. In Zanshin, the fighter remains completely alert, balanced, and attentive after the strike, fully prepared for any unforeseen second or third attack.</p><blockquote>\"To conquer twenty adversaries in the arena is simple. To conquer the restless perturbations of your own mind when fatigue sets in—that is the mark of a true Kensei.\" &mdash; Master Kenji Sato</blockquote><p>Applied to modern life, Zanshin means full presence in critical conversations, heightened situational alertness in city transit, and disciplined follow-through on personal and professional goals.</p>"},{"id":"section-3","title":"Kokyu: Breath as the Master Switch of the Autonomic Nervous System","content":"<p>Under acute danger or sudden crisis, the sympathetic nervous system triggers shallow chest breathing, elevated heart rates, and tunnel vision. By practicing deep abdominal breathing (<strong>Kokyu-ho</strong>)—inhaling slowly through the nose into the lower belly and exhaling with a controlled cadence—practitioners manually stimulate the vagus nerve, restoring parasympathetic calm within 30 seconds.</p>"},{"id":"section-4","title":"The Dojo as a Mirror for Everyday Life","content":"<p>The tatami mat is the ultimate mirror. When you face an intimidating opponent or struggle through an exhausting drill, fatigue strips away pretense and social vanity. You discover who you are when comfort is removed. The discipline, resilience, and compassion forged on the dojo floor travel home with you, transforming how you parent, lead, and live.</p>"}]}};
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var postSlug = urlParams.get('post') || 'karate-basics';
+
+      var article = BLOG_ARTICLES[postSlug] || BLOG_ARTICLES['karate-basics'];
+
+      // 1. Update Page Title & Metadata
+      document.title = article.title + ' | KENSEI Academy';
+      var pageDesc = document.getElementById('pageDescription');
+      if (pageDesc) pageDesc.setAttribute('content', article.excerpt);
+
+      // Helper function to format two-tone headings: White/Red (Dark) & Black/Red (Light)
+      function formatTwoTone(text) {
+        if (!text) return '';
+        if (text.includes(':')) {
+          var colonParts = text.split(':');
+          return '<span class="heading-lead-text">' + colonParts[0].trim() + ':</span> <span class="text-combat-red">' + colonParts.slice(1).join(':').trim() + '</span>';
+        }
+        var words = text.trim().split(' ');
+        if (words.length <= 2) {
+          return '<span class="heading-lead-text">' + words[0] + '</span> <span class="text-combat-red">' + (words[1] || '') + '</span>';
+        }
+        var midpoint = Math.ceil(words.length / 2);
+        var first = words.slice(0, midpoint).join(' ');
+        var second = words.slice(midpoint).join(' ');
+        return '<span class="heading-lead-text">' + first + '</span> <span class="text-combat-red">' + second + '</span>';
+      }
+
+      // Map author photos
+      var AUTHOR_PHOTOS = {
+        'Master Kenji Sato': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+        'Elena Rostova': 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+        'Professor Thiago Silva': 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+        'Marcus Vance': 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+        'Kru Somchai Prasert': 'assets/images/muaythai-thailand.jpg',
+        'Dojo Operations Team': 'assets/images/inside-dojo.jpg'
+      };
+
+      // 2. Update Article Hero
+      document.getElementById('breadcrumbCategory').textContent = article.category;
+      document.getElementById('articleCategoryBadge').textContent = article.category;
+      document.getElementById('articleReadTime').innerHTML = '<i class="bi bi-clock me-1"></i>' + article.readTime;
+      document.getElementById('articleDate').textContent = article.date;
+      document.getElementById('articleHeadline').innerHTML = formatTwoTone(article.title);
+      document.getElementById('articleSubtitle').textContent = article.subtitle;
+      document.getElementById('authorName').textContent = article.author;
+      document.getElementById('authorRole').innerHTML = article.authorRole;
+
+      var authorImgEl = document.getElementById('authorAvatarImg');
+      if (authorImgEl) {
+        authorImgEl.src = AUTHOR_PHOTOS[article.author] || article.image;
+        authorImgEl.alt = article.author;
+      }
+
+      document.getElementById('articleFeaturedBanner').src = article.image;
+      document.getElementById('articleFeaturedBanner').alt = article.title;
+
+      // 3. Render Key Takeaways
+      var takeawaysList = document.getElementById('takeawaysList');
+      if (takeawaysList) {
+        takeawaysList.innerHTML = article.takeaways.map(function(item) {
+          return '<li class="mb-2"><i class="bi bi-check2 text-danger me-2 fw-bold"></i>' + item + '</li>';
+        }).join('');
+      }
+
+      // 4. Render Article Content Sections & Build Table of Contents
+      var bodyContainer = document.getElementById('articleBodySections');
+      var tocList = document.getElementById('tocList');
+      var sectionsHtml = '';
+      var tocHtml = '';
+
+      article.sections.forEach(function(sec, idx) {
+        sectionsHtml += '<section id="' + sec.id + '" class="mb-5">';
+        var partNum = (idx + 1) < 10 ? '0' + (idx + 1) : (idx + 1);
+        sectionsHtml += '<div class="mt-4 mb-2"><span class="section-badge">Tactical Breakdown &bull; Part ' + partNum + '</span></div>';
+        sectionsHtml += '<h2 class="article-section-title">' + formatTwoTone(sec.title) + '</h2>';
+        sectionsHtml += sec.content;
+        sectionsHtml += '</section>';
+
+        tocHtml += '<li><a href="#' + sec.id + '" class="toc-link">' + (idx + 1) + '. ' + sec.title + '</a></li>';
+      });
+
+      if (bodyContainer) bodyContainer.innerHTML = sectionsHtml;
+      if (tocList) tocList.innerHTML = tocHtml;
+
+      // 5. Render Related Articles (pick 3 other articles)
+      var relatedContainer = document.getElementById('relatedArticlesContainer');
+      if (relatedContainer) {
+        var otherKeys = Object.keys(BLOG_ARTICLES).filter(function(k) { return k !== article.id; });
+        var selectedKeys = otherKeys.slice(0, 3);
+
+        var relatedHtml = selectedKeys.map(function(k) {
+          var rel = BLOG_ARTICLES[k];
+          return '<div class="col-lg-4 col-md-6">' +
+            '<article class="kensei-blog-card">' +
+              '<div class="kensei-blog-img-wrap">' +
+                '<img src="' + rel.image + '" alt="' + rel.title + '" class="kensei-blog-img" loading="lazy">' +
+              '</div>' +
+              '<div class="kensei-blog-body">' +
+                '<div class="d-flex justify-content-between align-items-center mb-2">' +
+                  '<span class="kensei-blog-category">' + rel.category + '</span>' +
+                  '<span class="text-muted small"><i class="bi bi-clock me-1"></i>' + rel.readTime + '</span>' +
+                '</div>' +
+                '<h4 class="kensei-blog-title fs-5">' +
+                  '<a href="blog-detail.html?post=' + rel.id + '" class="text-decoration-none text-reset">' +
+                    rel.title +
+                  '</a>' +
+                '</h4>' +
+                '<p class="kensei-blog-excerpt small mb-3">' +
+                  rel.excerpt +
+                '</p>' +
+                '<div class="kensei-blog-footer">' +
+                  '<span class="small text-muted">' + rel.author + '</span>' +
+                  '<a href="blog-detail.html?post=' + rel.id + '" class="kensei-read-more-btn">' +
+                    'Read <i class="bi bi-arrow-right"></i>' +
+                  '</a>' +
+                '</div>' +
+              '</div>' +
+            '</article>' +
+          '</div>';
+        }).join('');
+
+        relatedContainer.innerHTML = relatedHtml;
+      }
+
+      // 6. Share Buttons Setup
+      var currentUrl = encodeURIComponent(window.location.href);
+      var shareTitle = encodeURIComponent(article.title + ' | KENSEI Martial Arts Academy');
+
+      var shareTwitter = document.getElementById('shareTwitter');
+      if (shareTwitter) shareTwitter.href = 'https://twitter.com/intent/tweet?text=' + shareTitle + '&url=' + currentUrl;
+
+      var shareFacebook = document.getElementById('shareFacebook');
+      if (shareFacebook) shareFacebook.href = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl;
+
+      var shareLinkedin = document.getElementById('shareLinkedin');
+      if (shareLinkedin) shareLinkedin.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + currentUrl;
+
+      var shareWhatsapp = document.getElementById('shareWhatsapp');
+      if (shareWhatsapp) shareWhatsapp.href = 'https://api.whatsapp.com/send?text=' + shareTitle + '%20' + currentUrl;
+
+      var copyBtn = document.getElementById('copyLinkBtn');
+      var copyToast = document.getElementById('copyToast');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+          navigator.clipboard.writeText(window.location.href).then(function() {
+            if (copyToast) {
+              copyToast.classList.remove('d-none');
+              setTimeout(function() {
+                copyToast.classList.add('d-none');
+              }, 4000);
+            }
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

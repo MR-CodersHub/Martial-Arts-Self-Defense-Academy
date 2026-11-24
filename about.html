@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | KENSEI &mdash; International Martial Arts &amp; Self-Defense Academy</title>
+  <meta name="description" content="Discover KENSEI Academy: an international martial arts institution uniting Karate, Brazilian Jiu-Jitsu, Muay Thai, Boxing, and Self-Defense into an ego-free, world-class curriculum.">
+
+  <!-- Google Fonts: Barlow Condensed, Bebas Neue & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVBAR (Unified Component)
+       ======================================================================== -->
+    <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg kensei-navbar" aria-label="Main navigation">
+      <div class="container-xl d-flex align-items-center justify-content-between">
+        <!-- Brand Wordmark -->
+        <a class="brand-link" href="index.html">
+          <div class="brand-symbol" aria-hidden="true">K</div>
+          <div class="brand-text">
+            <span class="brand-title">KENSEI</span>
+            <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+          </div>
+        </a>
+
+        <!-- Right Side Controls (RTL + Theme + Desktop CTA + Mobile Hamburger) -->
+        <div class="d-flex align-items-center gap-2 order-lg-3 nav-header-actions">
+          <!-- RTL / LTR Toggle -->
+          <button id="rtlToggleBtn" class="nav-util-btn" title="Toggle RTL / LTR" aria-label="Toggle Text Direction">
+            <span id="rtlToggleLabel" class="rtl-toggle-text">RTL</span>
+          </button>
+
+          <!-- Light / Dark Theme Toggle -->
+          <button id="themeToggleBtn" class="nav-util-btn" title="Switch Theme" aria-label="Toggle Theme">
+            <i id="themeToggleIcon" class="bi bi-sun-fill"></i>
+          </button>
+
+          <!-- Desktop Book a Free Trial CTA -->
+          <a href="schedule.html" class="btn-kensei btn-kensei-primary btn-kensei-sm d-none d-lg-inline-flex" data-trial-program="General Inquiry">
+            <i class="bi bi-shield-check"></i>
+            <span>Book a Free Trial</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kenseiNavContent" aria-controls="kenseiNavContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+        <!-- Collapsible Navigation Menu -->
+        <div class="collapse navbar-collapse order-lg-2" id="kenseiNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="home-2.html">Home 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile-only CTA inside opened menu -->
+          <div class="d-lg-none mt-3 pt-3 border-top border-secondary-subtle">
+            <a href="schedule.html" class="btn-kensei btn-kensei-primary w-100 justify-content-center" data-trial-program="General Inquiry">
+              <i class="bi bi-shield-check"></i>
+              <span>Book a Free Trial</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       1. ABOUT KENSEI &mdash; HERO SECTION
+       ======================================================================== -->
+    <!-- ========================================================================
+       1. ABOUT KENSEI &mdash; HERO SECTION (Home 2 Dark Atmosphere Style)
+       ======================================================================== -->
+  <section class="home2-hero-section about-hero-dark-version" id="hero-about">
+    <!-- Cinematic Dark Background Container with Strength in Unity artwork -->
+    <div class="home2-hero-bg">
+      <img src="assets/images/martial-arts-academy-strength-in-unity.png" alt="KENSEI Martial Arts Academy &mdash; Strength in Unity" class="home2-hero-img about-dark-hero-img">
+      <div class="home2-hero-scrim-left about-scrim-left-deep" aria-hidden="true"></div>
+      <div class="home2-hero-scrim-bottom" aria-hidden="true"></div>
+    </div>
+
+    <!-- Right Edge Vertical Watermark: TRADITION • DISCIPLINE • RESILIENCE -->
+    <div class="home2-vertical-watermark" aria-hidden="true">
+      <span class="home2-watermark-line"></span>
+      <span class="home2-watermark-text">TRADITION <span class="red-bullet">&bull;</span> DISCIPLINE <span class="red-bullet">&bull;</span> RESILIENCE</span>
+      <span class="home2-watermark-line"></span>
+    </div>
+
+    <!-- Floating Angular Badge: EST. 2008 • GLOBAL TRADITIONS -->
+    <div class="home2-floating-badge reveal-on-scroll">
+      <span class="home2-floating-text">EST. 2008 &bull; GLOBAL TRADITIONS</span>
+    </div>
+
+    <!-- Hero Content Container -->
+    <div class="container-xl home2-hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-xl-7">
+          <!-- Top Red Accent Bar -->
+          <span class="home2-accent-bar reveal-on-scroll" aria-hidden="true"></span>
+
+          <!-- 3-Line Slanted Bold Headline (Home 2 Style) -->
+          <h1 class="home2-hero-headline reveal-on-scroll reveal-delay-1">
+            <span class="text-white-line">MORE THAN A</span>
+            <span class="text-white-line">MARTIAL ARTS</span>
+            <span class="text-red-line">ACADEMY.</span>
+          </h1>
+
+          <!-- Short Supporting Description -->
+          <p class="home2-hero-lead reveal-on-scroll reveal-delay-2">
+            KENSEI bridges authentic international warrior traditions with contemporary sports biomechanics. We forge character, physical resilience, and quiet confidence for practitioners of every generation.
+          </p>
+
+          <!-- Dual CTA Action Buttons (Home 2 Style) -->
+          <div class="home2-btn-group reveal-on-scroll reveal-delay-3">
+            <a href="#story" class="home2-btn-primary">
+              <span>DISCOVER OUR STORY</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#join" class="home2-btn-outline">
+              <i class="bi bi-shield-check me-1"></i>
+              <span>BOOK A FREE TRIAL</span>
+            </a>
+          </div>
+
+          <!-- Bottom 3-Part Stats Strip with Left Red Border (Home 2 Style) -->
+          <div class="home2-stats-strip reveal-on-scroll reveal-delay-4">
+            <!-- Stat 1: 18+ Years of Excellence -->
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">18+</span>
+              <span class="home2-stat-lbl">Years of Excellence</span>
+            </div>
+
+            <div class="home2-stat-sep" aria-hidden="true"></div>
+
+            <!-- Stat 2: 12,000+ Students Transformed -->
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">12,000+</span>
+              <span class="home2-stat-lbl">Students Transformed</span>
+            </div>
+
+            <div class="home2-stat-sep" aria-hidden="true"></div>
+
+            <!-- Stat 3: 7 Global Disciplines -->
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">7</span>
+              <span class="home2-stat-lbl">Global Disciplines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. OUR STORY &mdash; HERITAGE &amp; EVOLUTION
+       ======================================================================== -->
+  <section class="section-padding" id="story" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center">
+        <!-- Story Media Column -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="story-frame">
+            <img src="assets/images/about/about-story.jpg" alt="Traditional karate mastery at KENSEI Academy" loading="lazy">
+            <div class="story-badge-quote">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-quote fs-1 text-combat-red"></i>
+                <div>
+                  <p class="mb-1 text-white fst-italic" style="font-size: 0.95rem;">
+                    &ldquo;Martial arts is not about defeating others. It is about conquering the weaknesses within yourself and standing calmly in the face of chaos.&rdquo;
+                  </p>
+                  <span class="text-combat-red fw-bold text-uppercase small">&mdash; Master Kenjiro Sato, 7th Dan Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story Text Column -->
+        <div class="col-lg-6 reveal-on-scroll reveal-delay-1">
+          <span class="section-badge">Origins &bull; Purpose &bull; Growth</span>
+          <h2 class="section-title">HOW KENSEI BEGAN <br><span class="text-combat-red">TRANSCENDING BORDERS, UNITING TRADITIONS</span></h2>
+          <p class="section-subtitle mb-4">
+            In 2008, KENSEI was founded to challenge the dogmatic, single-origin boundaries of traditional martial arts clubs. Master Kenjiro Sato brought together master coaches from Japan, Brazil, Thailand, and Europe with a revolutionary mandate: create a unified international academy where the world&rsquo;s most proven combat disciplines could be learned with uncompromising technical integrity.
+          </p>
+
+          <p class="text-muted" style="font-size: 0.95rem; line-height: 1.7;">
+            We discarded dogma and superstition, replacing them with biomechanical science, structured curricula, and a sacred code of mutual respect. What began as a modest 800 sq.ft training dojo has evolved into an internationally recognized combat science center, touching over 12,000 lives across three generations of practitioners.
+          </p>
+
+          <!-- Historical Milestones -->
+          <ul class="story-timeline-list">
+            <li class="story-timeline-item">
+              <span class="story-timeline-year">2008</span>
+              <div>
+                <h4 class="font-heading fs-5 mb-1" style="color: var(--text-ivory);">The First Tatami</h4>
+                <p class="text-muted small mb-0">Founded with a single 800 sq.ft dojo dedicated to technical precision and egoless discipline.</p>
+              </div>
+            </li>
+            <li class="story-timeline-item">
+              <span class="story-timeline-year">2015</span>
+              <div>
+                <h4 class="font-heading fs-5 mb-1" style="color: var(--text-ivory);">Global Faculty Alliance</h4>
+                <p class="text-muted small mb-0">Standardized 7 international disciplines into a unified modern training system under certified master coaches.</p>
+              </div>
+            </li>
+            <li class="story-timeline-item">
+              <span class="story-timeline-year">2021</span>
+              <div>
+                <h4 class="font-heading fs-5 mb-1" style="color: var(--text-ivory);">The Modern Arena</h4>
+                <p class="text-muted small mb-0">Unveiled our 6,000 sq.ft state-of-the-art facility featuring dual Olympic tatami and UV-C medical sanitization.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. MISSION &amp; VISION &mdash; CONTRASTING PANELS
+       ======================================================================== -->
+  <section class="section-padding" id="mission-vision" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center mb-5 reveal-on-scroll">
+        <span class="section-badge">Direction &bull; Legacy</span>
+        <h2 class="section-title">OUR MISSION &amp; VISION <br><span class="text-combat-red">FORGING CAPABILITY TODAY. SHAPING TOMORROW.</span></h2>
+        <p class="section-subtitle">
+          Our daily mission grounds every class in rigorous technique and safety, while our overarching vision drives the evolution of martial arts education worldwide.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Mission Panel -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="mv-card">
+            <div class="mv-icon-box">
+              <i class="bi bi-bullseye"></i>
+            </div>
+            <span class="mv-tag">What We Deliver Today</span>
+            <h3 class="mv-title">OUR MISSION</h3>
+            <p class="mv-text">
+              To deliver accessible, biomechanically rigorous martial arts instruction that equips everyday individuals with instinctive self-defense capabilities, radiant physical longevity, and calm emotional fortitude within a welcoming, zero-ego community.
+            </p>
+            <ul class="mv-bullet-list">
+              <li class="mv-bullet-item">
+                <i class="bi bi-shield-check"></i>
+                <span>Zero-Tolerance for Ego &amp; Uncontrolled Aggression</span>
+              </li>
+              <li class="mv-bullet-item">
+                <i class="bi bi-diagram-3-fill"></i>
+                <span>Standardized, Transparent Belt Progression Roadmaps</span>
+              </li>
+              <li class="mv-bullet-item">
+                <i class="bi bi-heart-pulse-fill"></i>
+                <span>Medical-Grade Dojo Safety &amp; Concussion Protocols</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vision Panel -->
+        <div class="col-lg-6 reveal-on-scroll reveal-delay-1">
+          <div class="mv-card">
+            <div class="mv-icon-box">
+              <i class="bi bi-compass"></i>
+            </div>
+            <span class="mv-tag">Where We Are Heading</span>
+            <h3 class="mv-title">OUR VISION</h3>
+            <p class="mv-text">
+              To be the international gold standard for holistic martial arts education&mdash;proving that traditional warrior ethics and cutting-edge sports biomechanics belong together, nurturing compassionate leaders who navigate life&rsquo;s adversities with unyielding grace.
+            </p>
+            <ul class="mv-bullet-list">
+              <li class="mv-bullet-item">
+                <i class="bi bi-globe-americas"></i>
+                <span>International Black Belt Exchange &amp; Cross-Discipline Summits</span>
+              </li>
+              <li class="mv-bullet-item">
+                <i class="bi bi-award-fill"></i>
+                <span>Global Youth Leadership &amp; Anti-Bullying Mentorship</span>
+              </li>
+              <li class="mv-bullet-item">
+                <i class="bi bi-activity"></i>
+                <span>Pioneering Sports Science Research for Lifelong Athletic Longevity</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. OUR TRAINING PHILOSOPHY &mdash; SIX CORE PILLARS
+       ======================================================================== -->
+  <section class="section-padding" id="philosophy" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center mb-5 reveal-on-scroll">
+        <span class="section-badge">The KENSEI Code &bull; 6 Core Pillars</span>
+        <h2 class="section-title">OUR TRAINING PHILOSOPHY <br><span class="text-combat-red">AN UNCOMPROMISING STANDARD OF EXCELLENCE</span></h2>
+        <p class="section-subtitle">
+          Martial arts is not a sport of brute force. It is an art of human optimization where mind, body, and character converge in complete harmony.
+        </p>
+      </div>
+
+      <div class="row g-4 reveal-on-scroll">
+        <!-- 1. Technique -->
+        <div class="col-md-6 col-lg-4">
+          <div class="philo-card">
+            <div class="philo-header">
+              <span class="philo-num">01</span>
+              <div class="philo-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            </div>
+            <h3 class="philo-title">BIOMECHANICAL TECHNIQUE</h3>
+            <p class="philo-desc">
+              Leverage, angular timing, and skeletal alignment supersede brute power. We teach students how a 120-lb practitioner can control a 220-lb adversary with physics and precision.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Discipline -->
+        <div class="col-md-6 col-lg-4">
+          <div class="philo-card">
+            <div class="philo-header">
+              <span class="philo-num">02</span>
+              <div class="philo-icon"><i class="bi bi-clock-history"></i></div>
+            </div>
+            <h3 class="philo-title">UNSHAKEABLE DISCIPLINE</h3>
+            <p class="philo-desc">
+              Motivation is temporary; disciplined habit is permanent. In our dojo, showing up consistently, respecting training hours, and embracing humble repetition build champions.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Respect -->
+        <div class="col-md-6 col-lg-4">
+          <div class="philo-card">
+            <div class="philo-header">
+              <span class="philo-num">03</span>
+              <div class="philo-icon"><i class="bi bi-hand-thumbs-up-fill"></i></div>
+            </div>
+            <h3 class="philo-title">MUTUAL RESPECT &amp; ETHICS</h3>
+            <p class="philo-desc">
+              Every round begins and ends with a bow. Your training partner is not an enemy to break, but a trusted ally who entrusts you with their safety so both of you can sharpen your craft.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Fitness -->
+        <div class="col-md-6 col-lg-4">
+          <div class="philo-card">
+            <div class="philo-header">
+              <span class="philo-num">04</span>
+              <div class="philo-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+            </div>
+            <h3 class="philo-title">FUNCTIONAL FITNESS</h3>
+            <p class="philo-desc">
+              True combat conditioning builds core rotational torque, joint flexibility, and aerobic recovery. We build athletic bodies capable of explosive speed and lifelong health.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Confidence -->
+        <div class="col-md-6 col-lg-4">
+          <div class="philo-card">
+            <div class="philo-header">
+              <span class="philo-num">05</span>
+              <div class="philo-icon"><i class="bi bi-shield-shaded"></i></div>
+            </div>
+            <h3 class="philo-title">QUIET CONFIDENCE</h3>
+            <p class="philo-desc">
+              When you know you can protect yourself and your loved ones, you no longer feel the need to posture or prove anything. True capability creates gentle, unshakable composure.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Practical Self-Defense -->
+        <div class="col-md-6 col-lg-4">
+          <div class="philo-card">
+            <div class="philo-header">
+              <span class="philo-num">06</span>
+              <div class="philo-icon"><i class="bi bi-crosshair"></i></div>
+            </div>
+            <h3 class="philo-title">PRACTICAL SELF-DEFENSE</h3>
+            <p class="philo-desc">
+              Real altercations have no weight classes, referee stops, or mats. We train pre-incident awareness, threat de-escalation, and immediate escape mechanics designed for the real world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. WHAT MAKES US DIFFERENT &mdash; THE KENSEI ADVANTAGE
+       ======================================================================== -->
+  <section class="section-padding" id="different" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6 reveal-on-scroll">
+          <span class="section-badge">The KENSEI Standard</span>
+          <h2 class="section-title">WHAT MAKES US DIFFERENT <br><span class="text-combat-red">AN ENVIRONMENT BUILT FOR GROWTH</span></h2>
+          <p class="section-subtitle">
+            Most martial arts gyms either treat students like casual fitness gym members or throw beginners into hostile, injury-prone environments. KENSEI provides the professional middle ground: serious martial arts education delivered with safety, structure, and empathy.
+          </p>
+        </div>
+        <div class="col-lg-6 reveal-on-scroll reveal-delay-1">
+          <div class="position-relative overflow-hidden rounded-1 border border-secondary shadow-lg">
+            <img src="assets/images/about/about-different.jpg" alt="Supportive martial arts instruction at KENSEI Academy" class="img-fluid w-100" style="object-fit: cover; max-height: 380px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 reveal-on-scroll">
+        <!-- 01. Beginner-Friendly Coaching -->
+        <div class="col-md-6 col-lg-3">
+          <div class="diff-card">
+            <span class="diff-watermark">01</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-emoji-smile-fill text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">Zero Intimidation</span>
+            </div>
+            <h3 class="diff-title">BEGINNER-FRIENDLY COACHING</h3>
+            <p class="diff-desc">
+              Every black belt was once a white belt. We guide new practitioners through dedicated introductory tracks, ensuring you never feel overwhelmed or out of your depth.
+            </p>
+          </div>
+        </div>
+
+        <!-- 02. Structured Learning -->
+        <div class="col-md-6 col-lg-3">
+          <div class="diff-card">
+            <span class="diff-watermark">02</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-journal-bookmark-fill text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">Methodical Path</span>
+            </div>
+            <h3 class="diff-title">STRUCTURED CURRICULUM</h3>
+            <p class="diff-desc">
+              No guessing what to practice next. Our multi-tier syllabus breaks down strikes, submissions, and evasions into clear modules with transparent progression standards.
+            </p>
+          </div>
+        </div>
+
+        <!-- 03. Individual Attention -->
+        <div class="col-md-6 col-lg-3">
+          <div class="diff-card">
+            <span class="diff-watermark">03</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-people-fill text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">1:8 Coach Ratio</span>
+            </div>
+            <h3 class="diff-title">INDIVIDUAL ATTENTION</h3>
+            <p class="diff-desc">
+              We strictly cap class sizes so our certified black belt faculty can correct your posture, adjust your foot placement, and tailor drills to your personal physical capabilities.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04. Inclusive Dojo Culture -->
+        <div class="col-md-6 col-lg-3">
+          <div class="diff-card">
+            <span class="diff-watermark">04</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-shield-check text-combat-red fs-4"></i>
+              <span class="text-combat-red fw-bold text-uppercase small">Safe &amp; Clean</span>
+            </div>
+            <h3 class="diff-title">INCLUSIVE &amp; SAFE CULTURE</h3>
+            <p class="diff-desc">
+              From doctors and engineers to students and parents, KENSEI unites a respectful, multi-generational community on hospital-grade sanitized Olympic tatami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. OUR APPROACH TO TRAINING &mdash; 4-STAGE PROGRESSION
+       ======================================================================== -->
+  <section class="section-padding" id="approach" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center mb-5 reveal-on-scroll">
+        <span class="section-badge">Methodology &bull; The 4-Stage Pathway</span>
+        <h2 class="section-title">OUR APPROACH TO TRAINING <br><span class="text-combat-red">FROM FUNDAMENTAL FOUNDATION TO INTUITIVE MASTERY</span></h2>
+        <p class="section-subtitle">
+          Martial excellence is built layer by layer. Our 4-stage progression ensures every technique is deeply ingrained before pressure is increased.
+        </p>
+      </div>
+
+      <div class="progression-track reveal-on-scroll">
+        <!-- Stage 1 -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Stage 01</span>
+          <h3 class="prog-stage-title">LEARN THE BASICS</h3>
+          <p class="prog-stage-desc">
+            Master the foundational architecture: dynamic stance stability, spatial awareness, defensive guard positioning, and correct breathing cadence under exertion.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Footwork &bull; Defense &bull; Breathing</span>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Stage 02</span>
+          <h3 class="prog-stage-title">DEVELOP TECHNIQUE</h3>
+          <p class="prog-stage-desc">
+            Combine basic movements into fluid kinetic sequences. Learn striking combinations, takedown counters, joint locks, and defensive angles through structured partner drills.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Combinations &bull; Takedowns &bull; Flow</span>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Stage 03</span>
+          <h3 class="prog-stage-title">BUILD CONFIDENCE</h3>
+          <p class="prog-stage-desc">
+            Pressure-test your skills in controlled, respectful sparring rounds. Overcome adrenaline surges, maintain mental clarity, and adapt strategically to various body types.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Controlled Sparring &bull; Composure</span>
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="prog-card">
+          <span class="prog-step-badge">Stage 04</span>
+          <h3 class="prog-stage-title">MASTER YOUR SKILLS</h3>
+          <p class="prog-stage-desc">
+            Move beyond conscious thought into instinctive reflex. Cultivate personalized tactical flow, mentor newer students, and embody the warrior spirit in everyday civilian life.
+          </p>
+          <div>
+            <span class="prog-focus-pill">Instinct &bull; Leadership &bull; Mastery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. OUR ACADEMY AT A GLANCE &mdash; AUTHENTIC STATISTICS
+       ======================================================================== -->
+  <section class="glance-section" id="glance">
+    <div class="container-xl">
+      <div class="row g-0 reveal-on-scroll">
+        <div class="col-6 col-lg-2">
+          <div class="glance-stat-card">
+            <div class="glance-number">12K+</div>
+            <div class="glance-label">Students Trained</div>
+            <div class="glance-sub">Across 18 years of academy history</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="glance-stat-card">
+            <div class="glance-number">7</div>
+            <div class="glance-label">World Disciplines</div>
+            <div class="glance-sub">Japan, Korea, Brazil, Thailand, India, Boxing</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="glance-stat-card">
+            <div class="glance-number">20+</div>
+            <div class="glance-label">Master Coaches</div>
+            <div class="glance-sub">Certified international black belts</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="glance-stat-card">
+            <div class="glance-number">18+</div>
+            <div class="glance-label">Years of Excellence</div>
+            <div class="glance-sub">Continuously operating since 2008</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="glance-stat-card">
+            <div class="glance-number">6,000</div>
+            <div class="glance-label">Sq.Ft Facility</div>
+            <div class="glance-sub">Dual Olympic tatami with UV-C sanitization</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="glance-stat-card">
+            <div class="glance-number">100%</div>
+            <div class="glance-label">Safety Record</div>
+            <div class="glance-sub">Zero-ego culture with medical safety protocols</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. JOIN THE KENSEI COMMUNITY &mdash; FINAL TRIAL CTA
+       ======================================================================== -->
+  <section class="section-padding about-cta-section" id="join">
+    <div class="container-xl">
+      <div class="about-cta-card reveal-on-scroll">
+        <div class="row g-0 align-items-center">
+          <!-- CTA Media Column -->
+          <div class="col-lg-5 about-cta-img-col d-none d-lg-block">
+            <img src="assets/images/about/about-community.jpg" alt="KENSEI martial arts community in training" loading="lazy">
+          </div>
+
+          <!-- CTA Content Column -->
+          <div class="col-lg-7 about-cta-content">
+            <span class="section-badge">Step Onto The Tatami</span>
+            <h2 class="section-title mb-3">
+              YOUR JOURNEY. YOUR STRENGTH. <br>
+              <span class="text-combat-red">YOUR KENSEI.</span>
+            </h2>
+            <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.65;">
+              Whether your objective is practical civilian self-defense, functional athletic longevity, or developing razor-sharp mental focus, your first class at KENSEI is completely on us. No contracts. No sales pressure. Just authentic martial arts instruction.
+            </p>
+
+            <form class="row g-3" id="aboutTrialForm" onsubmit="event.preventDefault(); alert('Thank you! Your complimentary trial pass has been reserved. Our academy coordinator will contact you shortly.');">
+              <div class="col-md-6">
+                <label for="trialName" class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Full Name</label>
+                <input type="text" class="form-control" id="trialName" placeholder="e.g. Marcus Vance" required>
+              </div>
+              <div class="col-md-6">
+                <label for="trialEmail" class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Email Address</label>
+                <input type="email" class="form-control" id="trialEmail" placeholder="e.g. marcus@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="trialDiscipline" class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Target Discipline</label>
+                <select class="form-select" id="trialDiscipline" required>
+                  <option value="" selected disabled>Select Discipline</option>
+                  <option value="karate">Traditional Karate &bull; Japan</option>
+                  <option value="bjj">Brazilian Jiu-Jitsu &bull; Brazil</option>
+                  <option value="muaythai">Muay Thai &bull; Thailand</option>
+                  <option value="boxing">Western Boxing &bull; International</option>
+                  <option value="taekwondo">Taekwondo &bull; Korea</option>
+                  <option value="defense">Practical Self-Defense &bull; All-Levels</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="trialDay" class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Preferred Day</label>
+                <select class="form-select" id="trialDay" required>
+                  <option value="" selected disabled>Select Day of Week</option>
+                  <option value="monday">Monday (Evening)</option>
+                  <option value="tuesday">Tuesday (Evening)</option>
+                  <option value="wednesday">Wednesday (Evening)</option>
+                  <option value="thursday">Thursday (Evening)</option>
+                  <option value="friday">Friday (Evening)</option>
+                  <option value="saturday">Saturday (Morning)</option>
+                </select>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn-kensei btn-kensei-primary btn-kensei-lg w-100 justify-content-center">
+                  <i class="bi bi-shield-check"></i>
+                  <span>CLAIM YOUR FREE TRIAL PASS</span>
+                </button>
+                <div class="text-center mt-2">
+                  <span class="text-muted small"><i class="bi bi-lock-fill"></i> No credit card required &bull; Free loaner uniform provided for first class</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="kensei-footer" id="contact">
+    <div class="container-xl">
+      <div class="row g-5">
+        <!-- Widget 1: Academy Overview -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-link mb-3" href="index.html">
+            <div class="brand-symbol" aria-hidden="true">K</div>
+            <div class="brand-text">
+              <span class="brand-title">KENSEI</span>
+              <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+            </div>
+          </a>
+          <p class="mt-3">
+            KENSEI is a high-performance martial arts institution committed to authentic combat disciplines, ethical
+            character development, and reality-based tactical self-preservation.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Widget 2: Quick Links (Navbar Links) -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="schedule.html"><i class="bi bi-chevron-right small"></i> Schedule</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 3: Support & Legal -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">SUPPORT</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html#privacy"><i class="bi bi-chevron-right small"></i> Privacy Policy</a></li>
+            <li><a href="terms.html#terms"><i class="bi bi-chevron-right small"></i> Terms &amp; Conditions</a></li>
+            <li><a href="terms.html#faqs"><i class="bi bi-chevron-right small"></i> FAQs</a></li>
+            <li><a href="terms.html#safety"><i class="bi bi-chevron-right small"></i> Dojo Safety Code</a></li>
+            <li><a href="contact.html#free-trial"><i class="bi bi-chevron-right small"></i> Free Trial Pass</a></li>
+            <li><a href="contact.html#send-message"><i class="bi bi-chevron-right small"></i> Help &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 4: Contact Details & Hours -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-widget-title">CONTACT DETAILS</h4>
+          <ul class="contact-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>742 Bushido Way, Combat Arts Pavilion, District 4, NY 10013</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span><a href="tel:+12125550988" class="text-reset text-decoration-none">+1 (212) 555-0988</a> / <a href="tel:+12125550989" class="text-reset text-decoration-none">+1 (212) 555-0989</a></span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span><a href="mailto:admissions@kenseiacademy.com" class="text-reset text-decoration-none">admissions@kenseiacademy.com</a></span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon &ndash; Fri: 06:00 AM &ndash; 09:30 PM<br>Saturday: 08:30 AM &ndash; 04:00 PM (Closed Sun)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 KENSEI Martial Arts &amp; Self-Defense Academy. All rights reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="terms.html#privacy" class="text-decoration-none text-muted small">Privacy Policy</a>
+          <a href="terms.html#terms" class="text-decoration-none text-muted small">Terms &amp; Conditions</a>
+          <a href="terms.html#faqs" class="text-decoration-none text-muted small">FAQs</a>
+          <a href="terms.html#safety" class="text-decoration-none text-muted small">Dojo Safety Code</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

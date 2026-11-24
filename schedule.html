@@ -1,0 +1,2189 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Schedule &amp; Timetable | KENSEI &mdash; Martial Arts Academy</title>
+  <meta name="description" content="View the complete weekly martial arts class schedule at KENSEI Academy. Filter by discipline, age group, and skill level from Monday to Saturday.">
+
+  <!-- Google Fonts: Barlow Condensed, Bebas Neue & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800;1,900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+
+  <!-- ========================================================================
+       NAVBAR (Unified Component)
+       ======================================================================== -->
+    <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg kensei-navbar" aria-label="Main navigation">
+      <div class="container-xl d-flex align-items-center justify-content-between">
+        <!-- Brand Wordmark -->
+        <a class="brand-link" href="index.html">
+          <div class="brand-symbol" aria-hidden="true">K</div>
+          <div class="brand-text">
+            <span class="brand-title">KENSEI</span>
+            <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+          </div>
+        </a>
+
+        <!-- Right Side Controls (RTL + Theme + Desktop CTA + Mobile Hamburger) -->
+        <div class="d-flex align-items-center gap-2 order-lg-3 nav-header-actions">
+          <!-- RTL / LTR Toggle -->
+          <button id="rtlToggleBtn" class="nav-util-btn" title="Toggle RTL / LTR" aria-label="Toggle Text Direction">
+            <span id="rtlToggleLabel" class="rtl-toggle-text">RTL</span>
+          </button>
+
+          <!-- Light / Dark Theme Toggle -->
+          <button id="themeToggleBtn" class="nav-util-btn" title="Switch Theme" aria-label="Toggle Theme">
+            <i id="themeToggleIcon" class="bi bi-sun-fill"></i>
+          </button>
+
+          <!-- Desktop Book a Free Trial CTA -->
+          <a href="schedule.html" class="btn-kensei btn-kensei-primary btn-kensei-sm d-none d-lg-inline-flex" data-trial-program="General Inquiry">
+            <i class="bi bi-shield-check"></i>
+            <span>Book a Free Trial</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kenseiNavContent" aria-controls="kenseiNavContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list fs-4"></i>
+          </button>
+        </div>
+
+        <!-- Collapsible Navigation Menu -->
+        <div class="collapse navbar-collapse order-lg-2" id="kenseiNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="home-2.html">Home 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile-only CTA inside opened menu -->
+          <div class="d-lg-none mt-3 pt-3 border-top border-secondary-subtle">
+            <a href="schedule.html" class="btn-kensei btn-kensei-primary w-100 justify-content-center" data-trial-program="General Inquiry">
+              <i class="bi bi-shield-check"></i>
+              <span>Book a Free Trial</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       1. SCHEDULE HERO (Home 2 Exact Architecture with Planning the Next Round)
+       ======================================================================== -->
+  <section class="home2-hero-section schedule-hero-dark-version" id="hero-schedule">
+    <!-- Cinematic Background Container using Planning the Next Round artwork -->
+    <div class="home2-hero-bg">
+      <img src="assets/images/Planning%20the%20Next%20Round.png"
+        alt="Planning the Next Round &mdash; KENSEI Academy Training Schedule" class="home2-hero-img schedule-dark-hero-img">
+      <div class="home2-hero-scrim-left about-scrim-left-deep" aria-hidden="true"></div>
+      <div class="home2-hero-scrim-bottom" aria-hidden="true"></div>
+    </div>
+
+    <!-- Right Edge Vertical Watermark: DISCIPLINE • TIMING • MASTERY -->
+    <div class="home2-vertical-watermark" aria-hidden="true">
+      <span class="home2-watermark-line"></span>
+      <span class="home2-watermark-text">DISCIPLINE <span class="red-bullet">&bull;</span> TIMING <span class="red-bullet">&bull;</span> MASTERY</span>
+      <span class="home2-watermark-line"></span>
+    </div>
+
+    <!-- Floating Angular Badge: TIMETABLE • 45+ SESSIONS WEEKLY -->
+    <div class="home2-floating-badge reveal-on-scroll">
+      <span class="home2-floating-text">TIMETABLE &bull; 45+ SESSIONS WEEKLY</span>
+    </div>
+
+    <!-- Hero Content Container -->
+    <div class="container-xl home2-hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-xl-6">
+          <!-- Top Red Accent Bar -->
+          <span class="home2-accent-bar reveal-on-scroll" aria-hidden="true"></span>
+
+          <!-- 3-Line Slanted Bold Headline (Home 2 Style) -->
+          <h1 class="home2-hero-headline reveal-on-scroll reveal-delay-1">
+            <span class="text-white-line">PLAN YOUR TRAINING.</span>
+            <span class="text-white-line">STRUCTURE YOUR DISCIPLINE.</span>
+            <span class="text-red-line">OWN YOUR PROGRESS.</span>
+          </h1>
+
+          <!-- Short Supporting Description -->
+          <p class="home2-hero-lead reveal-on-scroll reveal-delay-2">
+            Structured classes engineered for measured progression. From 6:00 AM dawn striking to evening adult grappling, train across 7 authentic disciplines with master faculty oversight.
+          </p>
+
+          <!-- Dual CTA Action Buttons (Home 2 Style) -->
+          <div class="home2-btn-group reveal-on-scroll reveal-delay-3">
+            <a href="#timetable" class="home2-btn-primary">
+              <i class="bi bi-calendar3 me-1"></i>
+              <span>VIEW TIMETABLE</span>
+            </a>
+            <a href="#trial" class="home2-btn-outline">
+              <i class="bi bi-shield-check me-1"></i>
+              <span>BOOK A FREE TRIAL</span>
+            </a>
+          </div>
+
+          <!-- Bottom 3-Part Stats Strip with Left Red Border (Home 2 Style) -->
+          <div class="home2-stats-strip reveal-on-scroll reveal-delay-4">
+            <!-- Stat 1: 45+ Weekly Classes -->
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">45+</span>
+              <span class="home2-stat-lbl">Weekly Classes</span>
+            </div>
+
+            <div class="home2-stat-sep" aria-hidden="true"></div>
+
+            <!-- Stat 2: Mon - Sat -->
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">6 Days</span>
+              <span class="home2-stat-lbl">Open Mat Schedule</span>
+            </div>
+
+            <div class="home2-stat-sep" aria-hidden="true"></div>
+
+            <!-- Stat 3: 12:1 Ratio -->
+            <div class="home2-stat-unit">
+              <span class="home2-stat-num">12:1</span>
+              <span class="home2-stat-lbl">Max Coach Ratio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       2. QUICK SCHEDULE OVERVIEW
+       ======================================================================== -->
+  <section class="section-padding" id="overview" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">At A Glance &bull; Weekly Capacity</span>
+        <h2 class="section-title">QUICK SCHEDULE OVERVIEW <br><span class="text-combat-red">DESIGNED FOR BUSY LIVES</span></h2>
+        <p class="section-subtitle">
+          Whether you are a working professional, a parent coordinating youth sports, or an aspiring competitor, our schedule offers morning, afternoon, and evening blocks.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Metric 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="sched-overview-card">
+            <div class="sched-overview-icon"><i class="bi bi-calendar-week-fill"></i></div>
+            <div class="sched-overview-val">45+</div>
+            <div class="sched-overview-lbl">Weekly Classes</div>
+            <p class="sched-overview-desc">From early morning conditioning to late evening sparring batches.</p>
+          </div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="sched-overview-card">
+            <div class="sched-overview-icon"><i class="bi bi-globe-americas"></i></div>
+            <div class="sched-overview-val">7</div>
+            <div class="sched-overview-lbl">World Disciplines</div>
+            <p class="sched-overview-desc">Karate, Taekwondo, Kung Fu, Muay Thai, Boxing, BJJ, and Kalaripayattu.</p>
+          </div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="sched-overview-card">
+            <div class="sched-overview-icon"><i class="bi bi-calendar-check-fill"></i></div>
+            <div class="sched-overview-val">6</div>
+            <div class="sched-overview-lbl">Training Days</div>
+            <p class="sched-overview-desc">Monday through Saturday (Sunday reserved for UV-C tatami deep sanitization).</p>
+          </div>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="sched-overview-card">
+            <div class="sched-overview-icon"><i class="bi bi-clock-fill"></i></div>
+            <div class="sched-overview-val">06:00 &ndash; 21:30</div>
+            <div class="sched-overview-lbl">Class Timings</div>
+            <p class="sched-overview-desc">Dawn Patrol, Youth/Teen afternoon hours, and prime adult evening slots.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3 & 4. FIND YOUR CLASS & WEEKLY CLASS TIMETABLE (Interactive)
+       ======================================================================== -->
+  <section class="section-padding" id="timetable" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Interactive Filter &bull; Live Schedule</span>
+        <h2 class="section-title">WEEKLY CLASS TIMETABLE <br><span class="text-combat-red">FIND YOUR PERFECT SESSION</span></h2>
+        <p class="section-subtitle">
+          Select a day or filter by discipline, skill level, and age group to instantly view matching training sessions.
+        </p>
+      </div>
+
+      <!-- Filter Controls Box -->
+      <div class="timetable-filter-wrap reveal-on-scroll" id="find-class">
+        <!-- Day Pill Switcher -->
+        <div class="day-pill-nav" id="dayFilterNav">
+          <button class="day-pill-btn active" data-day="monday"><i class="bi bi-calendar2-day me-1"></i> Monday</button>
+          <button class="day-pill-btn" data-day="tuesday"><i class="bi bi-calendar2-day me-1"></i> Tuesday</button>
+          <button class="day-pill-btn" data-day="wednesday"><i class="bi bi-calendar2-day me-1"></i> Wednesday</button>
+          <button class="day-pill-btn" data-day="thursday"><i class="bi bi-calendar2-day me-1"></i> Thursday</button>
+          <button class="day-pill-btn" data-day="friday"><i class="bi bi-calendar2-day me-1"></i> Friday</button>
+          <button class="day-pill-btn" data-day="saturday"><i class="bi bi-calendar2-day me-1"></i> Saturday</button>
+          <button class="day-pill-btn" data-day="all"><i class="bi bi-grid-3x3-gap me-1"></i> View All (30)</button>
+        </div>
+
+        <!-- Dropdown Filters Row -->
+        <div class="row g-3 align-items-center">
+          <!-- Filter: Discipline -->
+          <div class="col-md-4 col-lg-3">
+            <label class="form-label small text-muted text-uppercase fw-bold mb-1">Martial Art</label>
+            <select class="form-select form-select-sm" id="disciplineFilter">
+              <option value="all">All Disciplines (7 Arts)</option>
+              <option value="karate">Traditional Karate</option>
+              <option value="taekwondo">Olympic Taekwondo</option>
+              <option value="kungfu">Shaolin Kung Fu</option>
+              <option value="kickboxing">Muay Thai &amp; Kickboxing</option>
+              <option value="boxing">Western Boxing</option>
+              <option value="bjj">Brazilian Jiu-Jitsu</option>
+              <option value="kalaripayattu">Kalaripayattu</option>
+              <option value="selfdefense">Tactical Self-Defense</option>
+            </select>
+          </div>
+
+          <!-- Filter: Skill Level -->
+          <div class="col-md-4 col-lg-3">
+            <label class="form-label small text-muted text-uppercase fw-bold mb-1">Skill Level</label>
+            <select class="form-select form-select-sm" id="levelFilter">
+              <option value="all">All Skill Levels</option>
+              <option value="beginner">Beginner (White / Novice)</option>
+              <option value="intermediate">Intermediate (Color Belts)</option>
+              <option value="advanced">Advanced (Brown / Black / Sparring)</option>
+            </select>
+          </div>
+
+          <!-- Filter: Age Group -->
+          <div class="col-md-4 col-lg-3">
+            <label class="form-label small text-muted text-uppercase fw-bold mb-1">Age Group</label>
+            <select class="form-select form-select-sm" id="ageFilter">
+              <option value="all">All Age Groups</option>
+              <option value="kids">Kids (Ages 5&ndash;12)</option>
+              <option value="teens">Teens (Ages 13&ndash;17)</option>
+              <option value="adults">Adults (Ages 18+)</option>
+            </select>
+          </div>
+
+          <!-- Filter Counter & Reset Button -->
+          <div class="col-lg-3 d-flex justify-content-lg-end align-items-end mt-3 mt-lg-0">
+            <button class="btn btn-sm btn-outline-secondary d-inline-flex align-items-center gap-1" id="resetFiltersBtn">
+              <i class="bi bi-arrow-counterclockwise"></i> Reset Filters
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Results Counter -->
+      <div class="d-flex justify-content-between align-items-center mb-3 text-muted small px-1">
+        <span>Showing <strong class="text-combat-red" id="matchingCount">30</strong> training sessions</span>
+        <span class="d-none d-md-inline"><i class="bi bi-shield-check text-combat-red"></i> All sessions coached by certified black belt faculty</span>
+      </div>
+
+      <!-- Timetable Cards Container with pre-rendered cards -->
+      <div id="timetableCardsContainer">
+
+        <div class="timetable-class-card" 
+             data-day="monday" 
+             data-discipline="kickboxing" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Monday</div>
+            <div class="class-time-text">06:00 AM – 07:15 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Morning Deck</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Muay Thai</span>
+            <h3 class="class-title">Dawn Patrol: Heavy Bag & Conditioning</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Kru Somchai Prasert</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kickboxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Muay Thai', 'Monday 06:00 AM – 07:15 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="monday" 
+             data-discipline="karate" 
+             data-level="beginner" 
+             data-age="kids">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Monday</div>
+            <div class="class-time-text">04:30 PM – 05:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Youth Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Traditional Karate</span>
+            <h3 class="class-title">Junior Samurai: Stances & Kihon Basics</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Kenji Sato</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Kids (5–12)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=karate" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Traditional Karate', 'Monday 04:30 PM – 05:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="monday" 
+             data-discipline="taekwondo" 
+             data-level="intermediate" 
+             data-age="teens">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Monday</div>
+            <div class="class-time-text">05:45 PM – 06:45 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Agility Zone</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Olympic Taekwondo</span>
+            <h3 class="class-title">Teen Aerial Agility & Dynamic Kicking</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Elena Rostova</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate</span>
+              <span><i class="bi bi-people-fill"></i> Teens (13–17)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=taekwondo" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Olympic Taekwondo', 'Monday 05:45 PM – 06:45 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="monday" 
+             data-discipline="bjj" 
+             data-level="beginner" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Monday</div>
+            <div class="class-time-text">07:00 PM – 08:15 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Main Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Brazilian Jiu-Jitsu</span>
+            <h3 class="class-title">Gi Fundamentals: Positional Control & Sweeps</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Prof. Rodrigo Silva</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=bjj" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Brazilian Jiu-Jitsu', 'Monday 07:00 PM – 08:15 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="monday" 
+             data-discipline="boxing" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Monday</div>
+            <div class="class-time-text">08:30 PM – 09:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Boxing Ring</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Western Boxing</span>
+            <h3 class="class-title">Night Bag Lab: Power Hooks & Slip Counters</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Marcus Vance</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate / Adv</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=boxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Western Boxing', 'Monday 08:30 PM – 09:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="tuesday" 
+             data-discipline="boxing" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Tuesday</div>
+            <div class="class-time-text">06:30 AM – 07:30 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Morning Ring</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Western Boxing</span>
+            <h3 class="class-title">Sweet Science: Footwork Geometry & Mitts</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Marcus Vance</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=boxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Western Boxing', 'Tuesday 06:30 AM – 07:30 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="tuesday" 
+             data-discipline="taekwondo" 
+             data-level="beginner" 
+             data-age="kids">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Tuesday</div>
+            <div class="class-time-text">04:30 PM – 05:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Youth Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Olympic Taekwondo</span>
+            <h3 class="class-title">Little Tigers: Poomsae & Target Kicking</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Elena Rostova</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Kids (5–12)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=taekwondo" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Olympic Taekwondo', 'Tuesday 04:30 PM – 05:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="tuesday" 
+             data-discipline="kungfu" 
+             data-level="all" 
+             data-age="teens">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Tuesday</div>
+            <div class="class-time-text">05:45 PM – 06:45 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Flow Studio</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Shaolin Kung Fu</span>
+            <h3 class="class-title">Youth Shaolin: Five Animal Postures & Agility</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Li Wei</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Teens (13–17)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kungfu" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Shaolin Kung Fu', 'Tuesday 05:45 PM – 06:45 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="tuesday" 
+             data-discipline="kalaripayattu" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Tuesday</div>
+            <div class="class-time-text">07:00 PM – 08:15 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Heritage Arena</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Kalaripayattu</span>
+            <h3 class="class-title">Kerala Meipayattu: Animal Vadivu & Flexibility</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Gurukkal Devadas</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kalaripayattu" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Kalaripayattu', 'Tuesday 07:00 PM – 08:15 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="tuesday" 
+             data-discipline="bjj" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Tuesday</div>
+            <div class="class-time-text">08:30 PM – 09:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Main Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Brazilian Jiu-Jitsu</span>
+            <h3 class="class-title">No-Gi Submission Lab: Leg Locks & Chokes</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Prof. Rodrigo Silva</strong></span>
+              <span><i class="bi bi-award-fill"></i> Advanced</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=bjj" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Brazilian Jiu-Jitsu', 'Tuesday 08:30 PM – 09:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="wednesday" 
+             data-discipline="kickboxing" 
+             data-level="intermediate" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Wednesday</div>
+            <div class="class-time-text">06:00 AM – 07:15 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Striking Deck</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Muay Thai</span>
+            <h3 class="class-title">Dutch Striking Combos & Thai Pad Chaining</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Kru Somchai Prasert</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kickboxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Muay Thai', 'Wednesday 06:00 AM – 07:15 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="wednesday" 
+             data-discipline="karate" 
+             data-level="intermediate" 
+             data-age="kids">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Wednesday</div>
+            <div class="class-time-text">04:30 PM – 05:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Youth Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Traditional Karate</span>
+            <h3 class="class-title">Junior Kata Precision: Pinan / Heian Forms</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Kenji Sato</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate</span>
+              <span><i class="bi bi-people-fill"></i> Kids (5–12)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=karate" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Traditional Karate', 'Wednesday 04:30 PM – 05:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="wednesday" 
+             data-discipline="boxing" 
+             data-level="beginner" 
+             data-age="teens">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Wednesday</div>
+            <div class="class-time-text">05:45 PM – 06:45 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Boxing Ring</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Western Boxing</span>
+            <h3 class="class-title">Teen Boxing: Defensive Head Movement & Mitts</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Marcus Vance</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Teens (13–17)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=boxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Western Boxing', 'Wednesday 05:45 PM – 06:45 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="wednesday" 
+             data-discipline="karate" 
+             data-level="beginner" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Wednesday</div>
+            <div class="class-time-text">07:00 PM – 08:15 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Main Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Traditional Karate</span>
+            <h3 class="class-title">Shotokan Karate: Bunkai Combat Applications</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Kenji Sato</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=karate" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Traditional Karate', 'Wednesday 07:00 PM – 08:15 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="wednesday" 
+             data-discipline="bjj" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Wednesday</div>
+            <div class="class-time-text">08:30 PM – 09:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Grappling Mats</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Brazilian Jiu-Jitsu</span>
+            <h3 class="class-title">Live Rolling Tatami: Positional Sparring Rounds</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Prof. Rodrigo Silva</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate / Adv</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=bjj" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Brazilian Jiu-Jitsu', 'Wednesday 08:30 PM – 09:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="thursday" 
+             data-discipline="kungfu" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Thursday</div>
+            <div class="class-time-text">06:30 AM – 07:30 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Flow Studio</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Shaolin Kung Fu</span>
+            <h3 class="class-title">Morning Qigong: Breath Control & Tendon Flow</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Li Wei</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kungfu" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Shaolin Kung Fu', 'Thursday 06:30 AM – 07:30 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="thursday" 
+             data-discipline="bjj" 
+             data-level="beginner" 
+             data-age="kids">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Thursday</div>
+            <div class="class-time-text">04:30 PM – 05:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Youth Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Brazilian Jiu-Jitsu</span>
+            <h3 class="class-title">Kids Anti-Bullying Mat Chess: Safe Takedowns</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Prof. Rodrigo Silva</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Kids (5–12)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=bjj" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Brazilian Jiu-Jitsu', 'Thursday 04:30 PM – 05:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="thursday" 
+             data-discipline="kalaripayattu" 
+             data-level="beginner" 
+             data-age="teens">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Thursday</div>
+            <div class="class-time-text">05:45 PM – 06:45 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Heritage Arena</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Kalaripayattu</span>
+            <h3 class="class-title">Teen Kolthari: Hardwood Staff Fencing Basics</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Gurukkal Devadas</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Teens (13–17)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kalaripayattu" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Kalaripayattu', 'Thursday 05:45 PM – 06:45 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="thursday" 
+             data-discipline="boxing" 
+             data-level="intermediate" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Thursday</div>
+            <div class="class-time-text">07:00 PM – 08:15 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Boxing Ring</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Western Boxing</span>
+            <h3 class="class-title">Inside Pocket Fighting: Hooks, Uppercuts & Rolls</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Marcus Vance</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=boxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Western Boxing', 'Thursday 07:00 PM – 08:15 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="thursday" 
+             data-discipline="kickboxing" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Thursday</div>
+            <div class="class-time-text">08:30 PM – 09:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Striking Deck</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Muay Thai</span>
+            <h3 class="class-title">Plum Clinch Lab: Knees & Horizontal Forearm Strikes</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Kru Somchai Prasert</strong></span>
+              <span><i class="bi bi-award-fill"></i> Advanced</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kickboxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Muay Thai', 'Thursday 08:30 PM – 09:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="friday" 
+             data-discipline="karate" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Friday</div>
+            <div class="class-time-text">06:00 AM – 07:15 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Main Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Traditional Karate</span>
+            <h3 class="class-title">Okinawan Sanchin: Iron Body Conditioning</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Kenji Sato</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate / Adv</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=karate" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Traditional Karate', 'Friday 06:00 AM – 07:15 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="friday" 
+             data-discipline="kickboxing" 
+             data-level="beginner" 
+             data-age="kids">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Friday</div>
+            <div class="class-time-text">04:30 PM – 05:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Youth Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Muay Thai</span>
+            <h3 class="class-title">Junior Kickboxing: Footwork Rhythm & Agility</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Kru Somchai Prasert</strong></span>
+              <span><i class="bi bi-award-fill"></i> Beginner</span>
+              <span><i class="bi bi-people-fill"></i> Kids (5–12)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kickboxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Muay Thai', 'Friday 04:30 PM – 05:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="friday" 
+             data-discipline="bjj" 
+             data-level="intermediate" 
+             data-age="teens">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Friday</div>
+            <div class="class-time-text">05:45 PM – 06:45 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Grappling Mats</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Brazilian Jiu-Jitsu</span>
+            <h3 class="class-title">Teen Mat Flow: Joint Fulcrums & Guard Escapes</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Prof. Rodrigo Silva</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate</span>
+              <span><i class="bi bi-people-fill"></i> Teens (13–17)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=bjj" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Brazilian Jiu-Jitsu', 'Friday 05:45 PM – 06:45 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="friday" 
+             data-discipline="taekwondo" 
+             data-level="intermediate" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Friday</div>
+            <div class="class-time-text">07:00 PM – 08:15 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Agility Zone</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Olympic Taekwondo</span>
+            <h3 class="class-title">Olympic Kyorugi Sparring: High-Velocity Kicks</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Elena Rostova</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate / Adv</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=taekwondo" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Olympic Taekwondo', 'Friday 07:00 PM – 08:15 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="friday" 
+             data-discipline="kungfu" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Friday</div>
+            <div class="class-time-text">08:30 PM – 09:30 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Flow Studio</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Shaolin Kung Fu</span>
+            <h3 class="class-title">Shaolin Staff Mastery & Animal Combatives</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Li Wei</strong></span>
+              <span><i class="bi bi-award-fill"></i> Advanced</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kungfu" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Shaolin Kung Fu', 'Friday 08:30 PM – 09:30 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="saturday" 
+             data-discipline="kalaripayattu" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Saturday</div>
+            <div class="class-time-text">08:00 AM – 09:15 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Heritage Arena</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Kalaripayattu</span>
+            <h3 class="class-title">Dawn Marma: Long Staff (Kettukari) Fencing</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Gurukkal Devadas</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=kalaripayattu" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Kalaripayattu', 'Saturday 08:00 AM – 09:15 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="saturday" 
+             data-discipline="karate" 
+             data-level="all" 
+             data-age="kids">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Saturday</div>
+            <div class="class-time-text">09:30 AM – 10:45 AM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Main Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Karate & Taekwondo</span>
+            <h3 class="class-title">Family Synergy Batch: Parents & Kids on Mats</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Sato & Coach Elena</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Family / Kids</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=karate" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Karate & Taekwondo', 'Saturday 09:30 AM – 10:45 AM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="saturday" 
+             data-discipline="boxing" 
+             data-level="advanced" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Saturday</div>
+            <div class="class-time-text">11:00 AM – 12:15 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Boxing Ring</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Western Boxing</span>
+            <h3 class="class-title">Saturday Sparring Lab: Angle Cuts & Counter-Rounds</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Coach Marcus Vance</strong></span>
+              <span><i class="bi bi-award-fill"></i> Intermediate / Adv</span>
+              <span><i class="bi bi-people-fill"></i> Teens & Adults</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=boxing" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Western Boxing', 'Saturday 11:00 AM – 12:15 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="saturday" 
+             data-discipline="bjj" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Saturday</div>
+            <div class="class-time-text">12:30 PM – 02:00 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Main Tatami</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Brazilian Jiu-Jitsu</span>
+            <h3 class="class-title">Open Tatami: Supervised Free Rolling (Gi/No-Gi)</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Prof. Rodrigo Silva</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=bjj" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Brazilian Jiu-Jitsu', 'Saturday 12:30 PM – 02:00 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="timetable-class-card" 
+             data-day="saturday" 
+             data-discipline="selfdefense" 
+             data-level="all" 
+             data-age="adults">
+          <div class="class-time-block">
+            <div class="class-day-badge"><i class="bi bi-calendar-event"></i> Saturday</div>
+            <div class="class-time-text">02:30 PM – 04:00 PM</div>
+            <div class="small text-muted"><i class="bi bi-geo-alt-fill text-combat-red"></i> Combat Pavilion</div>
+          </div>
+
+          <div class="class-info-block">
+            <span class="class-discipline-badge">Tactical Self-Defense</span>
+            <h3 class="class-title">Civilian Conflict Survival & Grab Releases</h3>
+            <div class="class-meta">
+              <span><i class="bi bi-person-fill"></i> Coach: <strong>Master Faculty</strong></span>
+              <span><i class="bi bi-award-fill"></i> All Levels</span>
+              <span><i class="bi bi-people-fill"></i> Adults (18+)</span>
+            </div>
+          </div>
+
+          <div class="class-action-block">
+            <a href="program-detail.html?program=karate" class="btn-kensei btn-kensei-outline btn-kensei-sm" title="Explore Curriculum">
+              <span>Curriculum</span>
+            </a>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm" onclick="selectTrialClass('Tactical Self-Defense', 'Saturday 02:30 PM – 04:00 PM')">
+              <i class="bi bi-shield-check"></i>
+              <span>Book Slot</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. TRAINING BATCHES (Differentiated Visual Hierarchy & Generous Padding)
+       ======================================================================== -->
+  <section class="section-padding" id="batches" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Targeted Cohorts &bull; Peer Camaraderie</span>
+        <h2 class="section-title">DEDICATED TRAINING BATCHES <br><span class="text-combat-red">EQUAL FOCUS FOR EVERY LEVEL</span></h2>
+        <p class="section-subtitle">
+          Every batch has a dedicated curriculum, standardized coach ratio, and tailored progression benchmarks.
+        </p>
+      </div>
+
+      <!-- Row 1: Age Groups (3 Distinct Cards with Rich Padding & Visual Differentiation) -->
+      <div class="row g-4 mb-4 align-items-stretch">
+        <!-- 1. Kids Batch -->
+        <div class="col-md-6 col-lg-4">
+          <div class="batch-cohort-card h-100 cohort-kids">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="batch-target-pill batch-pill-kids">Ages 5 &ndash; 12 &bull; Junior Warriors</span>
+              <div class="cohort-icon-box cohort-icon-kids">
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            
+            <h3 class="batch-title">KIDS MARTIAL ARTS BATCH</h3>
+            <p class="batch-desc">
+              Focuses on gross motor agility, eye-hand balance, anti-bullying verbal de-escalation, and learning that true strength means self-control and kindness.
+            </p>
+
+            <div class="cohort-skill-tags mb-3">
+              <span class="cohort-skill-tag">Gross Motor Balance</span>
+              <span class="cohort-skill-tag">Anti-Bullying</span>
+              <span class="cohort-skill-tag">Focus &amp; Respect</span>
+            </div>
+
+            <ul class="batch-specs-list">
+              <li><i class="bi bi-clock-fill"></i> <span><strong>Class Hours:</strong> Mon &ndash; Fri at 04:30 PM &bull; Sat 09:30 AM</span></li>
+              <li><i class="bi bi-people-fill"></i> <span><strong>Coach Ratio:</strong> <span class="badge-ratio">8:1 Max</span> Close Supervision</span></li>
+              <li><i class="bi bi-shield-check"></i> <span><strong>Disciplines:</strong> Junior Karate, Taekwondo &amp; BJJ</span></li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-outline btn-kensei-sm w-100 justify-content-center mt-auto" onclick="selectTrialClass('Kids Martial Arts', 'Junior Batch')">
+              <span>Book Junior Trial</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Teens Batch -->
+        <div class="col-md-6 col-lg-4">
+          <div class="batch-cohort-card h-100 cohort-teens">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="batch-target-pill batch-pill-teens">Ages 13 &ndash; 17 &bull; Young Athletes</span>
+              <div class="cohort-icon-box cohort-icon-teens">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+            </div>
+
+            <h3 class="batch-title">TEENS COMBATIVE SQUAD</h3>
+            <p class="batch-desc">
+              Channels adolescent energy into supreme athletic conditioning, mental resilience under pressure, real-world self-defense, and positive peer camaraderie.
+            </p>
+
+            <div class="cohort-skill-tags mb-3">
+              <span class="cohort-skill-tag">Aerial Agility</span>
+              <span class="cohort-skill-tag">Tactical Defense</span>
+              <span class="cohort-skill-tag">Mental Resilience</span>
+            </div>
+
+            <ul class="batch-specs-list">
+              <li><i class="bi bi-clock-fill"></i> <span><strong>Class Hours:</strong> Mon &ndash; Fri at 05:45 PM &bull; Sat 11:00 AM</span></li>
+              <li><i class="bi bi-people-fill"></i> <span><strong>Coach Ratio:</strong> <span class="badge-ratio">10:1 Ratio</span> Mentor Coaching</span></li>
+              <li><i class="bi bi-shield-check"></i> <span><strong>Disciplines:</strong> Taekwondo, Boxing, BJJ &amp; Muay Thai</span></li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-outline btn-kensei-sm w-100 justify-content-center mt-auto" onclick="selectTrialClass('Teens Combative Squad', 'Young Athletes')">
+              <span>Book Teen Trial</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Adults Batch (FEATURED SPOTLIGHT COHORT) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="batch-cohort-card h-100 cohort-adults featured">
+            <div class="batch-spotlight-badge">
+              <i class="bi bi-fire me-1"></i> MOST POPULAR COHORT
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3 pt-2">
+              <span class="batch-target-pill batch-pill-adults">Ages 18+ &bull; Fitness &amp; Combat</span>
+              <div class="cohort-icon-box cohort-icon-adults">
+                <i class="bi bi-shield-shaded"></i>
+              </div>
+            </div>
+
+            <h3 class="batch-title">ADULT MARTIAL ARTS BATCH</h3>
+            <p class="batch-desc">
+              High-intensity metabolic cardio, functional joint mobility, stress relief after the workday, and authentic warrior traditions in an egoless community.
+            </p>
+
+            <div class="cohort-skill-tags mb-3">
+              <span class="cohort-skill-tag">Full-Body Striking</span>
+              <span class="cohort-skill-tag">Ground Control</span>
+              <span class="cohort-skill-tag">Stress Relief</span>
+            </div>
+
+            <ul class="batch-specs-list">
+              <li><i class="bi bi-clock-fill"></i> <span><strong>Class Hours:</strong> Morning 06:00 AM &bull; Evening 07:00 PM</span></li>
+              <li><i class="bi bi-people-fill"></i> <span><strong>Coach Ratio:</strong> <span class="badge-ratio badge-ratio-highlight">12:1 Ratio</span> Master Oversight</span></li>
+              <li><i class="bi bi-shield-check"></i> <span><strong>Disciplines:</strong> All 7 Global Combat Disciplines</span></li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-primary btn-kensei-sm w-100 justify-content-center mt-auto" onclick="selectTrialClass('Adult Martial Arts', 'Adult Batch')">
+              <i class="bi bi-shield-check me-1"></i>
+              <span>Book Adult Trial Pass</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Experience Levels (2 Balanced Cards) -->
+      <div class="row g-4 justify-content-center align-items-stretch">
+        <!-- 4. Beginners Track -->
+        <div class="col-md-6 col-lg-5">
+          <div class="batch-cohort-card h-100 cohort-beginners">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="batch-target-pill batch-pill-beginners">Novice On-Ramp &bull; White Belt Cohort</span>
+              <div class="cohort-icon-box cohort-icon-beginners">
+                <i class="bi bi-shield-check"></i>
+              </div>
+            </div>
+
+            <h3 class="batch-title">FOUNDATIONS &amp; BEGINNERS</h3>
+            <p class="batch-desc">
+              Designed specifically for members stepping onto the mats for the first time. Zero sparring, zero intimidation. Every movement is taught from ground balance and safe breathing.
+            </p>
+
+            <div class="cohort-skill-tags mb-3">
+              <span class="cohort-skill-tag">Zero Sparring</span>
+              <span class="cohort-skill-tag">Ground Balance</span>
+              <span class="cohort-skill-tag">4-Week Syllabus</span>
+            </div>
+
+            <ul class="batch-specs-list">
+              <li><i class="bi bi-clock-fill"></i> <span><strong>Class Hours:</strong> Mon &ndash; Fri at 07:00 PM &bull; Sat 10:00 AM</span></li>
+              <li><i class="bi bi-people-fill"></i> <span><strong>Coach Ratio:</strong> <span class="badge-ratio">10:1 Ratio</span> Dedicated Mentor</span></li>
+              <li><i class="bi bi-shield-check"></i> <span><strong>Orientation:</strong> 4-week structured movement syllabus</span></li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-outline btn-kensei-sm w-100 justify-content-center mt-auto" onclick="selectTrialClass('Beginners Foundation', 'Novice Cohort')">
+              <span>Book Beginner Trial</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Advanced Masters Track -->
+        <div class="col-md-6 col-lg-5">
+          <div class="batch-cohort-card h-100 cohort-advanced">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="batch-target-pill batch-pill-advanced">Brown &amp; Black Belts &bull; Competitive Squad</span>
+              <div class="cohort-icon-box cohort-icon-advanced">
+                <i class="bi bi-trophy-fill"></i>
+              </div>
+            </div>
+
+            <h3 class="batch-title">ADVANCED MASTERS &amp; SPARRING</h3>
+            <p class="batch-desc">
+              Rigorous high-cadence sparring, complex Kata bunkai, No-Gi leg lock matrices, clinch tactics, and tournament coaching for competitors and senior rank candidates.
+            </p>
+
+            <div class="cohort-skill-tags mb-3">
+              <span class="cohort-skill-tag">Full-Speed Sparring</span>
+              <span class="cohort-skill-tag">Kata Bunkai</span>
+              <span class="cohort-skill-tag">Tournament Prep</span>
+            </div>
+
+            <ul class="batch-specs-list">
+              <li><i class="bi bi-clock-fill"></i> <span><strong>Class Hours:</strong> Night Mat at 08:30 PM &bull; Sat Sparring 11:00 AM</span></li>
+              <li><i class="bi bi-people-fill"></i> <span><strong>Coach Ratio:</strong> <span class="badge-ratio">Direct Mentor</span> Master Faculty</span></li>
+              <li><i class="bi bi-shield-check"></i> <span><strong>Focus:</strong> Sanctioned tournament prep &amp; Dan ranking</span></li>
+            </ul>
+            <a href="#trial" class="btn-kensei btn-kensei-outline btn-kensei-sm w-100 justify-content-center mt-auto" onclick="selectTrialClass('Advanced Sparring', 'Masters Squad')">
+              <span>Inquire Advanced Squad</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. INSTRUCTOR AVAILABILITY
+       ======================================================================== -->
+  <section class="section-padding" id="instructors" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Master Faculty &bull; Direct Pedigree</span>
+        <h2 class="section-title">INSTRUCTOR AVAILABILITY <br><span class="text-combat-red">MEET YOUR COACHES ON THE MATS</span></h2>
+        <p class="section-subtitle">
+          Every session is coached by certified international masters with decades of authentic lineage and zero-ego teaching methodology.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Instructor 1: Master Kenji Sato -->
+        <div class="col-md-6 col-lg-4">
+          <div class="instructor-schedule-card">
+            <div class="instructor-card-img-wrap">
+              <img src="assets/images/karate-japan.jpg" alt="Master Kenji Sato &mdash; Karate Headmaster" class="instructor-card-img">
+            </div>
+            <div class="instructor-card-body">
+              <span class="instructor-discipline-tag">Japan &bull; Okinawa</span>
+              <h3 class="instructor-card-name">MASTER KENJI SATO</h3>
+              <div class="instructor-card-role">6th Dan Shotokan &bull; Academy Founder</div>
+              <p class="small text-muted mb-3">Specializes in biomechanical linear striking, Kata bunkai, and low-stance hip power.</p>
+              <div class="instructor-schedule-slots">
+                <i class="bi bi-calendar3 text-combat-red me-1"></i> <strong>Active Days:</strong> Mon, Wed, Fri (Karate Fundamentals &amp; Kumite)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructor 2: Professor Rodrigo Silva -->
+        <div class="col-md-6 col-lg-4">
+          <div class="instructor-schedule-card">
+            <div class="instructor-card-img-wrap">
+              <img src="assets/images/bjj-brazil.jpg" alt="Professor Rodrigo Silva &mdash; BJJ Head Coach" class="instructor-card-img">
+            </div>
+            <div class="instructor-card-body">
+              <span class="instructor-discipline-tag">Brazil &bull; Gracie Lineage</span>
+              <h3 class="instructor-card-name">PROF. RODRIGO SILVA</h3>
+              <div class="instructor-card-role">3rd Degree BJJ Black Belt &bull; ADCC Veteran</div>
+              <p class="small text-muted mb-3">Specializes in leverage dominance, guard retention, submissions, and pressure passing.</p>
+              <div class="instructor-schedule-slots">
+                <i class="bi bi-calendar3 text-combat-red me-1"></i> <strong>Active Days:</strong> Mon, Tue, Thu, Sat (Gi &amp; No-Gi BJJ Batches)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructor 3: Kru Somchai Prasert -->
+        <div class="col-md-6 col-lg-4">
+          <div class="instructor-schedule-card">
+            <div class="instructor-card-img-wrap">
+              <img src="assets/images/muaythai-thailand.jpg" alt="Kru Somchai Prasert &mdash; Muay Thai Master" class="instructor-card-img">
+            </div>
+            <div class="instructor-card-body">
+              <span class="instructor-discipline-tag">Thailand &bull; Bangkok Stadium</span>
+              <h3 class="instructor-card-name">KRU SOMCHAI PRASERT</h3>
+              <div class="instructor-card-role">180+ Professional Fights &bull; Striking Director</div>
+              <p class="small text-muted mb-3">Specializes in eight-limb striking, plum clinch knee battles, and Dutch pad combinations.</p>
+              <div class="instructor-schedule-slots">
+                <i class="bi bi-calendar3 text-combat-red me-1"></i> <strong>Active Days:</strong> Mon, Wed, Fri (Dawn Patrol &amp; Evening Rounds)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructor 4: Coach Marcus Vance -->
+        <div class="col-md-6 col-lg-4">
+          <div class="instructor-schedule-card">
+            <div class="instructor-card-img-wrap">
+              <img src="assets/images/boxing-international.jpg" alt="Coach Marcus Vance &mdash; Boxing Lead" class="instructor-card-img">
+            </div>
+            <div class="instructor-card-body">
+              <span class="instructor-discipline-tag">USA &bull; Golden Gloves Champion</span>
+              <h3 class="instructor-card-name">COACH MARCUS VANCE</h3>
+              <div class="instructor-card-role">Olympic Certified &bull; Sweet Science Coach</div>
+              <p class="small text-muted mb-3">Specializes in angle footwork, slip-and-rip counter-punching, and shoulder endurance.</p>
+              <div class="instructor-schedule-slots">
+                <i class="bi bi-calendar3 text-combat-red me-1"></i> <strong>Active Days:</strong> Tue, Thu, Sat (Boxing Bag Labs &amp; Sparring)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructor 5: Master Li Wei -->
+        <div class="col-md-6 col-lg-4">
+          <div class="instructor-schedule-card">
+            <div class="instructor-card-img-wrap">
+              <img src="assets/images/kungfu-china.jpg" alt="Master Li Wei &mdash; Shaolin Wushu Master" class="instructor-card-img">
+            </div>
+            <div class="instructor-card-body">
+              <span class="instructor-discipline-tag">China &bull; Songshan Shaolin</span>
+              <h3 class="instructor-card-name">MASTER LI WEI</h3>
+              <div class="instructor-card-role">Shaolin Disciple &bull; Qigong Specialist</div>
+              <p class="small text-muted mb-3">Specializes in Five Animal forms, Shaolin staff weapons, and internal breath harmonization.</p>
+              <div class="instructor-schedule-slots">
+                <i class="bi bi-calendar3 text-combat-red me-1"></i> <strong>Active Days:</strong> Tue, Thu, Sat (Kung Fu &amp; Morning Qigong)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructor 6: Gurukkal Devadas -->
+        <div class="col-md-6 col-lg-4">
+          <div class="instructor-schedule-card">
+            <div class="instructor-card-img-wrap">
+              <img src="assets/images/kalaripayattu-india.jpg" alt="Gurukkal Devadas &mdash; Kalaripayattu Master" class="instructor-card-img">
+            </div>
+            <div class="instructor-card-body">
+              <span class="instructor-discipline-tag">India &bull; Kerala Lineage</span>
+              <h3 class="instructor-card-name">GURUKKAL DEVADAS</h3>
+              <div class="instructor-card-role">35 Years Heritage &bull; Marma Master</div>
+              <p class="small text-muted mb-3">Specializes in ancient Kerala animal vadivu postures, long staff fencing, and Marma points.</p>
+              <div class="instructor-schedule-slots">
+                <i class="bi bi-calendar3 text-combat-red me-1"></i> <strong>Active Days:</strong> Tue, Thu, Sat (Kalari &amp; Weapons Labs)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. SPECIAL TRAINING SESSIONS
+       ======================================================================== -->
+  <section class="section-padding" id="special-sessions" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Mastery Intensives &bull; Beyond The Timetable</span>
+        <h2 class="section-title">SPECIAL TRAINING SESSIONS <br><span class="text-combat-red">WEEKEND CLINICS &amp; WORKSHOPS</span></h2>
+        <p class="section-subtitle">
+          Accelerate your skills with deep-dive seminars, reality-based self-defense intensives, and open sparring tatami sessions.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Weekend Workshops -->
+        <div class="col-md-6 col-lg-3">
+          <div class="special-session-card">
+            <span class="special-badge-timing">Monthly &bull; 1st Saturday</span>
+            <h3 class="special-session-title">WEEKEND MASTER WORKSHOPS</h3>
+            <p class="special-session-desc">
+              3-hour intensive masterclasses featuring guest international world champions exploring weapons kata, takedown mechanics, and advanced tournament rule sets.
+            </p>
+            <a href="#trial" class="text-combat-red fw-bold text-uppercase small text-decoration-none">
+              Inquire Registration &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Self-Defense Clinics -->
+        <div class="col-md-6 col-lg-3">
+          <div class="special-session-card">
+            <span class="special-badge-timing">Bi-Weekly &bull; Saturday 02:30 PM</span>
+            <h3 class="special-session-title">TACTICAL SELF-DEFENSE</h3>
+            <p class="special-session-desc">
+              Reality-based civilian conflict mitigation: escapes from aggressive wrist/hair grabs, ground survival against larger assailants, and situational threat awareness.
+            </p>
+            <a href="#trial" class="text-combat-red fw-bold text-uppercase small text-decoration-none">
+              Inquire Registration &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Open Tatami -->
+        <div class="col-md-6 col-lg-3">
+          <div class="special-session-card">
+            <span class="special-badge-timing">Every Saturday &bull; 12:30 PM</span>
+            <h3 class="special-session-title">OPEN TATAMI &amp; SPARRING</h3>
+            <p class="special-session-desc">
+              Supervised open mat for all enrolled students: live BJJ rolling, controlled technical striking exchanges, heavy bag testing, and cross-discipline peer exchange.
+            </p>
+            <a href="#trial" class="text-combat-red fw-bold text-uppercase small text-decoration-none">
+              Inquire Registration &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Competition Squad -->
+        <div class="col-md-6 col-lg-3">
+          <div class="special-session-card">
+            <span class="special-badge-timing">Sundays &bull; Invite Only</span>
+            <h3 class="special-session-title">TOURNAMENT FIGHT TEAM</h3>
+            <p class="special-session-desc">
+              High-cadence rounds, weight management protocols, sports psychology, and referee score-card strategy for athletes preparing for state, national, or IBJJF tournaments.
+            </p>
+            <a href="#trial" class="text-combat-red fw-bold text-uppercase small text-decoration-none">
+              Inquire Registration &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. IMPORTANT SCHEDULE INFORMATION
+       ======================================================================== -->
+  <section class="section-padding" id="guidelines" style="background: var(--bg-midnight);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Dojo Protocols &bull; Student Expectations</span>
+        <h2 class="section-title">IMPORTANT SCHEDULE INFORMATION <br><span class="text-combat-red">ATTENDANCE &amp; DOJO ETIQUETTE</span></h2>
+        <p class="section-subtitle">
+          Clear standards ensure every training session is safe, organized, respectful, and productive for all practitioners.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <!-- Item 1 -->
+          <div class="guideline-item">
+            <div class="guideline-icon"><i class="bi bi-clock-history"></i></div>
+            <div>
+              <h3 class="guideline-title">CLASS DURATION &amp; ARRIVAL PROTOCOL</h3>
+              <p class="guideline-desc">
+                Standard classes run between 60 to 75 minutes. Please arrive 10 to 15 minutes prior to class to change, wrap hands, and warm up your joints before the formal opening bow.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="guideline-item">
+            <div class="guideline-icon"><i class="bi bi-door-open-fill"></i></div>
+            <div>
+              <h3 class="guideline-title">PUNCTUALITY &amp; TATAMI ENTRY</h3>
+              <p class="guideline-desc">
+                If arriving after the opening bow, please stand respectfully at the perimeter edge of the tatami mat and wait for the instructor’s nod before bowing and stepping onto the training floor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="guideline-item">
+            <div class="guideline-icon"><i class="bi bi-award-fill"></i></div>
+            <div>
+              <h3 class="guideline-title">ATTENDANCE FOR BELT GRADINGS</h3>
+              <p class="guideline-desc">
+                Progression through KENSEI belt ranks requires consistent mat presence. Students must log a minimum attendance record (typically 2 sessions/week over 3 to 6 months) to qualify for grading invitations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="guideline-item">
+            <div class="guideline-icon"><i class="bi bi-shield-shaded"></i></div>
+            <div>
+              <h3 class="guideline-title">EQUIPMENT &amp; HYGIENE STANDARDS</h3>
+              <p class="guideline-desc">
+                Clean training uniforms (Dogi, Dobok, or rashguards) are mandatory. Finger and toenails must be neatly trimmed. All personal gloves, shin guards, and mouthguards must be sanitized before stepping on the tatami.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="guideline-item">
+            <div class="guideline-icon"><i class="bi bi-bell-fill"></i></div>
+            <div>
+              <h3 class="guideline-title">HOLIDAY SCHEDULES &amp; WEATHER UPDATES</h3>
+              <p class="guideline-desc">
+                Dojo closures or holiday timetables are broadcasted via our Member WhatsApp channel and posted on this website 48 hours in advance. Emergency weather closures are announced by 06:00 AM on the day of training.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. FREQUENTLY ASKED QUESTIONS
+       ======================================================================== -->
+  <section class="section-padding" id="faq" style="background: var(--bg-charcoal);">
+    <div class="container-xl">
+      <div class="text-center section-header-wrap reveal-on-scroll">
+        <span class="section-badge">Schedule Guidance &bull; Clear Answers</span>
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS <br><span class="text-combat-red">ALL ABOUT CLASSES &amp; TIMETABLES</span></h2>
+        <p class="section-subtitle">
+          Have questions about managing your training schedule? Here are answers to the most common member questions.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion kensei-accordion" id="schedFaqAccordion">
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="schedFaqHead1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#schedFaqCol1" aria-expanded="true" aria-controls="schedFaqCol1">
+                  Can I switch between morning and evening batches if my shift changes?
+                </button>
+              </h3>
+              <div id="schedFaqCol1" class="accordion-collapse collapse show" aria-labelledby="schedFaqHead1" data-bs-parent="#schedFaqAccordion">
+                <div class="accordion-body">
+                  Yes, absolutely. Our flexible all-access membership allows adult students to attend morning, afternoon, or evening batches as their work and personal schedules require, with no penalty or transfer fee.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="schedFaqHead2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#schedFaqCol2" aria-expanded="false" aria-controls="schedFaqCol2">
+                  What happens if I miss a scheduled class due to work or travel?
+                </button>
+              </h3>
+              <div id="schedFaqCol2" class="accordion-collapse collapse" aria-labelledby="schedFaqHead2" data-bs-parent="#schedFaqAccordion">
+                <div class="accordion-body">
+                  Missed classes can easily be made up on alternate days within the same billing month or during our Saturday Open Tatami sessions. For extended travel (2+ weeks), members can pause their membership with 7 days notice.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="schedFaqHead3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#schedFaqCol3" aria-expanded="false" aria-controls="schedFaqCol3">
+                  Can I train in multiple martial arts in the same week?
+                </button>
+              </h3>
+              <div id="schedFaqCol3" class="accordion-collapse collapse" aria-labelledby="schedFaqHead3" data-bs-parent="#schedFaqAccordion">
+                <div class="accordion-body">
+                  Yes! Over 40% of our members cross-train across complementary arts, such as pairing striking (Karate, Muay Thai, or Boxing) with ground grappling (Brazilian Jiu-Jitsu). Our Combat Core membership tier grants unlimited access across all disciplines.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="schedFaqHead4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#schedFaqCol4" aria-expanded="false" aria-controls="schedFaqCol4">
+                  How do I book a Free Trial Class for a specific time slot?
+                </button>
+              </h3>
+              <div id="schedFaqCol4" class="accordion-collapse collapse" aria-labelledby="schedFaqHead4" data-bs-parent="#schedFaqAccordion">
+                <div class="accordion-body">
+                  Simply scroll to the trial booking form below, choose your desired martial art and preferred batch timing, and submit your contact details. Our admissions coordinator will confirm your spot within 2 hours.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="schedFaqHead5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#schedFaqCol5" aria-expanded="false" aria-controls="schedFaqCol5">
+                  Are private one-on-one sessions available outside the group schedule?
+                </button>
+              </h3>
+              <div id="schedFaqCol5" class="accordion-collapse collapse" aria-labelledby="schedFaqHead5" data-bs-parent="#schedFaqAccordion">
+                <div class="accordion-body">
+                  Yes. Our master coaches offer private 1-on-1 and semi-private training between 10:00 AM and 03:00 PM on weekdays, and on Sunday mornings. Private training is customized to your exact physical and technical goals.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. FINAL CTA (Book Free Trial)
+       ======================================================================== -->
+  <section class="section-padding about-cta-section" id="trial">
+    <div class="container-xl">
+      <div class="about-cta-card">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5 about-cta-img-col d-none d-lg-block">
+            <img src="assets/images/inside-dojo.jpg" alt="KENSEI Martial Arts Dojo Atmosphere" loading="lazy">
+          </div>
+          <div class="col-lg-7 about-cta-content">
+            <span class="section-badge">Step Onto The Tatami</span>
+            <h2 class="section-title mb-2">
+              FIND YOUR TIME. <br>
+              <span class="text-combat-red">START YOUR JOURNEY.</span>
+            </h2>
+            <p class="text-muted mb-4" style="font-size: 1.05rem; line-height: 1.65;">
+              Claim your complimentary 60-minute trial session in your preferred time slot. Full loaner gear and personalized movement assessment included.
+            </p>
+
+            <form class="row g-3" id="scheduleTrialForm" onsubmit="event.preventDefault(); alert('Trial pass requested! Our coordinator will contact you to confirm your reserved schedule slot.');">
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Full Name</label>
+                <input type="text" class="form-control" placeholder="e.g. Liam Taylor" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Email Address</label>
+                <input type="email" class="form-control" placeholder="e.g. liam@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="e.g. +1 (555) 234-5678" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Select Discipline</label>
+                <select class="form-select" id="formDisciplineSelect" required>
+                  <option value="" selected disabled>Choose Martial Art</option>
+                  <option value="Karate">Traditional Karate (Japan)</option>
+                  <option value="Taekwondo">Olympic Taekwondo (Korea)</option>
+                  <option value="Kung Fu">Shaolin Kung Fu (China)</option>
+                  <option value="Muay Thai">Muay Thai &amp; Kickboxing (Thailand)</option>
+                  <option value="Boxing">Western Boxing (The Sweet Science)</option>
+                  <option value="BJJ">Brazilian Jiu-Jitsu (Brazil)</option>
+                  <option value="Kalaripayattu">Kalaripayattu (India)</option>
+                  <option value="Self-Defense">Tactical Self-Defense</option>
+                </select>
+              </div>
+              <div class="col-md-12">
+                <label class="form-label small text-uppercase fw-semibold" style="color: var(--text-ivory);">Preferred Training Time Slot</label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select Desired Time Slot</option>
+                  <option value="Mon-Dawn">Monday Dawn Strike &bull; 06:00 AM</option>
+                  <option value="Mon-Eve">Monday Evening BJJ &bull; 07:00 PM</option>
+                  <option value="Tue-Morn">Tuesday Boxing Footwork &bull; 06:30 AM</option>
+                  <option value="Tue-Eve">Tuesday Kalari Staff &bull; 07:00 PM</option>
+                  <option value="Wed-Eve">Wednesday Karate Shotokan &bull; 07:00 PM</option>
+                  <option value="Thu-Eve">Thursday Muay Thai Clinch &bull; 08:30 PM</option>
+                  <option value="Fri-Eve">Friday Taekwondo Sparring &bull; 07:00 PM</option>
+                  <option value="Sat-Morn">Saturday Family Synergy &bull; 09:30 AM</option>
+                  <option value="Sat-Open">Saturday Open Tatami &bull; 12:30 PM</option>
+                </select>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn-kensei btn-kensei-primary btn-kensei-lg w-100 justify-content-center">
+                  <i class="bi bi-shield-check"></i>
+                  <span>CONFIRM FREE TRIAL RESERVATION</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER (Canonical Home Footer)
+       ======================================================================== -->
+  <footer class="kensei-footer" id="contact">
+    <div class="container-xl">
+      <div class="row g-5">
+        <!-- Widget 1: Academy Overview -->
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-link mb-3" href="index.html">
+            <div class="brand-symbol" aria-hidden="true">K</div>
+            <div class="brand-text">
+              <span class="brand-title">KENSEI</span>
+              <span class="brand-subtitle">Martial Arts &bull; Self-Defense</span>
+            </div>
+          </a>
+          <p class="mt-3">
+            KENSEI is a high-performance martial arts institution committed to authentic combat disciplines, ethical
+            character development, and reality-based tactical self-preservation.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Follow Kensei on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Widget 2: Quick Links (Navbar Links) -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">QUICK LINKS</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right small"></i> Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="schedule.html"><i class="bi bi-chevron-right small"></i> Schedule</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right small"></i> Blog</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 3: Support & Legal -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-widget-title">SUPPORT</h4>
+          <ul class="footer-links">
+            <li><a href="terms.html#privacy"><i class="bi bi-chevron-right small"></i> Privacy Policy</a></li>
+            <li><a href="terms.html#terms"><i class="bi bi-chevron-right small"></i> Terms &amp; Conditions</a></li>
+            <li><a href="terms.html#faqs"><i class="bi bi-chevron-right small"></i> FAQs</a></li>
+            <li><a href="terms.html#safety"><i class="bi bi-chevron-right small"></i> Dojo Safety Code</a></li>
+            <li><a href="contact.html#free-trial"><i class="bi bi-chevron-right small"></i> Free Trial Pass</a></li>
+            <li><a href="contact.html#send-message"><i class="bi bi-chevron-right small"></i> Help &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Widget 4: Contact Details & Hours -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-widget-title">CONTACT DETAILS</h4>
+          <ul class="contact-info-list">
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>742 Bushido Way, Combat Arts Pavilion, District 4, NY 10013</span>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span><a href="tel:+12125550988" class="text-reset text-decoration-none">+1 (212) 555-0988</a> / <a href="tel:+12125550989" class="text-reset text-decoration-none">+1 (212) 555-0989</a></span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span><a href="mailto:admissions@kenseiacademy.com" class="text-reset text-decoration-none">admissions@kenseiacademy.com</a></span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon &ndash; Fri: 06:00 AM &ndash; 09:30 PM<br>Saturday: 08:30 AM &ndash; 04:00 PM (Closed Sun)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 KENSEI Martial Arts &amp; Self-Defense Academy. All rights reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="terms.html#privacy" class="text-decoration-none text-muted small">Privacy Policy</a>
+          <a href="terms.html#terms" class="text-decoration-none text-muted small">Terms &amp; Conditions</a>
+          <a href="terms.html#faqs" class="text-decoration-none text-muted small">FAQs</a>
+          <a href="terms.html#safety" class="text-decoration-none text-muted small">Dojo Safety Code</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+
+  <!-- Timetable Instant Filtering Engine -->
+  <script>
+    var currentFilters = {
+      day: "monday",
+      discipline: "all",
+      level: "all",
+      age: "all"
+    };
+
+    function applyTimetableFilters() {
+      var cards = document.querySelectorAll('.timetable-class-card');
+      var counter = document.getElementById('matchingCount');
+      var visibleCount = 0;
+
+      cards.forEach(function(card) {
+        var cardDay = card.getAttribute('data-day');
+        var cardDiscipline = card.getAttribute('data-discipline');
+        var cardLevel = card.getAttribute('data-level');
+        var cardAge = card.getAttribute('data-age');
+
+        var matches = true;
+
+        if (currentFilters.day !== "all" && cardDay !== currentFilters.day) {
+          matches = false;
+        }
+        if (currentFilters.discipline !== "all" && cardDiscipline !== currentFilters.discipline) {
+          matches = false;
+        }
+        if (currentFilters.level !== "all" && cardLevel !== currentFilters.level && cardLevel !== "all") {
+          matches = false;
+        }
+        if (currentFilters.age !== "all" && cardAge !== currentFilters.age) {
+          matches = false;
+        }
+
+        if (matches) {
+          card.style.display = "flex";
+          card.style.opacity = "1";
+          card.style.visibility = "visible";
+          card.style.transform = "none";
+          visibleCount++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      if (counter) counter.textContent = visibleCount;
+
+      var emptyMsg = document.getElementById('timetableEmptyMsg');
+      if (visibleCount === 0) {
+        if (!emptyMsg) {
+          emptyMsg = document.createElement('div');
+          emptyMsg.id = 'timetableEmptyMsg';
+          emptyMsg.className = 'text-center py-5 border rounded-1 my-3';
+          emptyMsg.style.background = 'var(--bg-charcoal)';
+          emptyMsg.style.borderColor = 'var(--border-slate)';
+          emptyMsg.innerHTML = '<i class="bi bi-calendar-x fs-1 text-combat-red mb-3 d-block"></i>' +
+            '<h4 class="font-heading fs-4 text-ivory">NO CLASSES MATCH YOUR SELECTED FILTER</h4>' +
+            '<p class="text-muted small mb-3">Try clearing or adjusting your day, discipline, or age selection.</p>' +
+            '<button class="btn btn-sm btn-kensei btn-kensei-outline" onclick="resetFilters()">Reset All Filters</button>';
+          document.getElementById('timetableCardsContainer').appendChild(emptyMsg);
+        }
+        emptyMsg.style.display = 'block';
+      } else if (emptyMsg) {
+        emptyMsg.style.display = 'none';
+      }
+    }
+
+    function selectTrialClass(discipline, slot) {
+      var select = document.getElementById('formDisciplineSelect');
+      if (select) {
+        for (var i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(discipline) || select.options[i].value === discipline) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    }
+
+    function resetFilters() {
+      currentFilters = { day: "monday", discipline: "all", level: "all", age: "all" };
+      document.querySelectorAll('.day-pill-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-day') === 'monday');
+      });
+      var dSel = document.getElementById('disciplineFilter');
+      var lSel = document.getElementById('levelFilter');
+      var aSel = document.getElementById('ageFilter');
+      if (dSel) dSel.value = 'all';
+      if (lSel) lSel.value = 'all';
+      if (aSel) aSel.value = 'all';
+      applyTimetableFilters();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Day pills
+      document.querySelectorAll('.day-pill-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.day-pill-btn').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          currentFilters.day = btn.getAttribute('data-day');
+          applyTimetableFilters();
+        });
+      });
+
+      // Dropdown filters
+      var dFilter = document.getElementById('disciplineFilter');
+      if (dFilter) {
+        dFilter.addEventListener('change', function(e) {
+          currentFilters.discipline = e.target.value;
+          applyTimetableFilters();
+        });
+      }
+
+      var lFilter = document.getElementById('levelFilter');
+      if (lFilter) {
+        lFilter.addEventListener('change', function(e) {
+          currentFilters.level = e.target.value;
+          applyTimetableFilters();
+        });
+      }
+
+      var aFilter = document.getElementById('ageFilter');
+      if (aFilter) {
+        aFilter.addEventListener('change', function(e) {
+          currentFilters.age = e.target.value;
+          applyTimetableFilters();
+        });
+      }
+
+      var resetBtn = document.getElementById('resetFiltersBtn');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', resetFilters);
+      }
+
+      // Initial filter application
+      applyTimetableFilters();
+    });
+  </script>
+</body>
+</html>

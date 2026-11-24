@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="kenseiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D62839"/>
+      <stop offset="100%" stop-color="#A81825"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Iconic Kensei Trapezoid Shield Crest -->
+  <polygon points="2,2 62,2 53,62 2,62" fill="url(#kenseiGrad)" filter="url(#subtleGlow)"/>
+  <!-- Bold Sharp Kensei Lettermark K -->
+  <!-- Vertical Pillar -->
+  <rect x="15" y="14" width="7.5" height="36" rx="1" fill="#FFFFFF"/>
+  <!-- Upper Diagonal Slash -->
+  <polygon points="22.5,33 37.5,14 47.5,14 28.5,37" fill="#FFFFFF"/>
+  <!-- Lower Diagonal Kick -->
+  <polygon points="25.5,33.5 39.5,50 49.5,50 32,31" fill="#FFFFFF"/>
+</svg>
