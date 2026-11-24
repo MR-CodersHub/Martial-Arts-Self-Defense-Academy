@@ -9940,7 +9940,7 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  /* Prevent navbar from ever being cut off or half-scrolled on mobile */
+  /* Rock-solid fixed navbar on mobile - never jumps or shifts */
   .kensei-navbar {
     position: fixed !important;
     top: 0 !important;
@@ -9964,23 +9964,30 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
   }
 
+  /* Container wraps so that the collapsed menu expands full-width BELOW the top bar */
   .kensei-navbar .container-xl {
     display: flex !important;
+    flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: space-between !important;
-    flex-wrap: nowrap !important;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
     max-width: 100% !important;
     width: 100% !important;
   }
 
+  /* Header Bar Left: Brand Link */
   .kensei-navbar .brand-link {
-    flex-shrink: 0 !important;
+    order: 1 !important;
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
   }
 
+  /* Header Bar Right: Controls (RTL, Theme, Hamburger) */
   .kensei-navbar .nav-header-actions {
-    flex-shrink: 0 !important;
+    order: 2 !important;
+    flex: 0 0 auto !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.45rem !important;
@@ -9990,6 +9997,82 @@ body {
   [dir="rtl"] .kensei-navbar .nav-header-actions {
     margin-left: 0 !important;
     margin-right: auto !important;
+  }
+
+  /* Header Bar Row 2: Full-Width Collapsible Mobile Navigation Drawer */
+  .kensei-navbar .navbar-collapse {
+    order: 3 !important;
+    flex-basis: 100% !important;
+    width: 100% !important;
+    margin-top: 0.85rem !important;
+    padding: 1.25rem 1rem !important;
+    background: #14171D !important;
+    border: 1px solid var(--border-slate) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7) !important;
+    max-height: calc(100vh - 85px) !important;
+    overflow-y: auto !important;
+  }
+
+  [data-bs-theme="light"] .kensei-navbar .navbar-collapse {
+    background: #FFFFFF !important;
+    border: 1px solid #D5D2CA !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .kensei-navbar .navbar-collapse .navbar-nav {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .kensei-navbar .navbar-collapse .nav-link {
+    display: block !important;
+    width: 100% !important;
+    padding: 0.75rem 0.85rem !important;
+    font-family: var(--font-heading) !important;
+    font-size: 1.25rem !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    color: var(--text-ivory) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 2px !important;
+    transition: all var(--transition-fast) !important;
+  }
+
+  .kensei-navbar .navbar-collapse .nav-link:hover,
+  .kensei-navbar .navbar-collapse .nav-link.active {
+    background: rgba(198, 40, 53, 0.12) !important;
+    color: var(--accent-combat-red) !important;
+    padding-left: 1.25rem !important;
+  }
+
+  [dir="rtl"] .kensei-navbar .navbar-collapse .nav-link:hover,
+  [dir="rtl"] .kensei-navbar .navbar-collapse .nav-link.active {
+    padding-left: 0.85rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  [data-bs-theme="light"] .kensei-navbar .navbar-collapse .nav-link {
+    color: #12141A !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+  }
+
+  [data-bs-theme="light"] .kensei-navbar .navbar-collapse .nav-link:hover,
+  [data-bs-theme="light"] .kensei-navbar .navbar-collapse .nav-link.active {
+    background: rgba(198, 40, 53, 0.08) !important;
+    color: var(--accent-combat-red) !important;
+  }
+
+  .kensei-navbar .navbar-collapse .btn-kensei {
+    margin-top: 1rem !important;
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 1.05rem !important;
   }
 
   /* Universal container clipping on mobile */
