@@ -80,6 +80,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
 }
 
 body {
@@ -9896,4 +9899,123 @@ div[id] {
   background: #F8F6F1 !important;
   border-color: #D5D2CA !important;
   color: #5A6270 !important;
+}
+
+/* ==========================================================================
+   MOBILE VIEWPORT & NAVBAR SCROLL RECTIFICATION
+   ========================================================================== */
+html,
+body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Footer bottom responsive flex wrap */
+.footer-bottom {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+}
+
+.footer-bottom .d-flex {
+  flex-wrap: wrap !important;
+  gap: 0.75rem 1.25rem !important;
+}
+
+@media (max-width: 767.98px) {
+  /* Hours row responsive stacking */
+  .hours-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.35rem !important;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .hours-badge {
+    align-self: flex-start !important;
+    margin-top: 0.25rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Prevent navbar from ever being cut off or half-scrolled on mobile */
+  .kensei-navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding: 0.75rem 0 !important;
+    min-height: 58px !important;
+    z-index: 1040 !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .kensei-navbar.scrolled {
+    padding: 0.75rem 0 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  [data-bs-theme="light"] .kensei-navbar.scrolled {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  .kensei-navbar .container-xl {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .kensei-navbar .brand-link {
+    flex-shrink: 0 !important;
+  }
+
+  .kensei-navbar .nav-header-actions {
+    flex-shrink: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.45rem !important;
+    margin-left: auto !important;
+  }
+
+  [dir="rtl"] .kensei-navbar .nav-header-actions {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+
+  /* Universal container clipping on mobile */
+  .container,
+  .container-fluid,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 100% !important;
+    overflow-x: clip !important;
+  }
+
+  /* Prevent media from bleeding beyond screen */
+  img, svg, video, iframe, canvas {
+    max-width: 100% !important;
+  }
+
+  /* Prevent absolute elements from causing horizontal overflow */
+  .about-secondary-badge {
+    right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .showcase-glow-backdrop {
+    left: 0 !important;
+    right: 0 !important;
+  }
 }
